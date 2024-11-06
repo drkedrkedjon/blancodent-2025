@@ -4,7 +4,7 @@ import { Link } from "@/i18n/routing";
 export default async function HomePage({
   params,
 }: Readonly<{
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }>) {
   const { locale } = await params;
   // Enable static rendering
