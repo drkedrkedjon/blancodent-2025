@@ -1,8 +1,15 @@
-import { useTranslations } from "next-intl";
+import { setRequestLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/routing";
 
-export default function HomePage() {
-  const t = useTranslations("HomePage");
+export default async function HomePage({
+  params,
+}: Readonly<{
+  params: { locale: string };
+}>) {
+  const { locale } = await params;
+  // Enable static rendering
+  setRequestLocale(locale);
+  const t = await getTranslations("HomePage");
   return (
     <div>
       <h1>{t("title")}</h1>
