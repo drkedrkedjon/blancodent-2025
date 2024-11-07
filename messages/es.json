@@ -2,5 +2,9 @@
   "HomePage": {
     "title": "Hola mundo cojonundo!",
     "about": "No se que en español"
+  },
+  "NotFoundPage": {
+    "title": "¡Página no encontrada!",
+    "homeLink": "Ir a la página de inicio"
   }
 }
