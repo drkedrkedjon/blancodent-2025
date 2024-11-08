@@ -15,14 +15,16 @@ const styles = {
 
 export default function NotFound() {
   return (
-    <>
-      <Link
-        style={styles.a}
-        href="/"
-      >
-        {"<-- HOME"}
-      </Link>
-      <Error statusCode={404} />
-    </>
+    <html lang="en">
+      <body>
+        <Link
+          style={styles.a}
+          href="/"
+        >
+          {"<-- HOME"}
+        </Link>
+        <Error statusCode={404} />
+      </body>
+    </html>
   );
 }

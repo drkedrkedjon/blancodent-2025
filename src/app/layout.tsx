@@ -1,11 +1,9 @@
+// Layout only for 404 page. Iy just passes children to the page.
+
 export default async function NotFoundLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
-  );
+  return children;
 }

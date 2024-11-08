@@ -6,6 +6,15 @@ import {
 } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import localFont from "next/font/local";
+import "../assets/global-styles/globals.css";
+
+// Load the local font
+const monaSansFont = localFont({
+  src: "../assets/fonts/Mona-Sans.woff2",
+  display: "fallback",
+  fallback: ["system-ui", "arial", "sans-serif"],
+});
 
 // Generate localised metadata for the page
 export async function generateMetadata({
@@ -45,7 +54,10 @@ export default async function RootLayout({
   // side is the easiest way to get started
   const messages = await getMessages();
   return (
-    <html lang={locale}>
+    <html
+      lang={locale}
+      className={monaSansFont.className}
+    >
       <body>
         <NextIntlClientProvider messages={messages}>
           {children}
