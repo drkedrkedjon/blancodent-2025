@@ -11,7 +11,7 @@ import { routing } from "@/i18n/routing";
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Metadata" });
@@ -34,8 +34,7 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
 }>) {
-  const resolvedParams = await params;
-  const { locale } = resolvedParams;
+  const { locale } = await params;
   // Enable static rendering
   setRequestLocale(locale);
   // Ensure that the incoming `locale` is valid
