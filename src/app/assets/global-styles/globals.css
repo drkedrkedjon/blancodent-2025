@@ -1,1 +1,53 @@
-@import url("css-reset.css")
+@import url("css-reset.css");
+
+:root {
+  --clr-primary-1: hsl(192.63, 20%, 62.75%);
+  --clr-primary-2: hsl(201.43, 50%, 89.02%);
+  --clr-primary-3: hsl(198.95, 90.48%, 95.88%);
+  --clr-secondary-1: hsl(344.35, 79.31%, 94.31%);
+  --clr-secondary-2: hsl(0, 100%, 99.61%);
+  --clr-accent-1: hsl(344.48, 77.3%, 63.73%);
+}
+
+@supports (color: oklch(72.13% 0.035 215.7)) {
+  :root {
+    --clr-primary-1: oklch(72.13% 0.035 215.7);
+    --clr-primary-2: oklch(91.76% 0.0236 231.86);
+    --clr-primary-3: oklch(97.12% 0.0159 226.96);
+    --clr-secondary-1: oklch(94.21% 0.0263 359.94);
+    --clr-secondary-2: oklch(99.56% 0.0021 17.19);
+    --clr-accent-1: oklch(66.55% 0.1787 7.43);
+  }
+}
+
+
+
+.test {
+  width: 100px;
+  height: 100px;
+}
+
+.test:nth-child(2) {
+  background-color: var(--clr-primary-1);
+  margin-right: auto;
+}
+
+.test:nth-child(3) {
+  background-color: var(--clr-primary-2);
+}
+
+.test:nth-child(4) {
+  background-color: var(--clr-primary-3);
+}
+
+.test:nth-child(5) {
+  background-color: var(--clr-secondary-1);
+}
+
+.test:nth-child(6) {
+  background-color: var(--clr-secondary-2);
+}
+
+.test:nth-child(7) {
+  background-color: var(--clr-accent-1);
+}
