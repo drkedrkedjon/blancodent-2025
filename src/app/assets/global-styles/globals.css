@@ -7,6 +7,8 @@
   --clr-secondary-1: hsl(344.35, 79.31%, 94.31%);
   --clr-secondary-2: hsl(0, 100%, 99.61%);
   --clr-accent-1: hsl(344.48, 77.3%, 63.73%);
+  --clr-black: hsl(223.81 0% 4%);
+  --clr-white: hsl(223.81 0% 99%)
 }
 
 @supports (color: oklch(72.13% 0.035 215.7)) {
@@ -17,6 +19,8 @@
     --clr-secondary-1: oklch(94.21% 0.0263 359.94);
     --clr-secondary-2: oklch(99.56% 0.0021 17.19);
     --clr-accent-1: oklch(66.55% 0.1787 7.43);
+    --clr-black: oklch(14.5% 0 0);
+    --clr-white: oklch(99% 0 0);
   }
 }
 
@@ -25,9 +29,14 @@
 .test {
   width: 100px;
   height: 100px;
+  display: grid;
+  place-content: center;
+  font-size: 3rem;
+  color: var(--clr-black);
 }
 
 .test:nth-child(2) {
+  color: var(--clr-white);
   background-color: var(--clr-primary-1);
   margin-right: auto;
 }
@@ -49,5 +58,15 @@
 }
 
 .test:nth-child(7) {
+  /* color: var(--clr-white); */
   background-color: var(--clr-accent-1);
+}
+
+.test:nth-child(8) {
+  background-color: var(--clr-black);
+  color: var(--clr-white)
+}
+
+.test:nth-child(9) {
+  background-color: var(--clr-white);
 }
