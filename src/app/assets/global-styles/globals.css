@@ -1,26 +1,104 @@
 @import url("css-reset.css");
 
 :root {
-  --clr-primary-1: hsl(192.63, 20%, 62.75%);
+  /* --clr-primary-1: hsl(192.63, 20%, 62.75%);
   --clr-primary-2: hsl(201.43, 50%, 89.02%);
   --clr-primary-3: hsl(198.95, 90.48%, 95.88%);
   --clr-secondary-1: hsl(344.35, 79.31%, 94.31%);
   --clr-secondary-2: hsl(0, 100%, 99.61%);
   --clr-accent-1: hsl(344.48, 77.3%, 63.73%);
+  --clr-accent-2: hsl(344 51% 39%);
   --clr-black: hsl(223.81 0% 4%);
-  --clr-white: hsl(223.81 0% 99%)
+  --clr-white: hsl(223.81 0% 99%); */
 }
 
 @supports (color: oklch(72.13% 0.035 215.7)) {
-  :root {
+
+  /* :root {
     --clr-primary-1: oklch(72.13% 0.035 215.7);
     --clr-primary-2: oklch(91.76% 0.0236 231.86);
     --clr-primary-3: oklch(97.12% 0.0159 226.96);
     --clr-secondary-1: oklch(94.21% 0.0263 359.94);
     --clr-secondary-2: oklch(99.56% 0.0021 17.19);
     --clr-accent-1: oklch(66.55% 0.1787 7.43);
+    --clr-accent-2: oklch(46.89% 0.1367 7.95);
     --clr-black: oklch(14.5% 0 0);
     --clr-white: oklch(99% 0 0);
+
+    
+  } */
+  :root {
+    --gray-1: oklch(98% 0.001 215);
+    --gray-2: oklch(97% 0.002 215);
+    --gray-3: oklch(93% 0.004 215);
+    --gray-4: oklch(84% 0.005 215);
+    --gray-5: oklch(80% 0.006 215);
+    --gray-6: oklch(71% 0.008 215);
+    --gray-7: oklch(66% 0.008 215);
+    --gray-8: oklch(58% 0.008 215);
+    --gray-9: oklch(53% 0.008 215);
+    --gray-10: oklch(49% 0.008 215);
+    --gray-11: oklch(42% 0.007 215);
+    --gray-12: oklch(35% 0.006 215);
+    --gray-13: oklch(27% 0.005 215);
+    --gray-14: oklch(20% 0.004 215);
+    --gray-15: oklch(16% 0.003 215);
+    --gray-16: oklch(10% 0.002 215);
+    --gray-accent: oklch(84% 0.02 215);
+
+    --primary-1: oklch(98% 0.006 215);
+    --primary-2: oklch(97% 0.012 215);
+    --primary-3: oklch(93% 0.02 215);
+    --primary-4: oklch(84% 0.024 215);
+    --primary-5: oklch(80% 0.032 215);
+    --primary-6: oklch(71% 0.038 215);
+    --primary-7: oklch(66% 0.04 215);
+    --primary-8: oklch(58% 0.042 215);
+    --primary-9: oklch(53% 0.04 215);
+    --primary-10: oklch(49% 0.038 215);
+    --primary-11: oklch(42% 0.034 215);
+    --primary-12: oklch(35% 0.03 215);
+    --primary-13: oklch(27% 0.024 215);
+    --primary-14: oklch(20% 0.018 215);
+    --primary-15: oklch(16% 0.014 215);
+    --primary-16: oklch(10% 0.01 215);
+    --primary-accent: oklch(84% 0.1 215);
+
+    --secondary-1: oklch(98% 0.006 5);
+    --secondary-2: oklch(97% 0.012 5);
+    --secondary-3: oklch(93% 0.02 5);
+    --secondary-4: oklch(84% 0.024 5);
+    --secondary-5: oklch(80% 0.032 5);
+    --secondary-6: oklch(71% 0.038 5);
+    --secondary-7: oklch(66% 0.04 5);
+    --secondary-8: oklch(58% 0.042 5);
+    --secondary-9: oklch(53% 0.04 5);
+    --secondary-10: oklch(49% 0.038 5);
+    --secondary-11: oklch(42% 0.034 5);
+    --secondary-12: oklch(35% 0.03 5);
+    --secondary-13: oklch(27% 0.024 5);
+    --secondary-14: oklch(20% 0.018 5);
+    --secondary-15: oklch(16% 0.014 5);
+    --secondary-16: oklch(10% 0.01 5);
+    --secondary-accent: oklch(84% 0.1 5);
+
+    --tertiary-1: oklch(98% 0.006 65);
+    --tertiary-2: oklch(97% 0.012 65);
+    --tertiary-3: oklch(93% 0.02 65);
+    --tertiary-4: oklch(84% 0.024 65);
+    --tertiary-5: oklch(80% 0.032 65);
+    --tertiary-6: oklch(71% 0.038 65);
+    --tertiary-7: oklch(66% 0.04 65);
+    --tertiary-8: oklch(58% 0.042 65);
+    --tertiary-9: oklch(53% 0.04 65);
+    --tertiary-10: oklch(49% 0.038 65);
+    --tertiary-11: oklch(42% 0.034 65);
+    --tertiary-12: oklch(35% 0.03 65);
+    --tertiary-13: oklch(27% 0.024 65);
+    --tertiary-14: oklch(20% 0.018 65);
+    --tertiary-15: oklch(16% 0.014 65);
+    --tertiary-16: oklch(10% 0.01 65);
+    --tertiary-accent: oklch(84% 0.1 65);
   }
 }
 
@@ -36,30 +114,29 @@
 }
 
 .test:nth-child(2) {
-  color: var(--clr-white);
-  background-color: var(--clr-primary-1);
+  background-color: var(--primary-1);
   margin-right: auto;
 }
 
 .test:nth-child(3) {
-  background-color: var(--clr-primary-2);
+  background-color: var(--primary-2);
 }
 
 .test:nth-child(4) {
-  background-color: var(--clr-primary-3);
+  background-color: var(--primary-3);
 }
 
 .test:nth-child(5) {
-  background-color: var(--clr-secondary-1);
+  background-color: var(--secondary-1);
 }
 
 .test:nth-child(6) {
-  background-color: var(--clr-secondary-2);
+  background-color: var(--secondary-2);
 }
 
 .test:nth-child(7) {
-  /* color: var(--clr-white); */
-  background-color: var(--clr-accent-1);
+  color: var(--clr-white);
+  background-color: var(--clr-accent-2);
 }
 
 .test:nth-child(8) {
