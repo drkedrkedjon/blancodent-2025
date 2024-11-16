@@ -114,36 +114,36 @@
 }
 
 .test:nth-child(2) {
-  background-color: var(--primary-1);
+  background-color: var(--primary-2);
   margin-right: auto;
 }
 
 .test:nth-child(3) {
-  background-color: var(--primary-2);
-}
-
-.test:nth-child(4) {
   background-color: var(--primary-3);
 }
 
+.test:nth-child(4) {
+  background-color: var(--primary-6);
+}
+
 .test:nth-child(5) {
-  background-color: var(--secondary-1);
+  background-color: var(--secondary-3);
 }
 
 .test:nth-child(6) {
-  background-color: var(--secondary-2);
+  background-color: var(--secondary-accent);
 }
 
 .test:nth-child(7) {
-  color: var(--clr-white);
-  background-color: var(--clr-accent-2);
+  color: var(--gray-2);
+  background-color: var(--tertiary-11);
 }
 
 .test:nth-child(8) {
-  background-color: var(--clr-black);
-  color: var(--clr-white)
+  color: var(--gray-16);
+  background-color: var(--tertiary-accent);
 }
 
 .test:nth-child(9) {
-  background-color: var(--clr-white);
+  background-color: var(--primary-accent);
 }
