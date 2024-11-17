@@ -105,17 +105,22 @@
 
 
 .test {
-  width: 100px;
-  height: 100px;
-  display: grid;
-  place-content: center;
+  display: flex;
   font-size: 3rem;
-  color: var(--clr-black);
+  font-weight: 600;
+  color: var(--grey-15);
+}
+
+.test>div {
+  width: 100px;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .test:nth-child(2) {
   background-color: var(--primary-2);
-  margin-right: auto;
 }
 
 .test:nth-child(3) {
@@ -123,7 +128,7 @@
 }
 
 .test:nth-child(4) {
-  background-color: var(--primary-6);
+  background-color: var(--primary-5);
 }
 
 .test:nth-child(5) {
@@ -135,12 +140,12 @@
 }
 
 .test:nth-child(7) {
-  color: var(--gray-2);
   background-color: var(--tertiary-11);
+  color: var(--gray-2);
 }
 
 .test:nth-child(8) {
-  color: var(--gray-16);
+  color: var(--gray-15);
   background-color: var(--tertiary-accent);
 }
 
