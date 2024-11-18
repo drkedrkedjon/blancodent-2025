@@ -9,6 +9,7 @@ import { routing } from "@/i18n/routing";
 import localFont from "next/font/local";
 import "../assets/global-styles/globals.css";
 import Header from "@/app/components/header/Header";
+import SkipLink from "@/app/components/skip-link/SkipLink";
 
 // Load the local font
 const monaSansFont = localFont({
@@ -54,6 +55,7 @@ export default async function RootLayout({
   // Providing all messages to the client
   // side is the easiest way to get started
   const messages = await getMessages();
+  const t = await getTranslations("SkipLinkMain");
   return (
     <html
       lang={locale}
@@ -61,6 +63,10 @@ export default async function RootLayout({
     >
       <body>
         <NextIntlClientProvider messages={messages}>
+          <SkipLink
+            link={t("href")}
+            content={t("content")}
+          />
           <Header />
           {children}
         </NextIntlClientProvider>
