@@ -13,6 +13,6 @@
   },
   "SkipLinkMain": {
     "content": "Saltar al contenido principal",
-    "href": "#main"
+    "href": "main"
   }
 }
