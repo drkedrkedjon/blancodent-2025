@@ -61,7 +61,7 @@ export default async function RootLayout({
       lang={locale}
       className={monaSansFont.className}
     >
-      <body>
+      <body className="layout-grid">
         <NextIntlClientProvider messages={messages}>
           <SkipLink
             link={t("href")}
