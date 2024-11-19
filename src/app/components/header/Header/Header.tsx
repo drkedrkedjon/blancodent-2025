@@ -59,6 +59,22 @@ export default function Header() {
           </Link>
           <p>Blancodent</p>
         </div>
+        <nav
+          aria-label={t("quickLinksLabel")}
+          className={styles.quickLinks}
+        >
+          <ul role="list">
+            <li>
+              <Link href="/location">{t("quickLinksLocation")}</Link> |{" "}
+            </li>
+            <li>
+              <Link href="/contact">{t("quickLinksContact")}</Link> |{" "}
+            </li>
+            <li>
+              <Link href="tel:+34928292455">{t("quickLinksTel")}</Link>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
   );
