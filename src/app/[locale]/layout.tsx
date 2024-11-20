@@ -16,7 +16,7 @@ const monaSansFont = localFont({
   src: "../assets/fonts/Mona-Sans.woff2",
   display: "fallback",
   fallback: ["system-ui", "arial", "sans-serif"],
-  // weight: "100 900",
+  weight: "100 900",
 });
 
 // Generate localised metadata for the page

@@ -31,5 +31,5 @@
 .quickLinks>ul {
   display: flex;
   gap: var(--space-100);
-  font-weight: var(--f-wei-600);
+  font-weight: var(--f-wei-900);
 }
