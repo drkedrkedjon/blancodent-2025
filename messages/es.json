@@ -6,6 +6,10 @@
     "quickLinksContact": "Cita previa",
     "quickLinksTel": "Llámanos"
   },
+  "LangSwitcher": {
+    "label": "Cambiar idioma",
+    "locale": "{locale, select, es {🇪🇸 Español} en {🇺🇸 English} other {Unknown}}"
+  },
   "HomePage": {
     "title": "Hola mundo cojonundo!",
     "about": "No se que en español"
