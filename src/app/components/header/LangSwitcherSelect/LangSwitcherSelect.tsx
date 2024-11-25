@@ -1,5 +1,6 @@
 "use client";
-import React, { ChangeEvent, ReactNode } from "react";
+import styles from "./LangSwitcherSelect.module.css";
+import React, { ChangeEvent, ReactNode, useTransition } from "react";
 import { usePathname, useRouter } from "@/i18n/routing";
 import { useParams } from "next/navigation";
 
@@ -12,14 +13,17 @@ export default function LangSwitcherSelect({
   defaultValue: string;
   label: string;
 }) {
+  const [isPending, startTransition] = useTransition();
   const pathname = usePathname();
   const params = useParams();
   const router = useRouter();
 
   function handleLangChange(event: ChangeEvent<HTMLSelectElement>) {
     const nextLanguage = event.target.value as string;
-    // @ts-expect-error -- Expected error...
-    router.replace({ pathname, params }, { locale: nextLanguage });
+    startTransition(() =>
+      // @ts-expect-error -- Expected error...
+      router.replace({ pathname, params }, { locale: nextLanguage })
+    );
   }
 
   return (
@@ -32,7 +36,9 @@ export default function LangSwitcherSelect({
       </label>
       <select
         id="lang-switcher"
+        className={`${styles.select} ${isPending && styles.pending}`}
         defaultValue={defaultValue}
+        disabled={isPending}
         onChange={handleLangChange}
       >
         {children}
