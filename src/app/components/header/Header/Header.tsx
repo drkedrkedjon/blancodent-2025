@@ -2,6 +2,7 @@ import styles from "./Header.module.css";
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import LangSwitcher from "@/app/components/header/LangSwitcher";
+import Menu from "@/app/components/header/Menu";
 
 export default function Header() {
   const t = useTranslations("Header");
@@ -72,11 +73,12 @@ export default function Header() {
               <Link href="/contact">{t("quickLinksContact")}</Link> •{" "}
             </li>
             <li>
-              <Link href="tel:+34928292455">{t("quickLinksTel")}</Link> •{" "}
+              <Link href="tel:+34928292455">{t("quickLinksTel")}</Link>
             </li>
           </ul>
         </nav>
         <LangSwitcher />
+        <Menu />
       </div>
     </header>
   );

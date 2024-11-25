@@ -1,12 +1,13 @@
+"use client";
 import styles from "./Menu.module.css";
+import { List } from "@phosphor-icons/react/dist/ssr";
 
 export default function Menu() {
   return (
-    <div className={styles.menu}>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
-    </div>
+    <nav className={styles.container}>
+      <button className={styles.button}>
+        <List weight="bold" />
+      </button>
+    </nav>
   );
 }
