@@ -12,6 +12,7 @@
   margin: 0;
   font-family: inherit;
   font-size: inherit;
+  color: inherit;
   cursor: pointer;
   font-weight: var(--f-wei-500);
   line-height: inherit;

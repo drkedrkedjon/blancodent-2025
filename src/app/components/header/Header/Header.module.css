@@ -1,6 +1,6 @@
 .header {
   background-color: var(--primary-6);
-  padding-block: var(--space-400);
+  padding-block: min(1.4vw, var(--space-400));
 }
 
 .container {
@@ -19,13 +19,13 @@
 }
 
 .logo svg {
-  width: 3rem;
-  height: 3rem;
+  /* width: 3rem; */
+  height: min(8vw, 3rem);
   filter: drop-shadow(var(--shadow-400));
 }
 
 .logo p {
-  font-size: var(--fs-600);
+  font-size: min(4vw, var(--fs-600));
   font-weight: var(--f-wei-500);
   margin-left: var(--space-200);
   text-shadow: var(--shadow-400);
