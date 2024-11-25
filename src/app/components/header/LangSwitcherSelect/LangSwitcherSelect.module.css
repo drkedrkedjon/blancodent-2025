@@ -1,3 +1,9 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .select {
   /* // A reset of styles, including removing the default dropdown arrow */
   appearance: none;

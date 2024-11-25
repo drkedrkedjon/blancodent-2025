@@ -3,6 +3,7 @@ import styles from "./LangSwitcherSelect.module.css";
 import React, { ChangeEvent, ReactNode, useTransition } from "react";
 import { usePathname, useRouter } from "@/i18n/routing";
 import { useParams } from "next/navigation";
+import { CaretDown } from "@phosphor-icons/react/dist/ssr";
 
 export default function LangSwitcherSelect({
   children,
@@ -27,7 +28,7 @@ export default function LangSwitcherSelect({
   }
 
   return (
-    <>
+    <div className={styles.container}>
       <label
         htmlFor="lang-switcher"
         className="visually-hidden"
@@ -43,6 +44,7 @@ export default function LangSwitcherSelect({
       >
         {children}
       </select>
-    </>
+      <CaretDown weight="fill" />
+    </div>
   );
 }
