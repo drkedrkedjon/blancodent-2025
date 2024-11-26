@@ -25,6 +25,10 @@ body {
   font-stretch: var(--f-str-100);
 }
 
+button {
+  cursor: pointer;
+}
+
 a {
   text-underline-offset: 0.125rem;
 }
