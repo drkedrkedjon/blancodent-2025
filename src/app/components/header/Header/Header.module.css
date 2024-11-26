@@ -43,15 +43,13 @@
   padding-inline-end: var(--space-700)
 }
 
-@media (min-width: 44rem) {
-
+@media (min-width: 43rem) {
   .logo p {
     display: block;
   }
 }
 
-@media (min-width: 34rem) {
-
+@media (min-width: 33rem) {
   .quickLinks {
     display: block;
   }

@@ -7,7 +7,7 @@
 .button {
   background: none;
   border: none;
-  padding: none;
+  padding: 0;
   color: var(--gray-15);
 }
 
