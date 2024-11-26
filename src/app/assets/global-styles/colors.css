@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --gray-1: hsl(215, 0%, 98%);
   --gray-2: hsl(215, 0%, 97%);
   --gray-3: hsl(215, 0%, 93%);
@@ -70,7 +70,7 @@
   --tertiary-15: hsl(65, 1%, 16%);
   --tertiary-16: hsl(65, 1%, 10%);
   --tertiary-accent: hsl(65, 10%, 84%);
-}
+} */
 
 @supports (color: oklch(72.13% 0.035 215.7)) {
   :root {
