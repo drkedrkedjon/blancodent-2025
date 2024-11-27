@@ -10,6 +10,11 @@
     "label": "Cambiar idioma",
     "locale": "{locale, select, es {🇪🇸 Español} en {🇬🇧 English} other {Unknown}}"
   },
+  "MainMenu": {
+    "navLabel": "Principal",
+    "openMenuBtn": "Abrir menú",
+    "closeMenuBtn": "Cerrar menú"
+  },
   "HomePage": {
     "title": "Hola mundo cojonundo!",
     "about": "No se que en español"
