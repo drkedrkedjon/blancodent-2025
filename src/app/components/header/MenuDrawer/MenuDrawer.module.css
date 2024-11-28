@@ -14,10 +14,11 @@
 
 .navDrawer {
   position: absolute;
-  top: 0;
+  inset: var(--space-400);
+  /* top: 0;
   right: 0;
   bottom: 0;
-  width: min(100%, 500px);
+  width: min(100%, 100%); */
   background-color: var(--secondary-11);
   color: var(--gray-2);
   display: flex;
@@ -26,16 +27,26 @@
   gap: var(--space-200);
   padding: var(--space-400);
   overflow-y: auto;
-  /* overflow-y: clip; */
 }
 
+.details {
+  padding: var(--space-200);
+  margin-left: var(--space-800);
+}
+
+
 .summary {
-  font-size: var(--fs-900);
+  font-size: var(--fs-800);
+  list-style-position: outside;
   cursor: pointer;
 }
 
+.summary::marker {
+  color: var(--primary-8);
+}
+
 .navLinks {
-  text-align: right;
+  /* text-align: right; */
   font-size: var(--fs-500);
 }
 

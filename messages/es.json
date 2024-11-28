@@ -13,6 +13,7 @@
   "MainMenu": {
     "navLabel": "Principal",
     "openMenuBtn": "Abrir menú",
+    "disclosureGroupLabel": "Colección de categorías de navegación expandibles que contienen enlaces de navegación",
     "closeMenuBtn": "Cerrar menú"
   },
   "HomePage": {

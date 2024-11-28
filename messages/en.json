@@ -13,6 +13,7 @@
   "MainMenu": {
     "navLabel": "Main",
     "openMenuBtn": "Open menu",
+    "disclosureGroupLabel": "Collection of expandable navigation categories that contain navigation links",
     "closeMenuBtn": "Close menu"
   },
   "HomePage": {

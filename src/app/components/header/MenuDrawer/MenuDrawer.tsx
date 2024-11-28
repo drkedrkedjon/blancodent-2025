@@ -42,42 +42,46 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
       <FocusLock returnFocus={true}>
         <RemoveScroll>
           <div className={styles.navDrawer}>
-            <div className={styles.navLinks}>
-              <ul role="list">
-                <li>
-                  <details className={styles.details}>
-                    <summary className={styles.summary}>Servicios</summary>
-                    <ul role="list">
-                      <li className={styles.navLinks}>Implantologia</li>
-                      <li>Higiene</li>
-                      <li>Protesis</li>
-                      <li>Blanqueamiento</li>
-                    </ul>
-                  </details>
-                </li>{" "}
-                <li>
-                  <details className={styles.details}>
-                    <summary className={styles.summary}>Articulos</summary>
-                    <ul role="list">
-                      <li className={styles.navLinks}>Implantologia</li>
-                      <li>Higiene</li>
-                      <li>Protesis</li>
-                      <li>Blanqueamiento</li>
-                    </ul>
-                  </details>
-                </li>{" "}
-                <li>
-                  <details className={styles.details}>
-                    <summary className={styles.summary}>Contacto</summary>
-                    <ul role="list">
-                      <li className={styles.navLinks}>Implantologia</li>
-                      <li>Higiene</li>
-                      <li>Protesis</li>
-                      <li>Blanqueamiento</li>
-                    </ul>
-                  </details>
-                </li>
-              </ul>
+            <div
+              role="group"
+              aria-labelledby="nav-group-label"
+              className={styles.navLinks}
+            >
+              <span
+                id="nav-group-label"
+                className="visually-hidden"
+              >
+                {t("disclosureGroupLabel")}
+              </span>
+              <details className={styles.details}>
+                <summary className={styles.summary}>Our Services</summary>
+                <ul role="list">
+                  <li className={styles.navLinks}>Implantologia</li>
+                  <li>Higiene</li>
+                  <li>Protesis</li>
+                  <li>Blanqueamiento</li>
+                </ul>
+              </details>
+
+              <details className={styles.details}>
+                <summary className={styles.summary}>About the clinic</summary>
+                <ul role="list">
+                  <li className={styles.navLinks}>Implantologia</li>
+                  <li>Higiene</li>
+                  <li>Protesis</li>
+                  <li>Blanqueamiento</li>
+                </ul>
+              </details>
+
+              <details className={styles.details}>
+                <summary className={styles.summary}>Articles And News</summary>
+                <ul role="list">
+                  <li className={styles.navLinks}>Implantologia</li>
+                  <li>Higiene</li>
+                  <li>Protesis</li>
+                  <li>Blanqueamiento</li>
+                </ul>
+              </details>
             </div>
             <button
               aria-hidden="true"

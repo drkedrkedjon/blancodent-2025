@@ -4,6 +4,8 @@
 @import url("layout-grid.css");
 
 :root {
+  interpolate-size: allow-keywords;
+
   --space-100: 0.25rem;
   --space-200: 0.5rem;
   --space-300: 0.75rem;
