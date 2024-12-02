@@ -52,9 +52,12 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
               />
             </button>
             <div className={styles.innerContainer}>
-              <ul role="list">
+              <ul
+                className={styles.quickLinks}
+                role="list"
+              >
                 <li>
-                  <Link href="/contact">Appointment</Link> •{" "}
+                  <Link href="/contact">Appointment</Link> •{""}
                 </li>
                 <li>
                   <Link href="tel:+34928292455">Call us</Link>
@@ -81,6 +84,11 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     <li>Implantologia</li>
                     <li>Higiene</li>
                     <li>Protesis</li>
+                    <li>Blanqueamiento</li>
+                    <li>Implantologia</li>
+                    <li>Higiene</li>
+                    <li>Protesis</li>
+                    <li>Blanqueamiento</li>
                     <li>Blanqueamiento</li>
                   </ul>
                 </details>
