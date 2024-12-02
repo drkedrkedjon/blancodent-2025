@@ -4,7 +4,7 @@ import { X } from "@phosphor-icons/react/dist/ssr";
 import { useTranslations } from "next-intl";
 import FocusLock from "react-focus-lock";
 import { RemoveScroll } from "react-remove-scroll";
-// import { Link } from "@/i18n/routing";
+import { Link } from "@/i18n/routing";
 
 interface MenuDrawerProps {
   handleCloseDrawer: () => void;
@@ -12,14 +12,6 @@ interface MenuDrawerProps {
 
 export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
   const t = useTranslations("MainMenu");
-
-  // This is an alternative way to focus to the last focused element (before the drawer was opened)
-  // useEffect(() => {
-  //   const focusedElementBeforeModal = document.activeElement as HTMLElement;
-  //   return () => {
-  //     focusedElementBeforeModal.focus();
-  //   };
-  // }, []);
 
   useEffect(() => {
     function handleEscapeKey(event: KeyboardEvent): void {
@@ -60,19 +52,15 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
               />
             </button>
             <div className={styles.innerContainer}>
-              {/* <div>
-                <ul role="list">
-                  <li>
-                    <Link href="/location">{t("quickLinksLocation")}</Link> •{" "}
-                  </li>
-                  <li>
-                    <Link href="/contact">{t("quickLinksContact")}</Link> •{" "}
-                  </li>
-                  <li>
-                    <Link href="tel:+34928292455">{t("quickLinksTel")}</Link>
-                  </li>
-                </ul>
-              </div> */}
+              <ul role="list">
+                <li>
+                  <Link href="/contact">Appointment</Link> •{" "}
+                </li>
+                <li>
+                  <Link href="tel:+34928292455">Call us</Link>
+                </li>
+              </ul>
+
               <div
                 role="group"
                 aria-labelledby="nav-links-group-label"
@@ -84,7 +72,10 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                 >
                   {t("disclosureGroupLabel")}
                 </span>
-                <details className={styles.details}>
+                <details
+                  open
+                  className={styles.details}
+                >
                   <summary className={styles.summary}>Our Services</summary>
                   <ul role="list">
                     <li>Implantologia</li>
