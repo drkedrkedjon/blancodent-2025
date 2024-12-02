@@ -1,5 +1,5 @@
 import styles from "./MenuDrawer.module.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { X } from "@phosphor-icons/react/dist/ssr";
 import { useTranslations } from "next-intl";
 import FocusLock from "react-focus-lock";
@@ -12,6 +12,7 @@ interface MenuDrawerProps {
 
 export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
   const t = useTranslations("MainMenu");
+  const [openedDetails, setOpenedDetails] = useState<number | null>(null);
 
   useEffect(() => {
     function handleEscapeKey(event: KeyboardEvent): void {
@@ -25,6 +26,14 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
       window.removeEventListener("keyup", handleEscapeKey);
     };
   }, [handleCloseDrawer]);
+
+  function handleOpenDetails(
+    e: React.MouseEvent<HTMLElement>,
+    id: number
+  ): void {
+    e.preventDefault();
+    setOpenedDetails((prev) => (prev === id ? null : id));
+  }
 
   return (
     <div className={styles.navContainer}>
@@ -65,6 +74,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
               </ul>
 
               <div
+                // ref={detailsRef}
                 role="group"
                 aria-labelledby="nav-links-group-label"
                 className={styles.accordion}
@@ -76,10 +86,15 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                   {t("disclosureGroupLabel")}
                 </span>
                 <details
-                  open
+                  open={openedDetails === 0}
                   className={styles.details}
                 >
-                  <summary className={styles.summary}>Our Services</summary>
+                  <summary
+                    onClick={(e) => handleOpenDetails(e, 0)}
+                    className={styles.summary}
+                  >
+                    Our Services
+                  </summary>
                   <ul role="list">
                     <li>Implantologia</li>
                     <li>Higiene</li>
@@ -92,8 +107,16 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     <li>Blanqueamiento</li>
                   </ul>
                 </details>
-                <details className={styles.details}>
-                  <summary className={styles.summary}>About the clinic</summary>
+                <details
+                  open={openedDetails === 1}
+                  className={styles.details}
+                >
+                  <summary
+                    onClick={(e) => handleOpenDetails(e, 1)}
+                    className={styles.summary}
+                  >
+                    About the clinic
+                  </summary>
                   <ul role="list">
                     <li>Implantologia</li>
                     <li>Higiene</li>
@@ -101,8 +124,14 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     <li>Blanqueamiento</li>
                   </ul>
                 </details>
-                <details className={styles.details}>
-                  <summary className={styles.summary}>
+                <details
+                  open={openedDetails === 2}
+                  className={styles.details}
+                >
+                  <summary
+                    onClick={(e) => handleOpenDetails(e, 2)}
+                    className={styles.summary}
+                  >
                     Articles And News
                   </summary>
                   <ul role="list">

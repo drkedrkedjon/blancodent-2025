@@ -44,9 +44,9 @@
 }
 
 .closeBtn {
-  position: absolute;
-  top: var(--space-200);
-  right: var(--space-100);
+  position: fixed;
+  top: 0;
+  right: 0;
   border: none;
   background: none
 }
