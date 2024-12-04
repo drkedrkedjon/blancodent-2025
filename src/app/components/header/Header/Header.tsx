@@ -67,10 +67,10 @@ export default function Header() {
         >
           <ul role="list">
             <li>
-              <Link href="/location">{t("quickLinksLocation")}</Link> •{" "}
+              <Link href="/localizacion">{t("quickLinksLocation")}</Link> •{" "}
             </li>
             <li>
-              <Link href="/contact">{t("quickLinksContact")}</Link> •{" "}
+              <Link href="/contacto">{t("quickLinksContact")}</Link> •{" "}
             </li>
             <li>
               <Link href="tel:+34928292455">{t("quickLinksTel")}</Link>

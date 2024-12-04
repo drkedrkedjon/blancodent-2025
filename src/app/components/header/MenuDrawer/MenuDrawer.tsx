@@ -67,7 +67,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
               role="list"
             >
               <li>
-                <Link href="/contact">Appointment</Link> •{""}
+                <Link href="/contacto">Appointment</Link> •{""}
               </li>
               <li>
                 <Link href="tel:+34928292455">Call us</Link>
@@ -93,18 +93,81 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     onClick={(e) => handleOpenDetails(e, 0)}
                     className={styles.summary}
                   >
-                    Our Services
+                    Servicios:
                   </summary>
                   <ul role="list">
-                    <li>Implantologia</li>
-                    <li>Higiene</li>
-                    <li>Protesis</li>
-                    <li>Blanqueamiento</li>
-                    <li>Implantologia</li>
-                    <li>Higiene</li>
-                    <li>Protesis</li>
-                    <li>Blanqueamiento</li>
-                    <li>Blanqueamiento</li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/servicios/implantologia"
+                      >
+                        Implantología
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/servicios/ortodoncia"
+                      >
+                        Ortodoncia
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/servicios/periodoncia"
+                      >
+                        Periodoncia
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/servicios/blanqueamiento-dental"
+                      >
+                        Blanqueamiento Dental
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/servicios/bruxismo-o-rechinchar-de-dientes"
+                      >
+                        Bruxismo o rechinchar de dientes
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/servicios/odontologia-conservadora"
+                      >
+                        Odontologia Conservadora
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/servicios/endodoncia"
+                      >
+                        Endodoncia
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/servicios/protesis-dentales"
+                      >
+                        Prótesis dentales
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/servicios/higiene-dental"
+                      >
+                        Higiene dental
+                      </Link>
+                    </li>
                   </ul>
                 </details>
                 <details
@@ -115,13 +178,57 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     onClick={(e) => handleOpenDetails(e, 1)}
                     className={styles.summary}
                   >
-                    About the clinic
+                    Así Somos:
                   </summary>
                   <ul role="list">
-                    <li>Implantologia</li>
-                    <li>Higiene</li>
-                    <li>Protesis</li>
-                    <li>Blanqueamiento</li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/asi-somos/ubicacion"
+                      >
+                        Ubicación
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/asi-somos/transporte"
+                      >
+                        Transporte
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/asi-somos/los-horarios"
+                      >
+                        Los horarios
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/asi-somos/las-imagenes"
+                      >
+                        Las imágenes
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/asi-somos/el-personal"
+                      >
+                        El personal
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/asi-somos/financiacion"
+                      >
+                        Financiación
+                      </Link>
+                    </li>
                   </ul>
                 </details>
                 <details
@@ -132,21 +239,126 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     onClick={(e) => handleOpenDetails(e, 2)}
                     className={styles.summary}
                   >
-                    Articles And News
+                    Artículos:
                   </summary>
                   <ul role="list">
-                    <li>Implantologia</li>
-                    <li>Higiene</li>
-                    <li>Protesis</li>
-                    <li>Blanqueamiento</li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/articulos/tu-propio-diente-como-biomaterial"
+                      >
+                        Tu propio diente como biomaterial
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/articulos/laser-dental"
+                      >
+                        Láser dental
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/articulos/anestesia"
+                      >
+                        Anestesia
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/articulos/para-los-peques"
+                      >
+                        Para los Peques
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/articulos/para-los-fumadores"
+                      >
+                        Para los fumadores
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/articulos/mal-aliento"
+                      >
+                        Mal aliento
+                      </Link>
+                    </li>
+                  </ul>
+                </details>
+                <details
+                  open={openedDetails === 3}
+                  className={styles.details}
+                >
+                  <summary
+                    onClick={(e) => handleOpenDetails(e, 3)}
+                    className={styles.summary}
+                  >
+                    Varios:
+                  </summary>
+                  <ul role="list">
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/varios/la-salud-esta-navidad"
+                      >
+                        La salud esta navidad
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/varios/preguntas-frecuentes"
+                      >
+                        Preguntas frecuentes
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/varios/ofertas-continuas"
+                      >
+                        Ofertas continuas
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/contacto"
+                      >
+                        Cita Previa
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/varios/nota-legal"
+                      >
+                        Nota legal
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/varios/covid-19"
+                      >
+                        Covid-19
+                      </Link>
+                    </li>
                   </ul>
                 </details>
               </div>
-              <div className={styles.location}>
-                <h2>Where to find us</h2>
+              <div className={`${styles.location} flow`}>
+                <h2>Where to find us:</h2>
                 <address>
                   <p>
-                    Address:
+                    <strong>Address:</strong>
                     <br />
                     Av. Mesa y López, 1 - 1ª izq.
                     <br />
@@ -176,22 +388,26 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
               <div className={styles.containerQuery}>
                 <div className={styles.info}>
                   <div className={styles.contact}>
-                    <h2>How to contact us</h2>
+                    <h2>How to contact us:</h2>
                     <p>
-                      You can make an appointment or ask any question using our
-                      contact form
+                      You can make an appointment or ask any question using our{" "}
+                      <Link href="/contacto">Contact Form</Link>
                     </p>
                     <p>
-                      Or you can call us directly in our working hours or leave
-                      voice message here: Call us
+                      Or, if you prefer, you can call us directly during our
+                      working hours or leave a voice message here:{" "}
+                      <Link href="tel:+34928292455">Call us</Link>
                     </p>
                   </div>
                   <div className={styles.timetable}>
-                    <h2>Opening Hours</h2>
+                    <h2>Opening Hours:</h2>
                     <p>
-                      Lunes: 09:30h - 16:00h Martes: 14:00 - 20:00h Miércoles:
-                      09:30h - 16:00h Jueves: 14:00 - 20:00h Viernes: 09:30h -
-                      16:00h
+                      <strong>Monday:</strong> 09:30 h - 16:00 h <br />
+                      <strong>Tuesday:</strong> 14:00 h - 20:00 h <br />
+                      <strong>Wednesday:</strong> 09:30 h - 16:00 h <br />
+                      <strong>Thursday:</strong> 14:00 h - 20:00 h <br />
+                      <strong>Friday:</strong> 09:30 h - 16:00 h <br />
+                      <strong>Saturday & Sunday:</strong> Closed
                     </p>
                   </div>
                 </div>
