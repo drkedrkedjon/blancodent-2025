@@ -85,12 +85,12 @@
     "timetable": {
       "title": "Opening Hours:",
       "days": {
-        "monday": "Monday:",
-        "tuesday": "Tuesday:",
-        "wednesday": "Wednesday:",
-        "thursday": "Thursday:",
-        "friday": "Friday:",
-        "weekend": "Saturday & Sunday:"
+        "monday": "Mondays:",
+        "tuesday": "Tuesdays:",
+        "wednesday": "Wednesdays:",
+        "thursday": "Thursdays:",
+        "friday": "Fridays:",
+        "weekend": "Saturdays & Sundays:"
       }
     }
   },
