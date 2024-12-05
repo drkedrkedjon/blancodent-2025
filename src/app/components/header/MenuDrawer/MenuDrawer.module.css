@@ -43,6 +43,7 @@
   margin-block-end: var(--space-200);
 }
 
+
 .quickLinks {
   display: flex;
   justify-content: center;
@@ -71,6 +72,14 @@
 .details li {
   padding-block: var(--space-200);
   margin-inline-start: var(--space-300)
+}
+
+.details a {
+  text-decoration: none;
+}
+
+.details a:hover {
+  text-decoration: underline;
 }
 
 .summary {

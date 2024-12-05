@@ -67,10 +67,15 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
               role="list"
             >
               <li>
-                <Link href="/contacto">Appointment</Link> •{""}
+                <Link href="/contacto">
+                  {t("quickLinks.quickLinksContact")}
+                </Link>{" "}
+                •{""}
               </li>
               <li>
-                <Link href="tel:+34928292455">Call us</Link>
+                <Link href="tel:+34928292455">
+                  {t("quickLinks.quickLinksTel")}
+                </Link>
               </li>
             </ul>
             <div className={styles.innerContainer}>
@@ -93,7 +98,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     onClick={(e) => handleOpenDetails(e, 0)}
                     className={styles.summary}
                   >
-                    Servicios:
+                    {t("services.summary")}
                   </summary>
                   <ul role="list">
                     <li>
@@ -101,7 +106,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                         onClick={handleCloseDrawer}
                         href="/servicios/implantologia"
                       >
-                        Implantología
+                        {t("services.link1")}
                       </Link>
                     </li>
                     <li>
@@ -109,7 +114,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                         onClick={handleCloseDrawer}
                         href="/servicios/ortodoncia"
                       >
-                        Ortodoncia
+                        {t("services.link2")}
                       </Link>
                     </li>
                     <li>
@@ -117,7 +122,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                         onClick={handleCloseDrawer}
                         href="/servicios/periodoncia"
                       >
-                        Periodoncia
+                        {t("services.link3")}
                       </Link>
                     </li>
                     <li>
@@ -125,7 +130,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                         onClick={handleCloseDrawer}
                         href="/servicios/blanqueamiento-dental"
                       >
-                        Blanqueamiento Dental
+                        {t("services.link4")}
                       </Link>
                     </li>
                     <li>
@@ -133,7 +138,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                         onClick={handleCloseDrawer}
                         href="/servicios/bruxismo-o-rechinchar-de-dientes"
                       >
-                        Bruxismo o rechinchar de dientes
+                        {t("services.link5")}
                       </Link>
                     </li>
                     <li>
@@ -141,7 +146,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                         onClick={handleCloseDrawer}
                         href="/servicios/odontologia-conservadora"
                       >
-                        Odontologia Conservadora
+                        {t("services.link6")}
                       </Link>
                     </li>
                     <li>
@@ -149,7 +154,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                         onClick={handleCloseDrawer}
                         href="/servicios/endodoncia"
                       >
-                        Endodoncia
+                        {t("services.link7")}
                       </Link>
                     </li>
                     <li>
@@ -157,7 +162,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                         onClick={handleCloseDrawer}
                         href="/servicios/protesis-dentales"
                       >
-                        Prótesis dentales
+                        {t("services.link8")}
                       </Link>
                     </li>
                     <li>
@@ -165,7 +170,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                         onClick={handleCloseDrawer}
                         href="/servicios/higiene-dental"
                       >
-                        Higiene dental
+                        {t("services.link9")}
                       </Link>
                     </li>
                   </ul>
@@ -178,7 +183,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     onClick={(e) => handleOpenDetails(e, 1)}
                     className={styles.summary}
                   >
-                    Así Somos:
+                    {t("aboutClinic.summary")}
                   </summary>
                   <ul role="list">
                     <li>
@@ -186,7 +191,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                         onClick={handleCloseDrawer}
                         href="/asi-somos/ubicacion"
                       >
-                        Ubicación
+                        {t("aboutClinic.link1")}
                       </Link>
                     </li>
                     <li>
@@ -194,7 +199,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                         onClick={handleCloseDrawer}
                         href="/asi-somos/transporte"
                       >
-                        Transporte
+                        {t("aboutClinic.link2")}
                       </Link>
                     </li>
                     <li>
@@ -202,7 +207,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                         onClick={handleCloseDrawer}
                         href="/asi-somos/los-horarios"
                       >
-                        Los horarios
+                        {t("aboutClinic.link3")}
                       </Link>
                     </li>
                     <li>
@@ -210,7 +215,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                         onClick={handleCloseDrawer}
                         href="/asi-somos/las-imagenes"
                       >
-                        Las imágenes
+                        {t("aboutClinic.link4")}
                       </Link>
                     </li>
                     <li>
@@ -218,7 +223,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                         onClick={handleCloseDrawer}
                         href="/asi-somos/el-personal"
                       >
-                        El personal
+                        {t("aboutClinic.link5")}
                       </Link>
                     </li>
                     <li>
@@ -226,7 +231,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                         onClick={handleCloseDrawer}
                         href="/asi-somos/financiacion"
                       >
-                        Financiación
+                        {t("aboutClinic.link6")}
                       </Link>
                     </li>
                   </ul>
@@ -239,7 +244,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     onClick={(e) => handleOpenDetails(e, 2)}
                     className={styles.summary}
                   >
-                    Artículos:
+                    {t("articles.summary")}
                   </summary>
                   <ul role="list">
                     <li>
@@ -247,7 +252,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                         onClick={handleCloseDrawer}
                         href="/articulos/tu-propio-diente-como-biomaterial"
                       >
-                        Tu propio diente como biomaterial
+                        {t("articles.link1")}
                       </Link>
                     </li>
                     <li>
@@ -255,7 +260,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                         onClick={handleCloseDrawer}
                         href="/articulos/laser-dental"
                       >
-                        Láser dental
+                        {t("articles.link2")}
                       </Link>
                     </li>
                     <li>
@@ -263,7 +268,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                         onClick={handleCloseDrawer}
                         href="/articulos/anestesia"
                       >
-                        Anestesia
+                        {t("articles.link3")}
                       </Link>
                     </li>
                     <li>
@@ -271,7 +276,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                         onClick={handleCloseDrawer}
                         href="/articulos/para-los-peques"
                       >
-                        Para los Peques
+                        {t("articles.link4")}
                       </Link>
                     </li>
                     <li>
@@ -279,7 +284,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                         onClick={handleCloseDrawer}
                         href="/articulos/para-los-fumadores"
                       >
-                        Para los fumadores
+                        {t("articles.link5")}
                       </Link>
                     </li>
                     <li>
@@ -287,7 +292,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                         onClick={handleCloseDrawer}
                         href="/articulos/mal-aliento"
                       >
-                        Mal aliento
+                        {t("articles.link6")}
                       </Link>
                     </li>
                   </ul>
@@ -300,7 +305,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     onClick={(e) => handleOpenDetails(e, 3)}
                     className={styles.summary}
                   >
-                    Varios:
+                    {t("others.summary")}
                   </summary>
                   <ul role="list">
                     <li>
@@ -308,7 +313,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                         onClick={handleCloseDrawer}
                         href="/varios/la-salud-esta-navidad"
                       >
-                        La salud esta navidad
+                        {t("others.link1")}
                       </Link>
                     </li>
                     <li>
@@ -316,7 +321,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                         onClick={handleCloseDrawer}
                         href="/varios/preguntas-frecuentes"
                       >
-                        Preguntas frecuentes
+                        {t("others.link2")}
                       </Link>
                     </li>
                     <li>
@@ -324,7 +329,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                         onClick={handleCloseDrawer}
                         href="/varios/ofertas-continuas"
                       >
-                        Ofertas continuas
+                        {t("others.link3")}
                       </Link>
                     </li>
                     <li>
@@ -332,7 +337,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                         onClick={handleCloseDrawer}
                         href="/contacto"
                       >
-                        Cita Previa
+                        {t("others.link4")}
                       </Link>
                     </li>
                     <li>
@@ -340,7 +345,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                         onClick={handleCloseDrawer}
                         href="/varios/nota-legal"
                       >
-                        Nota legal
+                        {t("others.link5")}
                       </Link>
                     </li>
                     <li>
@@ -348,23 +353,23 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                         onClick={handleCloseDrawer}
                         href="/varios/covid-19"
                       >
-                        Covid-19
+                        {t("others.link6")}
                       </Link>
                     </li>
                   </ul>
                 </details>
               </div>
               <div className={`${styles.location} flow`}>
-                <h2>Where to find us:</h2>
+                <h2>{t("location.title")}</h2>
                 <address>
                   <p>
-                    <strong>Address:</strong>
+                    <strong>{t("location.address.title")}</strong>
                     <br />
-                    Av. Mesa y López, 1 - 1ª izq.
+                    {t("location.address.street")}
                     <br />
-                    35006 Las Palmas de G.C.
+                    {t("location.address.city")}
                     <br />
-                    Islas Canarias, España.
+                    {t("location.address.country")}
                   </p>
                 </address>
                 <Image
@@ -375,39 +380,45 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                   target="_blank"
                   href="https://www.google.com/maps/place/Cl%C3%ADnica+Dental+Blancodent/@28.134669,-15.429525,17z/data=!4m2!3m1!1s0x0:0x9293d54eccbd51c?hl=en"
                 >
-                  Open in Google Maps
+                  {t("location.map.link1")}
                 </Link>{" "}
                 <br />
                 <Link
                   target="_blank"
                   href="https://maps.apple.com/maps?address=Av%20Mesa%20y%20L%C3%B3pez,%201%20-%201%C2%AA%20izquierda,%2035006%20Las%20Palmas%20de%20Gran%20Canaria,%20Las%20Palmas,%20Las%20Palmas,%20Spain&auid=4569860911891010439&ll=28.134679,-15.429491&lsp=9902&q=Cl%C3%ADnica%20Dental%20Blancodent&t=m"
                 >
-                  Open in Apple Maps
+                  {t("location.map.link2")}
                 </Link>
               </div>
               <div className={styles.containerQuery}>
                 <div className={styles.info}>
                   <div className={styles.contact}>
-                    <h2>How to contact us:</h2>
+                    <h2>{t("contact.title")}</h2>
                     <p>
-                      You can make an appointment or ask any question using our{" "}
-                      <Link href="/contacto">Contact Form</Link>
+                      {t("contact.text1.text")}{" "}
+                      <Link href="/contacto">{t("contact.text1.link")}</Link>
                     </p>
                     <p>
-                      Or, if you prefer, you can call us directly during our
-                      working hours or leave a voice message here:{" "}
-                      <Link href="tel:+34928292455">Call us</Link>
+                      {t("contact.text2.text")}{" "}
+                      <Link href="tel:+34928292455">
+                        {t("contact.text2.link")}
+                      </Link>
                     </p>
                   </div>
                   <div className={styles.timetable}>
-                    <h2>Opening Hours:</h2>
+                    <h2>{t("timetable.title")}</h2>
                     <p>
-                      <strong>Monday:</strong> 09:30 h - 16:00 h <br />
-                      <strong>Tuesday:</strong> 14:00 h - 20:00 h <br />
-                      <strong>Wednesday:</strong> 09:30 h - 16:00 h <br />
-                      <strong>Thursday:</strong> 14:00 h - 20:00 h <br />
-                      <strong>Friday:</strong> 09:30 h - 16:00 h <br />
-                      <strong>Saturday & Sunday:</strong> Closed
+                      <strong>{t("timetable.days.monday")}</strong> 09:30 h -
+                      16:00 h <br />
+                      <strong>{t("timetable.days.tuesday")}</strong> 14:00 h -
+                      20:00 h <br />
+                      <strong>{t("timetable.days.wednesday")}</strong> 09:30 h -
+                      16:00 h <br />
+                      <strong>{t("timetable.days.thursday")}</strong> 14:00 h -
+                      20:00 h <br />
+                      <strong>{t("timetable.days.friday")}</strong> 09:30 h -
+                      16:00 h <br />
+                      <strong>{t("timetable.days.weekend")}</strong> Closed
                     </p>
                   </div>
                 </div>

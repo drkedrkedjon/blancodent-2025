@@ -14,7 +14,85 @@
     "navLabel": "Principal",
     "openMenuBtn": "Abrir menú",
     "disclosureGroupLabel": "Colección de categorías de navegación expandibles que contienen enlaces de navegación",
-    "closeMenuBtn": "Cerrar menú"
+    "closeMenuBtn": "Cerrar menú",
+    "quickLinks": {
+      "quickLinksContact": "Cita previa",
+      "quickLinksTel": "Llámanos"
+    },
+    "services": {
+      "summary": "Servicios:",
+      "link1": "Implantología",
+      "link2": "Ortodoncia",
+      "link3": "Periodoncia",
+      "link4": "Blanqueamiento Dental",
+      "link5": "Bruxismo o rechinchar de dientes",
+      "link6": "Odontologia Conservadora",
+      "link7": "Endodoncia",
+      "link8": "Prótesis dentales",
+      "link9": "Higiene dental"
+    },
+    "aboutClinic": {
+      "summary": "Así Somos:",
+      "link1": "Ubicación",
+      "link2": "Transporte",
+      "link3": "Los horarios",
+      "link4": "Las imágenes",
+      "link5": "El personal",
+      "link6": "Financiación"
+    },
+    "articles": {
+      "summary": "Artículos:",
+      "link1": "Tu propio diente como biomaterial",
+      "link2": "Láser dental",
+      "link3": "Anestesia",
+      "link4": "Para los Peques",
+      "link5": "Para los fumadores",
+      "link6": "Mal aliento"
+    },
+    "others": {
+      "summary": "Varios:",
+      "link1": "La salud esta navidad",
+      "link2": "Preguntas frecuentes",
+      "link3": "Ofertas continuas",
+      "link4": "Cita Previa",
+      "link5": "Nota legal",
+      "link6": "Covid-19"
+    },
+    "location": {
+      "title": "Dónde encontrarnos:",
+      "address": {
+        "title": "Dirección:",
+        "street": "Av. Mesa y López, 1 - 1ª izq.",
+        "city": "35006, Las Palmas de G.C.",
+        "country": "Islas Canarias, España"
+      },
+      "map": {
+        "link1": "Abrir en mapa de Google",
+        "link2": "Abrir en mapa de Apple"
+      }
+    },
+    "contact": {
+      "title": "Cómo contactar con nosotros:",
+      "text1": {
+        "text": "Puedes pedir cita o hacer cualquier consulta utilizando nuestro:",
+        "link": "Formulario de contacto."
+      },
+      "text2": {
+        "text": "O si lo prefieres, también puedes llamarnos en el horario de apertura o dejar un mensaje de audio al:",
+        "link": "Llámanos."
+      }
+    },
+    "timetable": {
+      "title": "Horario de apertura:",
+      "days": {
+        "monday": "Lunes:",
+        "tuesday": "Martes:",
+        "wednesday": "Miércoles:",
+        "thursday": "Jueves:",
+        "friday": "Viernes:",
+        "weekend": "Sabado y Domingo:"
+      }
+    }
   },
   "HomePage": {
     "title": "Hola mundo cojonundo!",
