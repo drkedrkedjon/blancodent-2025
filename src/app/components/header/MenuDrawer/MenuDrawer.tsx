@@ -6,7 +6,8 @@ import FocusLock from "react-focus-lock";
 import { RemoveScroll } from "react-remove-scroll";
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
-import smallMap from "./assets/small-map.jpg";
+// import smallMap from "./assets/small-map.jpg";
+import smallMap from "./assets/mapa.png";
 
 interface MenuDrawerProps {
   handleCloseDrawer: () => void;
@@ -67,7 +68,10 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
               role="list"
             >
               <li>
-                <Link href="/contacto">
+                <Link
+                  onClick={handleCloseDrawer}
+                  href="/contacto"
+                >
                   {t("quickLinks.quickLinksContact")}
                 </Link>{" "}
                 •{""}
@@ -409,16 +413,17 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     <h2>{t("timetable.title")}</h2>
                     <p>
                       <strong>{t("timetable.days.monday")}</strong> 09:30 h -
-                      16:00 h <br />
+                      16:00 h. <br />
                       <strong>{t("timetable.days.tuesday")}</strong> 14:00 h -
-                      20:00 h <br />
+                      20:00 h. <br />
                       <strong>{t("timetable.days.wednesday")}</strong> 09:30 h -
-                      16:00 h <br />
+                      16:00 h. <br />
                       <strong>{t("timetable.days.thursday")}</strong> 14:00 h -
-                      20:00 h <br />
+                      20:00 h. <br />
                       <strong>{t("timetable.days.friday")}</strong> 09:30 h -
-                      16:00 h <br />
-                      <strong>{t("timetable.days.weekend")}</strong> Closed
+                      16:00 h. <br />
+                      <strong>{t("timetable.days.weekend")}</strong>{" "}
+                      {t("timetable.days.closed")}
                     </p>
                   </div>
                 </div>

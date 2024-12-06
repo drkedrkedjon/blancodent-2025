@@ -64,7 +64,7 @@
         "title": "Dirección:",
         "street": "Av. Mesa y López, 1 - 1ª izq.",
         "city": "35006, Las Palmas de G.C.",
-        "country": "Islas Canarias, España"
+        "country": "Islas Canarias, España."
       },
       "map": {
         "link1": "Abrir en mapa de Google",
@@ -90,7 +90,8 @@
         "wednesday": "Miércoles:",
         "thursday": "Jueves:",
         "friday": "Viernes:",
-        "weekend": "Sabados y Domingos:"
+        "weekend": "Sabados y Domingos:",
+        "closed": "Cerrado."
       }
     }
   },
