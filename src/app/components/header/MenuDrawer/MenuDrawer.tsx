@@ -1,13 +1,12 @@
 import styles from "./MenuDrawer.module.css";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { X } from "@phosphor-icons/react/dist/ssr";
 import { useTranslations } from "next-intl";
 import FocusLock from "react-focus-lock";
 import { RemoveScroll } from "react-remove-scroll";
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
-// import smallMap from "./assets/small-map.jpg";
-import smallMap from "./assets/mapa.png";
+import smallMap from "./assets/small-map.jpg";
 
 interface MenuDrawerProps {
   handleCloseDrawer: () => void;
@@ -15,7 +14,6 @@ interface MenuDrawerProps {
 
 export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
   const t = useTranslations("MainMenu");
-  const [openedDetails, setOpenedDetails] = useState<number | null>(null);
 
   useEffect(() => {
     function handleEscapeKey(event: KeyboardEvent): void {
@@ -29,14 +27,6 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
       window.removeEventListener("keyup", handleEscapeKey);
     };
   }, [handleCloseDrawer]);
-
-  function handleOpenDetails(
-    e: React.MouseEvent<HTMLElement>,
-    id: number
-  ): void {
-    e.preventDefault();
-    setOpenedDetails((prev) => (prev === id ? null : id));
-  }
 
   return (
     <div className={styles.navContainer}>
@@ -95,13 +85,10 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                   {t("disclosureGroupLabel")}
                 </span>
                 <details
-                  open={openedDetails === 0}
+                  name="menu-accordion"
                   className={styles.details}
                 >
-                  <summary
-                    onClick={(e) => handleOpenDetails(e, 0)}
-                    className={styles.summary}
-                  >
+                  <summary className={styles.summary}>
                     {t("services.summary")}
                   </summary>
                   <ul role="list">
@@ -180,11 +167,12 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                   </ul>
                 </details>
                 <details
-                  open={openedDetails === 1}
+                  name="menu-accordion"
+                  // open={openedDetails === 1}
                   className={styles.details}
                 >
                   <summary
-                    onClick={(e) => handleOpenDetails(e, 1)}
+                    // onClick={(e) => handleOpenDetails(e, 1)}
                     className={styles.summary}
                   >
                     {t("aboutClinic.summary")}
@@ -241,13 +229,10 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                   </ul>
                 </details>
                 <details
-                  open={openedDetails === 2}
+                  name="menu-accordion"
                   className={styles.details}
                 >
-                  <summary
-                    onClick={(e) => handleOpenDetails(e, 2)}
-                    className={styles.summary}
-                  >
+                  <summary className={styles.summary}>
                     {t("articles.summary")}
                   </summary>
                   <ul role="list">
@@ -302,13 +287,10 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                   </ul>
                 </details>
                 <details
-                  open={openedDetails === 3}
+                  name="menu-accordion"
                   className={styles.details}
                 >
-                  <summary
-                    onClick={(e) => handleOpenDetails(e, 3)}
-                    className={styles.summary}
-                  >
+                  <summary className={styles.summary}>
                     {t("others.summary")}
                   </summary>
                   <ul role="list">
