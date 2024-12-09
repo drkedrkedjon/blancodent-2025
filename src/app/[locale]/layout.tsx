@@ -10,6 +10,7 @@ import localFont from "next/font/local";
 import "../assets/global-styles/globals.css";
 import Header from "@/app/components/header/Header";
 import SkipLink from "@/app/components/skip-link/SkipLink";
+import { MotionConfig } from "motion/react";
 
 // Load the local font
 const monaSansFont = localFont({
@@ -63,14 +64,16 @@ export default async function RootLayout({
       className={monaSansFont.className}
     >
       <body className="layout-grid">
-        <NextIntlClientProvider messages={messages}>
-          <SkipLink
-            link={t("href")}
-            content={t("content")}
-          />
-          <Header />
-          {children}
-        </NextIntlClientProvider>
+        <MotionConfig reducedMotion="user">
+          <NextIntlClientProvider messages={messages}>
+            <SkipLink
+              link={t("href")}
+              content={t("content")}
+            />
+            <Header />
+            {children}
+          </NextIntlClientProvider>
+        </MotionConfig>
       </body>
     </html>
   );

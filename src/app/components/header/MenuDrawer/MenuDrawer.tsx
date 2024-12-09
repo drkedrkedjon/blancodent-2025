@@ -7,6 +7,7 @@ import { RemoveScroll } from "react-remove-scroll";
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
 import smallMap from "./assets/small-map.jpg";
+import { motion } from "motion/react";
 
 interface MenuDrawerProps {
   handleCloseDrawer: () => void;
@@ -30,13 +31,28 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
 
   return (
     <div className={styles.navContainer}>
-      <div
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{
+          duration: 1,
+        }}
+        exit={{ opacity: 0 }}
         className={styles.navBackground}
         onClick={handleCloseDrawer}
       />
       <FocusLock returnFocus={true}>
         <RemoveScroll>
-          <div className={styles.navDrawer}>
+          <motion.div
+            animate={{ y: "110%" }}
+            transition={{
+              type: "spring",
+              stiffness: 150,
+              damping: 20,
+            }}
+            exit={{ y: "0%" }}
+            className={styles.navDrawer}
+          >
             <button
               className={styles.closeBtn}
               onClick={handleCloseDrawer}
@@ -382,7 +398,12 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     <h2>{t("contact.title")}</h2>
                     <p>
                       {t("contact.text1.text")}{" "}
-                      <Link href="/contacto">{t("contact.text1.link")}</Link>
+                      <Link
+                        onClick={handleCloseDrawer}
+                        href="/contacto"
+                      >
+                        {t("contact.text1.link")}
+                      </Link>
                     </p>
                     <p>
                       {t("contact.text2.text")}{" "}
@@ -411,7 +432,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </RemoveScroll>
       </FocusLock>
     </div>

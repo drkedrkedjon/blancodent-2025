@@ -1,7 +1,6 @@
 .navContainer {
   position: fixed;
   inset: 0;
-  padding: 1rem;
   z-index: 10000;
 }
 
@@ -20,13 +19,14 @@
   padding-block: min(3vw, var(--space-400));
   overflow-y: auto;
   border-radius: min(2vw, var(--space-400));
+  translate: 0% -110%;
 }
 
 .innerContainer {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-600);
-  max-width: 1200px;
+  max-width: 75rem;
   padding-inline: calc(var(--space-800) + 0.5rem);
   margin: auto;
 }
@@ -34,7 +34,7 @@
 .innerContainer>div {
   flex-grow: 1;
   flex-shrink: 1;
-  flex-basis: 330px;
+  flex-basis: 21rem;
   border-top: var(--space-100) solid var(--primary-6);
   padding-block-start: var(--space-500);
 }
@@ -42,7 +42,6 @@
 .innerContainer h2 {
   margin-block-end: var(--space-200);
 }
-
 
 .quickLinks {
   display: flex;
@@ -53,8 +52,8 @@
 
 .closeBtn {
   position: fixed;
-  top: calc(var(--space-200) + 1.3vw);
-  right: calc(var(--space-100) + 1.3vw);
+  top: min(0.4vw, var(--space-400));
+  right: min(0.4vw, var(--space-400));
   border: none;
   background: none;
   padding: 0.5rem;
@@ -69,6 +68,18 @@
 .details {
   margin-block: var(--space-200);
 }
+
+/* This part is for animating details opening but it will work soon...  */
+/* .details::details-content {
+  block-size: 0;
+  transition: block-size 0.5s ease;
+  content-visibility: 1s;
+  transition-behavior: allow-discrete;
+}
+
+.details[open]::details-content {
+  block-size: auto;
+} */
 
 .details li {
   padding-block: var(--space-200);
@@ -110,7 +121,7 @@
   gap: var(--space-500);
 }
 
-@container (min-width: 680px) {
+@container (min-width: 43rem) {
 
   .info {
     flex-direction: row;
@@ -121,5 +132,4 @@
     flex-shrink: 1;
     flex-basis: 50%;
   }
-
 }
