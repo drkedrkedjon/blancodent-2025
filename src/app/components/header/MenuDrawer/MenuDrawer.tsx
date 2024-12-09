@@ -6,7 +6,7 @@ import FocusLock from "react-focus-lock";
 import { RemoveScroll } from "react-remove-scroll";
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
-import smallMap from "./assets/small-map.jpg";
+import smallMap from "./assets/map-menu.png";
 import { motion } from "motion/react";
 
 interface MenuDrawerProps {
@@ -47,7 +47,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
             animate={{ y: "110%" }}
             transition={{
               type: "spring",
-              stiffness: 150,
+              stiffness: 160,
               damping: 20,
             }}
             exit={{ y: "0%" }}
