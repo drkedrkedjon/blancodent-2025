@@ -9,7 +9,8 @@ import { routing } from "@/i18n/routing";
 import localFont from "next/font/local";
 import "../assets/global-styles/globals.css";
 import Header from "@/app/components/header/Header";
-import SkipLink from "@/app/components/skip-link/SkipLink";
+import Footer from "@/app/components/Footer/Footer";
+import SkipLink from "@/app/components/SkipLink/SkipLink";
 import { MotionConfig } from "motion/react";
 
 // Load the local font
@@ -72,6 +73,7 @@ export default async function RootLayout({
             />
             <Header />
             {children}
+            <Footer />
           </NextIntlClientProvider>
         </MotionConfig>
       </body>

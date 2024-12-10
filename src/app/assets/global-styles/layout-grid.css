@@ -22,7 +22,6 @@
 .layout-grid>.wide-grid,
 .wide-grid>.wide-grid {
   grid-column: wide;
-
   display: grid;
   grid-template-columns: inherit;
 }

@@ -67,8 +67,8 @@
         "country": "Islas Canarias, España."
       },
       "map": {
-        "link1": "Abrir en mapa de Google",
-        "link2": "Abrir en mapa de Apple"
+        "link1": "Abrir en el mapa de Google",
+        "link2": "Abrir en el mapa de Apple"
       }
     },
     "contact": {
@@ -79,7 +79,7 @@
       },
       "text2": {
         "text": "O si lo prefieres, también puedes llamarnos en el horario de apertura o dejar un mensaje de audio al:",
-        "link": "Llámanos."
+        "link": "+34 928 292 455."
       }
     },
     "timetable": {
