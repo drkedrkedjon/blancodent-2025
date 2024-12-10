@@ -7,7 +7,7 @@ import { useTranslations } from "next-intl";
 import { AnimatePresence } from "motion/react";
 
 export default function Menu() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const t = useTranslations("MainMenu");
 
   function handleOpenDrawer(): void {
