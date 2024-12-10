@@ -28,6 +28,7 @@
   gap: var(--space-600);
   max-width: 75rem;
   padding-inline: calc(var(--space-800) + 0.5rem);
+  padding-block-end: var(--space-600);
   margin: auto;
 }
 

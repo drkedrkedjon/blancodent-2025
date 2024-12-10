@@ -6,7 +6,7 @@ import FocusLock from "react-focus-lock";
 import { RemoveScroll } from "react-remove-scroll";
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
-import smallMap from "./assets/map-menu.png";
+import smallMap from "./assets/menu-map.png";
 import { motion } from "motion/react";
 
 interface MenuDrawerProps {
