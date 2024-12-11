@@ -1,15 +1,33 @@
 .footer {
   background-color: var(--primary-6);
-  padding-block: var(--space-800);
+  padding-block: var(--space-900);
   text-align: center;
 }
 
 .cardsContainer {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: var(--space-800);
   margin-block-end: var(--space-900);
+}
+
+.boxOne,
+.boxTwo {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 16rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: var(--space-800);
+}
+
+.boxOne>*,
+.boxTwo>* {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 16rem;
 }
 
 .navLinks li {
