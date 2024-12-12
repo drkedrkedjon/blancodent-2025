@@ -16,12 +16,12 @@ export default function Menu() {
 
   return (
     <nav
-      aria-labelledby="nav-label"
+      aria-labelledby="nav-label-header"
       className={styles.container}
     >
       <span
         hidden
-        id="nav-label"
+        id="nav-label-header"
       >
         {t("navLabel")}
       </span>
