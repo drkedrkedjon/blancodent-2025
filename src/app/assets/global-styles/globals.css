@@ -45,7 +45,7 @@ button {
 }
 
 .btnLink:hover,
-:focus {
+.btnLink:focus {
   scale: 1.03;
 }
 

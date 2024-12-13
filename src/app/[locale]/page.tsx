@@ -12,16 +12,19 @@ export default async function HomePage({
   const t = await getTranslations("HomePage");
   return (
     <main
+      className="wide-grid"
       id="main"
       tabIndex={-1}
     >
-      <h1>{t("title")}</h1>
-      <h2>{t("title")}</h2>
-      <h3>{t("title")}</h3>
-      <h4>{t("title")}</h4>
-      <p>Sasas es un pendejon de cojones</p>
+      <div>
+        <h1>{t("title")}</h1>
+        <h2>{t("title")}</h2>
+        <h3>{t("title")}</h3>
+        <h4>{t("title")}</h4>
+        <p>Sasha es un pendejon de cojones</p>
 
-      <Link href="/about">{t("about")}</Link>
+        <Link href="/about">{t("about")}</Link>
+      </div>
     </main>
   );
 }
