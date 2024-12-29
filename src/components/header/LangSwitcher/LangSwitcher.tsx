@@ -1,4 +1,4 @@
-import LangSwitcherSelect from "@/app/components/header/LangSwitcherSelect";
+import LangSwitcherSelect from "@/components/header/LangSwitcherSelect";
 import { routing } from "@/i18n/routing";
 import { useLocale, useTranslations } from "next-intl";
 

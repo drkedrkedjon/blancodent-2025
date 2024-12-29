@@ -7,15 +7,15 @@ import {
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import localFont from "next/font/local";
-import "../assets/global-styles/globals.css";
-import Header from "@/app/components/header/Header";
-import Footer from "@/app/components/Footer/Footer";
-import SkipLink from "@/app/components/SkipLink/SkipLink";
+import "@/assets/global-styles/globals.css";
+import Header from "@/components/header/Header";
+import Footer from "@/components/Footer/Footer";
+import SkipLink from "@/components/SkipLink/SkipLink";
 import { MotionConfig } from "motion/react";
 
 // Load the local font
 const monaSansFont = localFont({
-  src: "../assets/fonts/Mona-Sans.woff2",
+  src: "../../assets/fonts/Mona-Sans.woff2",
   display: "fallback",
   fallback: ["system-ui", "arial", "sans-serif"],
   // weight: "100 900",

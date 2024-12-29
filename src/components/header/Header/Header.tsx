@@ -1,8 +1,8 @@
 import styles from "./Header.module.css";
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
-import LangSwitcher from "@/app/components/header/LangSwitcher";
-import Menu from "@/app/components/header/Menu";
+import LangSwitcher from "@/components/header/LangSwitcher";
+import Menu from "@/components/header/Menu";
 
 export default function Header() {
   const t = useTranslations("Header");
