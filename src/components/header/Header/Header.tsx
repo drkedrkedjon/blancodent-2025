@@ -1,5 +1,5 @@
 import styles from "./Header.module.css";
-import { Link } from "@/i18n/routing";
+import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import LangSwitcher from "@/components/header/LangSwitcher";
 import Menu from "@/components/header/Menu";

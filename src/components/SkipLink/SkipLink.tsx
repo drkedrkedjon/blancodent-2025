@@ -1,5 +1,5 @@
 import styles from "./SkipLink.module.css";
-import { Link } from "@/i18n/routing";
+import { Link } from "@/i18n/navigation";
 
 export default function SkipLink({
   link,

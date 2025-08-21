@@ -1,7 +1,7 @@
 "use client";
 import styles from "./LangSwitcherSelect.module.css";
 import React, { ChangeEvent, ReactNode, useTransition } from "react";
-import { usePathname, useRouter } from "@/i18n/routing";
+import { usePathname, useRouter } from "@/i18n/navigation";
 import { useParams } from "next/navigation";
 import { CaretDown } from "@phosphor-icons/react/dist/ssr";
 

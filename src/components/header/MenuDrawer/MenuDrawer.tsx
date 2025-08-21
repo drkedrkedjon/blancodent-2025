@@ -4,7 +4,7 @@ import { X } from "@phosphor-icons/react/dist/ssr";
 import { useTranslations } from "next-intl";
 import FocusLock from "react-focus-lock";
 import { RemoveScroll } from "react-remove-scroll";
-import { Link } from "@/i18n/routing";
+import { Link } from "@/i18n/navigation";
 import Image from "next/image";
 import smallMap from "./assets/menu-map.png";
 import { motion } from "motion/react";

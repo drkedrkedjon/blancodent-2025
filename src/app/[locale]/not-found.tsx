@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import { CSSProperties } from "react";
-import { Link } from "@/i18n/routing";
+import { Link } from "@/i18n/navigation";
 
 const styles: { container: CSSProperties } = {
   container: {

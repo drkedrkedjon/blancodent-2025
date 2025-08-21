@@ -1,10 +1,11 @@
-import { NextIntlClientProvider } from "next-intl";
+import { NextIntlClientProvider, hasLocale } from "next-intl";
 import {
   getMessages,
   setRequestLocale,
   getTranslations,
 } from "next-intl/server";
 import { notFound } from "next/navigation";
+import { Metadata } from "next";
 import { routing } from "@/i18n/routing";
 import localFont from "next/font/local";
 import "@/assets/global-styles/globals.css";
@@ -26,8 +27,9 @@ export async function generateMetadata({
   params,
 }: {
   params: Promise<{ locale: string }>;
-}) {
+}): Promise<Metadata> {
   const { locale } = await params;
+
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
   return {
@@ -52,7 +54,10 @@ export default async function RootLayout({
   // Enable static rendering
   setRequestLocale(locale);
   // Ensure that the incoming `locale` is valid
-  if (!routing.locales.includes(locale as "en" | "es")) {
+  // if (!routing.locales.includes(locale as "en" | "es")) {
+  //   notFound();
+  // }
+  if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
   // Providing all messages to the client

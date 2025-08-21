@@ -1,5 +1,5 @@
 import styles from "./Footer.module.css";
-import { Link } from "@/i18n/routing";
+import { Link } from "@/i18n/navigation";
 import { InstagramLogo, FacebookLogo } from "@phosphor-icons/react/dist/ssr";
 import { useTranslations } from "next-intl";
 
