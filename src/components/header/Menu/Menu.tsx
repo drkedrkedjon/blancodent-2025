@@ -1,6 +1,6 @@
 "use client";
 import styles from "./Menu.module.css";
-import { List } from "@phosphor-icons/react/dist/ssr";
+import { ListIcon } from "@phosphor-icons/react/dist/ssr";
 import MenuDrawer from "@/components/header/MenuDrawer";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
@@ -37,7 +37,7 @@ export default function Menu() {
         >
           {t("openMenuBtn")}
         </span>
-        <List
+        <ListIcon
           aria-hidden="true"
           weight="bold"
         />
