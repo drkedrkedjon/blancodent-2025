@@ -3,7 +3,7 @@ import styles from "./LangSwitcherSelect.module.css";
 import React, { ChangeEvent, ReactNode, useTransition } from "react";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { useParams } from "next/navigation";
-import { CaretDown } from "@phosphor-icons/react/dist/ssr";
+// import { CaretDownIcon } from "@phosphor-icons/react/dist/ssr";
 
 export default function LangSwitcherSelect({
   children,
@@ -53,7 +53,7 @@ export default function LangSwitcherSelect({
       >
         {children}
       </select>
-      <CaretDown weight="fill" />
+      {/* <CaretDownIcon weight="fill" /> */}
     </section>
   );
 }

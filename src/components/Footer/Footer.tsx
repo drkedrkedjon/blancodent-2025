@@ -1,6 +1,9 @@
 import styles from "./Footer.module.css";
 import { Link } from "@/i18n/navigation";
-import { InstagramLogo, FacebookLogo } from "@phosphor-icons/react/dist/ssr";
+import {
+  InstagramLogoIcon,
+  FacebookLogoIcon,
+} from "@phosphor-icons/react/dist/ssr";
 import { useTranslations } from "next-intl";
 
 export default function Footer() {
@@ -62,7 +65,7 @@ export default function Footer() {
                   >
                     {t("address.social.facebook")}
                   </span>
-                  <FacebookLogo weight="duotone" />
+                  <FacebookLogoIcon weight="duotone" />
                 </Link>
               </li>
               <li>
@@ -77,7 +80,7 @@ export default function Footer() {
                   >
                     {t("address.social.instagram")}
                   </span>
-                  <InstagramLogo weight="duotone" />
+                  <InstagramLogoIcon weight="duotone" />
                 </Link>
               </li>
             </ul>

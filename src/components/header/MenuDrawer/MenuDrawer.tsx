@@ -1,7 +1,7 @@
 import styles from "./MenuDrawer.module.css";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
-import { X } from "@phosphor-icons/react/dist/ssr";
+import { XIcon } from "@phosphor-icons/react/dist/ssr";
 import { useTranslations } from "next-intl";
 import FocusLock from "react-focus-lock";
 import { RemoveScroll } from "react-remove-scroll";
@@ -76,7 +76,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
               >
                 {t("closeMenuBtn")}
               </span>
-              <X
+              <XIcon
                 aria-hidden="true"
                 weight="bold"
               />
