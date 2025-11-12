@@ -1,5 +1,6 @@
 import styles from "./MenuDrawer.module.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import { X } from "@phosphor-icons/react/dist/ssr";
 import { useTranslations } from "next-intl";
 import FocusLock from "react-focus-lock";
@@ -14,7 +15,16 @@ interface MenuDrawerProps {
 }
 
 export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
+  // next two are for portal rendering on client
+  const [mounted, setMounted] = useState(false);
+  const [portalRoot, setPortalRoot] = useState<HTMLElement | null>(null);
   const t = useTranslations("MainMenu");
+
+  useEffect(() => {
+    // next two are for portal
+    setMounted(true);
+    setPortalRoot(document.getElementById("nav-menu-root"));
+  }, []);
 
   useEffect(() => {
     function handleEscapeKey(event: KeyboardEvent): void {
@@ -29,13 +39,15 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
     };
   }, [handleCloseDrawer]);
 
-  return (
+  if (!mounted || !portalRoot) return null;
+
+  return createPortal(
     <div className={styles.navContainer}>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{
-          duration: 1,
+          duration: 0.7,
         }}
         exit={{ opacity: 0 }}
         className={styles.navBackground}
@@ -435,6 +447,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
           </motion.div>
         </RemoveScroll>
       </FocusLock>
-    </div>
+    </div>,
+    portalRoot
   );
 }
