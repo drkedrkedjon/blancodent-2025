@@ -68,11 +68,11 @@
 
 .details {
   margin-block: var(--space-200);
-  overflow: hidden;
 }
 
 /* This part is for animating details opening but it will work soon, hope so...  */
 .details::details-content {
+  overflow: hidden;
   block-size: 0;
   transition: block-size 0.5s, content-visibility 1s;
   transition-behavior: allow-discrete;
@@ -105,7 +105,7 @@
   padding: var(--space-100) var(--space-300);
   background-color: var(--secondary-12);
   border-radius: var(--space-100);
-  list-style-position: outside;
+  /* list-style-position: outside; */
 }
 
 .summary::marker,
