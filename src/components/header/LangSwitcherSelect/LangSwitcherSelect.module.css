@@ -2,6 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  /* border: 1px red solid; */
+  margin-inline-end: 1rem;
 }
 
 .select {
