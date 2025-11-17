@@ -15,14 +15,12 @@ interface MenuDrawerProps {
 }
 
 export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
-  // next two are for portal rendering on client
-  const [mounted, setMounted] = useState(false);
+  // next is for portal rendering on client
   const [portalRoot, setPortalRoot] = useState<HTMLElement | null>(null);
   const t = useTranslations("MainMenu");
 
   useEffect(() => {
-    // next two are for portal
-    setMounted(true);
+    // next is for portal
     setPortalRoot(document.getElementById("nav-menu-root"));
   }, []);
 
@@ -39,7 +37,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
     };
   }, [handleCloseDrawer]);
 
-  if (!mounted || !portalRoot) return null;
+  if (!portalRoot) return null;
 
   return createPortal(
     <div className={styles.navContainer}>
