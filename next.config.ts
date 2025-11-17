@@ -1,7 +1,6 @@
 import type { NextConfig } from "next";
 // i18n plugin
 import createNextIntlPlugin from "next-intl/plugin";
-const withNextIntl = createNextIntlPlugin();
 
 const cspHeader = `
     default-src 'self';
@@ -58,4 +57,5 @@ const nextConfig: NextConfig = {
 // export default nextConfig;
 
 // Export with i18n plugin
+const withNextIntl = createNextIntlPlugin();
 export default withNextIntl(nextConfig);
