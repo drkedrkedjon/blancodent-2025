@@ -1,6 +1,6 @@
 .header {
   background-color: var(--primary-6);
-  padding-block: min(2vw, var(--space-300));
+  padding-block: min(1.5vw, var(--space-300));
 }
 
 .container {
@@ -19,8 +19,8 @@
 }
 
 .logo svg {
+  height: min(12vw, 60px);
   width: auto;
-  height: min(12vw, 48px);
   filter: drop-shadow(var(--shadow-400));
 }
 
@@ -51,7 +51,7 @@
   }
 }
 
-@media (min-width: 34rem) {
+@media (min-width: 35rem) {
   .quickLinks {
     display: block;
   }
