@@ -27,11 +27,11 @@
 .logo .p {
   display: none;
   font-size: min(4vw, var(--fs-700));
-  font-weight: var(--f-wei-900);
+  font-weight: var(--f-wei-800);
   font-stretch: var(--f-str-90);
-  margin-left: var(--space-200);
+  color: var(--tertiary-13);
+  margin-left: var(--space-300);
   text-shadow: var(--shadow-400);
-  color: var(--tertiary-accent);
 }
 
 .quickLinks {
