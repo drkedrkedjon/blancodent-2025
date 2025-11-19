@@ -1,7 +1,7 @@
 "use client";
 import styles from "./Menu.module.css";
 import { ListIcon } from "@phosphor-icons/react/dist/ssr";
-import MenuDrawer from "@/components/header/MenuDrawer";
+import MenuDrawer from "@/components/Header/MenuDrawer";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { AnimatePresence } from "motion/react";

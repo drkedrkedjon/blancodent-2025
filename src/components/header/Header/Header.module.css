@@ -1,6 +1,6 @@
 .header {
   background-color: var(--primary-6);
-  padding-block: min(2vw, var(--space-400));
+  padding-block: min(2vw, var(--space-300));
 }
 
 .container {
@@ -26,10 +26,12 @@
 
 .logo .p {
   display: none;
-  font-size: min(4vw, var(--fs-600));
-  font-weight: var(--f-wei-500);
+  font-size: min(4vw, var(--fs-700));
+  font-weight: var(--f-wei-900);
+  font-stretch: var(--f-str-90);
   margin-left: var(--space-200);
   text-shadow: var(--shadow-400);
+  color: var(--tertiary-accent);
 }
 
 .quickLinks {
@@ -43,13 +45,13 @@
   padding-inline-end: var(--space-700)
 }
 
-@media (min-width: 43rem) {
+@media (min-width: 45rem) {
   .logo .p {
     display: block;
   }
 }
 
-@media (min-width: 33rem) {
+@media (min-width: 34rem) {
   .quickLinks {
     display: block;
   }
