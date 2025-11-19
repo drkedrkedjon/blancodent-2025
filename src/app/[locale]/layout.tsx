@@ -9,7 +9,7 @@ import { Metadata } from "next";
 import { routing } from "@/i18n/routing";
 import localFont from "next/font/local";
 import "@/assets/global-styles/globals.css";
-import Header from "@/components/HeaderComp/Header";
+import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import SkipLink from "@/components/SkipLink/SkipLink";
 import { MotionConfig } from "motion/react";
