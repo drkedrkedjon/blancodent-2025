@@ -26,10 +26,10 @@
 
 .logo .p {
   display: none;
-  font-size: min(4vw, var(--fs-700));
+  font-size: min(5vw, var(--fs-700));
   font-weight: var(--f-wei-800);
   font-stretch: var(--f-str-90);
-  color: var(--tertiary-13);
+  color: var(--gray-13);
   margin-left: var(--space-300);
   text-shadow: var(--shadow-400);
 }
@@ -42,7 +42,7 @@
   display: flex;
   gap: var(--space-100);
   font-weight: var(--f-wei-500);
-  padding-inline-end: var(--space-700)
+  padding-inline-end: var(--space-400)
 }
 
 @media (min-width: 45rem) {

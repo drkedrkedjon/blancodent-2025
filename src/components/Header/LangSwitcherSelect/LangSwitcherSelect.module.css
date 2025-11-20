@@ -2,8 +2,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* border: 1px red solid; */
-  margin-inline-end: 1rem;
+  margin-inline-end: var(--space-300);
+  padding: var(--space-100);
+  padding-inline: var(--space-200);
+  border-radius: var(--space-100);
+  background-color: var(--primary-5);
 }
 
 .select {
@@ -21,5 +24,5 @@
 }
 
 .pending {
-  opacity: 50%;
+  opacity: 30%;
 }
