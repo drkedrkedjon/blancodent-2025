@@ -27,6 +27,10 @@ body {
   font-stretch: var(--f-str-100);
 }
 
+button {
+  cursor: pointer;
+}
+
 .btn {
   cursor: pointer;
   border: none;

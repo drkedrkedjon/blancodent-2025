@@ -53,7 +53,6 @@ export default function LangSwitcherSelect({
       >
         {children}
       </select>
-      {/* <CaretDownIcon weight="fill" /> */}
     </section>
   );
 }
