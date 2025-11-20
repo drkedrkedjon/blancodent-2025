@@ -1,4 +1,5 @@
 import Hero from "@/components/HomePage/Hero/Hero/Hero";
+import HeroCarousel from "@/components/HomePage/Hero/HeroCarousel/HeroCarousel";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 
@@ -18,6 +19,7 @@ export default async function HomePage({
       tabIndex={-1}
     >
       <Hero />
+      <HeroCarousel />
       {/* <div>
         <h1>{t("title")}</h1>
         <h2>{t("title")}</h2>

@@ -14,7 +14,7 @@
 .navDrawer {
   position: absolute;
   inset: min(1.5vw, var(--space-400));
-  background-color: var(--secondary-11);
+  background-color: var(--primary-10);
   color: var(--gray-2);
   padding-block: min(3vw, var(--space-400));
   overflow-y: auto;
@@ -68,6 +68,7 @@
 
 .details {
   margin-block: var(--space-200);
+  background-color: var(--primary-11);
 }
 
 /* This part is for animating details opening but it will work soon, hope so...  */
@@ -103,14 +104,14 @@
   user-select: none;
   -webkit-user-select: none;
   padding: var(--space-100) var(--space-300);
-  background-color: var(--secondary-12);
+  background-color: var(--primary-12);
   border-radius: var(--space-100);
   /* list-style-position: outside; */
 }
 
 .summary::marker,
 .summary::-webkit-details-marker {
-  color: var(--primary-8);
+  color: var(--primary-6);
 }
 
 .containerQuery {
