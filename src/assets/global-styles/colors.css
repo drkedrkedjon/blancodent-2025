@@ -145,6 +145,8 @@
     --tertiary-15: oklch(16% 0.014 65);
     --tertiary-16: oklch(10% 0.01 65);
     --tertiary-accent: oklch(84% 0.1 65);
+
+    --title-accent: oklch(46.90% 0.136 7.85);
   }
 }
 

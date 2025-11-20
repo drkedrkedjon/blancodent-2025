@@ -25,3 +25,15 @@
   display: grid;
   grid-template-columns: inherit;
 }
+
+/* 
+a ve... 
+Tenemos aplicado a body = .layout-grid
+
+home page / ANY page / header / footer = poner .wide-grid
+Si a las secciones dentro pones wide-grid se pone en grande
+Si a las secciones dentro de page no pones nada se queda en medio
+Si pones narroe se pone en pequeño
+
+
+*/

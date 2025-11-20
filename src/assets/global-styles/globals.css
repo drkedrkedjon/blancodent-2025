@@ -27,8 +27,23 @@ body {
   font-stretch: var(--f-str-100);
 }
 
-button {
+.btn {
   cursor: pointer;
+  border: none;
+  font-weight: var(--f-wei-600);
+  text-decoration: none;
+  padding: var(--space-200) var(--space-600);
+  border-radius: 16px;
+  box-shadow: var(--shadow-400);
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+}
+
+.btn:hover,
+.btn:focus {
+  scale: 1.03;
 }
 
 .btnLink {
@@ -37,7 +52,7 @@ button {
   color: var(--primary-16);
   font-weight: var(--f-wei-600);
   text-decoration: none;
-  padding: var(--space-200) var(--space-800);
+  padding: var(--space-200) var(--space-600);
   border-radius: 16px;
   box-shadow: var(--shadow-400);
   transition: all 0.3s ease-in-out;
@@ -58,7 +73,7 @@ a:hover,
   text-decoration: none;
 }
 
-p:not(:last-child) {
+p:not(:last-child):not([class]) {
   margin-bottom: var(--space-200);
 }
 

@@ -1,14 +1,15 @@
 :root {
   --fs-100: clamp(0.51rem, -0.02vi + 0.52rem, 0.5rem);
-  --fs-200: clamp(0.64rem, 0.05vi + 0.63rem, 0.67rem);
+  --fs-200: clamp(0.64rem, 0.10vi + 0.70rem, 0.85rem);
   --fs-300: clamp(0.8rem, 0.16vi + 0.76rem, 0.89rem);
-  --fs-400: clamp(1rem, 0.33vi + 0.92rem, 1.19rem);
+  --fs-400: clamp(1rem, 0.33vi + 1.12rem, 1.24rem);
   --fs-500: clamp(1.25rem, 0.59vi + 1.11rem, 1.58rem);
   --fs-600: clamp(1.56rem, 0.97vi + 1.34rem, 2.11rem);
   --fs-700: clamp(1.95rem, 1.52vi + 1.6rem, 2.81rem);
   --fs-800: clamp(2.44rem, 2.31vi + 1.9rem, 3.75rem);
   --fs-900: clamp(3.05rem, 3.44vi + 2.25rem, 5rem);
-  --fs-hero: clamp(3.052rem, 6vw, 4.5rem);
+  --fs-hero-100: clamp(3.5rem, 4vi + 3rem, 7rem);
+  /* --fs-extra-200: clamp(4.052rem, 6vw, 6.5rem); */
 
   --f-str-75: 75%;
   --f-str-90: 90%;

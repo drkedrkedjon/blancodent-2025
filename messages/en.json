@@ -137,8 +137,14 @@
     }
   },
   "HomePage": {
-    "title": "Hello world!",
-    "about": "Go to the about page"
+    "hero": {
+      "titleSmall": "Dental Clinic",
+      "titleBig": "Blancodent",
+      "tagLine": "Your dentists in Las Palmas de G.C.",
+      "address": "Avenida Mesa y López 1, Las Palmas de Gran Canaria",
+      "actionBtn": "Call us now",
+      "actionLink": "Book appointment online"
+    }
   },
   "NotFoundPage": {
     "title": "Page not found",

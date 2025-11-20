@@ -1,0 +1,67 @@
+.heroHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block: var(--space-900);
+}
+
+.titleGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  color: var(--title-accent);
+  font-size: var(--fs-hero-100);
+  text-shadow: var(--shadow-400);
+  line-height: 0.8;
+  margin-block-start: -2.8rem;
+}
+
+.dentalClinic {
+  font-size: var(--fs-700);
+  color: var(--gray-15);
+  font-weight: var(--f-wei-600);
+  font-stretch: var(--f-str-100);
+}
+
+.tagline {
+  font-size: var(--fs-400);
+  font-weight: var(--f-wei-500);
+}
+
+.address {
+  margin-block-start: -0.4rem;
+  font-size: var(--fs-200);
+}
+
+.actionGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  gap: var(--space-400);
+  margin-block-start: var(--space-600);
+}
+
+@media (min-width: 29rem) {
+  .actionGroup {
+    flex-direction: row;
+  }
+}
+
+.actionBtn {
+  background-color: var(--tertiary-accent);
+  border: 3px solid var(--tertiary-3);
+}
+
+.rightArrow {
+  display: inline-block;
+  vertical-align: middle;
+  margin-inline-start: var(--space-100);
+  width: var(--space-500);
+  height: auto;
+
+}

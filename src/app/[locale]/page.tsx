@@ -1,3 +1,4 @@
+import Hero from "@/components/HomePage/Hero/Hero/Hero";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 
@@ -16,7 +17,8 @@ export default async function HomePage({
       id="main"
       tabIndex={-1}
     >
-      <div>
+      <Hero />
+      {/* <div>
         <h1>{t("title")}</h1>
         <h2>{t("title")}</h2>
         <h3>{t("title")}</h3>
@@ -24,7 +26,7 @@ export default async function HomePage({
         <p>Sasha es un pendejon de cojones</p>
 
         <Link href="/about">{t("about")}</Link>
-      </div>
+      </div> */}
     </main>
   );
 }

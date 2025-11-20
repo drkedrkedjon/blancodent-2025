@@ -27,7 +27,7 @@
 .logo .p {
   display: none;
   font-size: min(5vw, var(--fs-700));
-  font-weight: var(--f-wei-800);
+  font-weight: var(--f-wei-700);
   font-stretch: var(--f-str-90);
   color: var(--gray-13);
   margin-left: var(--space-300);
