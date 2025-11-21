@@ -16,7 +16,7 @@
   --space-800: 2rem;
   --space-900: 3rem;
 
-  --shadow-400: 2px 2px 4px var(--gray-8);
+  --shadow-400: 2px 2px 3px var(--gray-7);
 }
 
 body {
