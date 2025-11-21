@@ -1,29 +1,19 @@
 .carouselContainer {
   /* position: relative; */
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  align-self: stretch;
+  align-self: stretch; */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
 }
 
-.navButton {
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  font-size: 2rem;
-  padding: 10px 15px;
-  cursor: pointer;
-  border-radius: 4px;
-  z-index: 10;
-}
-
-.navButton:hover {
-  background: rgba(0, 0, 0, 0.7);
-}
 
 .slider {
-  align-self: stretch;
+  /* align-self: stretch; */
+  grid-row: 1 / 2;
 }
 
 .slider>ul {
@@ -62,3 +52,26 @@
 .slider li:nth-child(odd) {
   background-color: rebeccapurple;
 }
+
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  grid-row: 2 / 3;
+  z-index: 10;
+}
+
+/* .navButton {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  z-index: 10;
+}
+
+.navButton:hover {
+  background: rgba(0, 0, 0, 0.7);
+} */

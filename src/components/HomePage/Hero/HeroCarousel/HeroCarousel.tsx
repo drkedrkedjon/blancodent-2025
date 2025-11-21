@@ -1,6 +1,10 @@
 "use client";
 import { useState, useRef } from "react";
 import styles from "./heroCarousel.module.css";
+import {
+  ArrowFatLinesLeftIcon,
+  ArrowFatLinesRightIcon,
+} from "@phosphor-icons/react/dist/ssr";
 
 export default function HeroCarousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -46,14 +50,14 @@ export default function HeroCarousel() {
           onClick={() => scrollToSlide("prev")}
           aria-label="Previous slide"
         >
-          ‹
+          <ArrowFatLinesLeftIcon size={32} />
         </button>
         <button
           className={styles.navButton}
           onClick={() => scrollToSlide("next")}
           aria-label="Next slide"
         >
-          ›
+          <ArrowFatLinesRightIcon size={32} />
         </button>
       </div>
     </div>
