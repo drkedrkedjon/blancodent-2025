@@ -1,37 +1,16 @@
-import { ArrowFatRightIcon } from "@phosphor-icons/react/dist/ssr";
+import HeroHeader from "@/components/HomePage/Hero/HeroHeader/HeroHeader";
+
 import styles from "./hero.module.css";
-import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
+import HeroCarousel from "@/components/HomePage/Hero/HeroCarousel/HeroCarousel";
 
 export default function Hero() {
   const t = useTranslations("HomePage");
 
   return (
-    <section className={`narrow-grid ${styles.heroHeader}`}>
-      <div className={styles.titleGroup}>
-        <h1 className={styles.title}>
-          <span className={styles.dentalClinic}>{t("hero.titleSmall")}</span>
-          <br />
-          {t("hero.titleBig")}
-        </h1>
-        <p className={styles.tagline}>{t("hero.tagLine")}</p>
-        <address className={styles.address}>{t("hero.address")}</address>
-      </div>
-      <div className={styles.actionGroup}>
-        <a
-          href="tel:+34928292455"
-          className={`btn ${styles.actionBtn}`}
-        >
-          {t("hero.actionBtn")}
-        </a>
-        <Link href="/varios/cita-previa">
-          {t("hero.actionLink")}
-          <ArrowFatRightIcon
-            weight="duotone"
-            className={styles.rightArrow}
-          />
-        </Link>
-      </div>
+    <section className={`narrow-grid ${styles.hero}`}>
+      <HeroHeader />
+      <HeroCarousel />
     </section>
   );
 }
