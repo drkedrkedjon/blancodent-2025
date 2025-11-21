@@ -35,12 +35,24 @@ export default function HeroCarousel() {
           role="list"
           ref={sliderRef}
         >
-          <li>Slide 1</li>
-          <li>Slide 2</li>
-          <li>Slide 3</li>
-          <li>Slide 4</li>
-          <li>Slide 5</li>
-          <li>Slide 6</li>
+          <li>
+            <div>Slide 1</div>
+          </li>
+          <li>
+            <div>Slide 2</div>
+          </li>
+          <li>
+            <div>Slide 3</div>
+          </li>
+          <li>
+            <div>Slide 4</div>
+          </li>
+          <li>
+            <div>Slide 5</div>
+          </li>
+          <li>
+            <div>Slide 6</div>
+          </li>
         </ul>
       </div>
 
@@ -59,6 +71,19 @@ export default function HeroCarousel() {
         >
           <ArrowFatLinesRightIcon size={32} />
         </button>
+      </div>
+      <div>
+        <p>Cualquiera pregunta. Blancodent responde. Saber mas</p>
+      </div>
+      <div>
+        <ul role="list">
+          <li>first</li>
+          <li>second</li>
+          <li>third</li>
+          <li>forth</li>
+          <li>fifth</li>
+          <li>sixt</li>
+        </ul>
       </div>
     </div>
   );
