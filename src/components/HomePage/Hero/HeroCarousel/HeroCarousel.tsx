@@ -1,12 +1,11 @@
 "use client";
-
 import { useState, useRef } from "react";
 import styles from "./heroCarousel.module.css";
 
 export default function HeroCarousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const sliderRef = useRef<HTMLUListElement>(null);
-  const totalSlides = 6; // Update this to match your number of slides
+  const totalSlides = 6;
 
   const scrollToSlide = (direction: "prev" | "next") => {
     if (!sliderRef.current) return;
@@ -27,14 +26,6 @@ export default function HeroCarousel() {
 
   return (
     <div className={styles.carouselContainer}>
-      <button
-        className={styles.navButton}
-        onClick={() => scrollToSlide("prev")}
-        aria-label="Previous slide"
-      >
-        ‹
-      </button>
-
       <div className={styles.slider}>
         <ul
           role="list"
@@ -49,36 +40,22 @@ export default function HeroCarousel() {
         </ul>
       </div>
 
-      <button
-        className={styles.navButton}
-        onClick={() => scrollToSlide("next")}
-        aria-label="Next slide"
-      >
-        ›
-      </button>
+      <div className={styles.buttonsContainer}>
+        <button
+          className={styles.navButton}
+          onClick={() => scrollToSlide("prev")}
+          aria-label="Previous slide"
+        >
+          ‹
+        </button>
+        <button
+          className={styles.navButton}
+          onClick={() => scrollToSlide("next")}
+          aria-label="Next slide"
+        >
+          ›
+        </button>
+      </div>
     </div>
   );
 }
-
-// import styles from "./heroCarousel.module.css";
-
-// export default function HeroCarousel() {
-//   return (
-//     <div className={`narrow-grid ${styles.slider}`}>
-//       <ul role="list">
-//         <li>
-//           <h2>Page 1</h2>
-//         </li>
-//         <li>
-//           <h2>Page 2</h2>
-//         </li>
-//         <li>
-//           <h2>Page 3</h2>
-//         </li>
-//         <li>
-//           <h2>Page 4</h2>
-//         </li>
-//       </ul>
-//     </div>
-//   );
-// }

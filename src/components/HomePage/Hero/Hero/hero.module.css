@@ -3,5 +3,5 @@
   flex-direction: column;
   align-items: center;
   padding-block: var(--space-900);
-  gap: 5rem;
+  gap: var(--space-900);
 }
