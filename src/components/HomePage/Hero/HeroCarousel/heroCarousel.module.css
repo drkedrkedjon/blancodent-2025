@@ -4,10 +4,10 @@
 }
 
 
-.slider {
-  /* align-self: stretch; */
-  /* grid-row: 1 / 2; */
-}
+/* .slider {
+  align-self: stretch;
+  grid-row: 1 / 2;
+} */
 
 .slider>ul {
   /* width: 100%; */
