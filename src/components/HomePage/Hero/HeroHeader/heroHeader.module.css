@@ -14,6 +14,7 @@
 }
 
 .dentalClinic {
+  text-shadow: none;
   font-size: var(--fs-700);
   color: var(--gray-15);
   font-weight: var(--f-wei-600);
@@ -39,12 +40,6 @@
   margin-block-start: var(--space-400);
 }
 
-@media (min-width: 29rem) {
-  .actionGroup {
-    flex-direction: row;
-    justify-content: center;
-  }
-}
 
 .actionBtn {
   background-color: var(--tertiary-accent);
@@ -58,4 +53,11 @@
   width: var(--space-500);
   height: auto;
 
+}
+
+@media (min-width: 29rem) {
+  .actionGroup {
+    flex-direction: row;
+    justify-content: center;
+  }
 }

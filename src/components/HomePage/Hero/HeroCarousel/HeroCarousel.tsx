@@ -1,9 +1,11 @@
 "use client";
 import { useState, useRef } from "react";
+import { Link } from "@/i18n/navigation";
 import styles from "./heroCarousel.module.css";
 import {
   ArrowFatLinesLeftIcon,
   ArrowFatLinesRightIcon,
+  DotsSixIcon,
 } from "@phosphor-icons/react/dist/ssr";
 
 export default function HeroCarousel() {
@@ -11,27 +13,36 @@ export default function HeroCarousel() {
   const sliderRef = useRef<HTMLUListElement>(null);
   const totalSlides = 6;
 
-  const scrollToSlide = (direction: "prev" | "next") => {
+  function scrollTheSlide(slideNumber: number) {
     if (!sliderRef.current) return;
 
+    const slideWidth = sliderRef.current.offsetWidth;
+    sliderRef.current.scrollTo({
+      left: slideWidth * slideNumber,
+      behavior: "smooth",
+    });
+  }
+
+  const scrollToSlide = (direction: "prev" | "next") => {
     let newSlide =
       direction === "next"
         ? (currentSlide + 1) % totalSlides
         : (currentSlide - 1 + totalSlides) % totalSlides;
 
     setCurrentSlide(newSlide);
+    scrollTheSlide(newSlide);
+  };
 
-    const slideWidth = sliderRef.current.offsetWidth;
-    sliderRef.current.scrollTo({
-      left: slideWidth * newSlide,
-      behavior: "smooth",
-    });
+  const goToSlide = (slideNumber: number) => {
+    setCurrentSlide(slideNumber);
+    scrollTheSlide(slideNumber);
   };
 
   return (
     <div className={styles.carouselContainer}>
       <div className={styles.slider}>
         <ul
+          className={styles.ulOuter}
           role="list"
           ref={sliderRef}
         >
@@ -62,29 +73,62 @@ export default function HeroCarousel() {
           onClick={() => scrollToSlide("prev")}
           aria-label="Previous slide"
         >
-          <ArrowFatLinesLeftIcon size={32} />
+          <ArrowFatLinesLeftIcon />
         </button>
+        {/* • */}
+        <DotsSixIcon weight="bold" />
         <button
           className={styles.navButton}
           onClick={() => scrollToSlide("next")}
           aria-label="Next slide"
         >
-          <ArrowFatLinesRightIcon size={32} />
+          <ArrowFatLinesRightIcon />
         </button>
       </div>
-      <div>
-        <p>Cualquiera pregunta. Blancodent responde. Saber mas</p>
+      <div className={styles.tagLineContainer}>
+        <p>
+          Cualquiera pregunta. Blancodent responde.{" "}
+          <Link href="/varios/cita-previa">Saber mas...</Link>
+        </p>
       </div>
-      <div>
-        <ul role="list">
-          <li>first</li>
-          <li>second</li>
-          <li>third</li>
-          <li>forth</li>
-          <li>fifth</li>
-          <li>sixt</li>
-        </ul>
-      </div>
+      <menu className={styles.menuCarousel}>
+        <button
+          className={styles.menuCarouselBtn}
+          onClick={() => goToSlide(0)}
+        >
+          Slide 1
+        </button>
+        <button
+          className={styles.menuCarouselBtn}
+          onClick={() => goToSlide(1)}
+        >
+          Slide 2
+        </button>
+        <button
+          className={styles.menuCarouselBtn}
+          onClick={() => goToSlide(2)}
+        >
+          Slide 3
+        </button>
+        <button
+          className={styles.menuCarouselBtn}
+          onClick={() => goToSlide(3)}
+        >
+          Slide 4
+        </button>
+        <button
+          className={styles.menuCarouselBtn}
+          onClick={() => goToSlide(4)}
+        >
+          Slide 5
+        </button>
+        <button
+          className={styles.menuCarouselBtn}
+          onClick={() => goToSlide(5)}
+        >
+          Slide 6
+        </button>
+      </menu>
     </div>
   );
 }

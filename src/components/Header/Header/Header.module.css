@@ -31,7 +31,7 @@
   font-stretch: var(--f-str-90);
   color: var(--gray-13);
   margin-left: var(--space-300);
-  text-shadow: var(--shadow-400);
+  text-shadow: var(--shadow-300);
 }
 
 .quickLinks {
