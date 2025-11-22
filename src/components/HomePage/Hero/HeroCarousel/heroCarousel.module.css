@@ -81,4 +81,7 @@
 
 .menuCarouselBtn {
   font-size: var(--fs-300);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

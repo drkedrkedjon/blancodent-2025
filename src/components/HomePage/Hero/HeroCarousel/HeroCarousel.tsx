@@ -3,9 +3,16 @@ import { useState, useRef } from "react";
 import { Link } from "@/i18n/navigation";
 import styles from "./heroCarousel.module.css";
 import {
+  AlignCenterHorizontalIcon,
   ArrowFatLinesLeftIcon,
   ArrowFatLinesRightIcon,
   DotsSixIcon,
+  EraserIcon,
+  FirstAidIcon,
+  PaintBrushIcon,
+  PaintBucketIcon,
+  SprayBottleIcon,
+  ToothIcon,
 } from "@phosphor-icons/react/dist/ssr";
 
 export default function HeroCarousel() {
@@ -96,37 +103,61 @@ export default function HeroCarousel() {
           className={styles.menuCarouselBtn}
           onClick={() => goToSlide(0)}
         >
-          Slide 1
+          <PaintBrushIcon
+            size={32}
+            weight="duotone"
+          />
+          Blanqueamiento
         </button>
         <button
           className={styles.menuCarouselBtn}
           onClick={() => goToSlide(1)}
         >
-          Slide 2
+          <AlignCenterHorizontalIcon
+            size={32}
+            weight="duotone"
+          />
+          Ortodoncia
         </button>
         <button
           className={styles.menuCarouselBtn}
           onClick={() => goToSlide(2)}
         >
-          Slide 3
+          <ToothIcon
+            size={32}
+            weight="duotone"
+          />
+          Implantologia
         </button>
         <button
           className={styles.menuCarouselBtn}
           onClick={() => goToSlide(3)}
         >
-          Slide 4
+          <FirstAidIcon
+            size={32}
+            weight="duotone"
+          />
+          Periodoncia
         </button>
         <button
           className={styles.menuCarouselBtn}
           onClick={() => goToSlide(4)}
         >
-          Slide 5
+          <PaintBucketIcon
+            size={32}
+            weight="duotone"
+          />
+          Empastes
         </button>
         <button
           className={styles.menuCarouselBtn}
           onClick={() => goToSlide(5)}
         >
-          Slide 6
+          <SprayBottleIcon
+            size={32}
+            weight="duotone"
+          />
+          Higiene
         </button>
       </menu>
     </div>
