@@ -1,5 +1,4 @@
 .carouselContainer {
-  /* position: relative; */
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -7,13 +6,7 @@
   padding: var(--space-300);
   border-radius: var(--space-700);
   box-shadow: var(--shadow-400);
-  /* gap: 1rem; */
 }
-
-/* .slider {
-  align-self: stretch;
-  grid-row: 1 / 2;
-} */
 
 .slider>ul {
   height: min(40vh, 400px);
@@ -35,7 +28,7 @@
 .slider li {
   flex: 0 0 100%;
   scroll-snap-align: center;
-  background-color: var(--primary-4)
+  background-color: var(--primary-4);
 }
 
 .slider li>div {
@@ -74,18 +67,25 @@
   display: flex;
   gap: 5px;
   justify-content: space-between;
-  padding-inline: 0px;
-  margin-block: 20px;
+  padding-inline: var(--space-400);
+  margin-block: var(--space-500);
   /* gap: 5px; */
 }
 
 .menuCarouselBtn {
-  flex: 1;
+  color: inherit;
+  flex: 1 1 0;
   font-size: var(--fs-300);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5px;
-  border-radius: 5px;
-  border: 1px solid var(--primary-6);
+  padding: var(--space-200);
+  border-radius: var(--space-200);
+  border: 1px solid var(--primary-7);
+  transition: all 0.3s ease-in-out;
+}
+
+.menuCarouselBtn:hover {
+  background-color: var(--primary-2);
+
 }
