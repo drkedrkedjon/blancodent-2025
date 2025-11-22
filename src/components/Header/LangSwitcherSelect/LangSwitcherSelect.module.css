@@ -4,9 +4,10 @@
   justify-content: center;
   margin-inline-end: var(--space-300);
   padding: var(--space-100);
-  padding-inline: var(--space-200);
-  border-radius: var(--space-100);
+  padding-inline: var(--space-300);
+  border-radius: var(--space-200);
   background-color: var(--primary-5);
+  font-size: var(--fs-300);
 }
 
 .container:hover {
