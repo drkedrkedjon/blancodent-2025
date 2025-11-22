@@ -15,6 +15,7 @@
   display: flex;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
   /* Hide scrollbar Firefox & Edge */
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -32,7 +33,7 @@
 }
 
 .slider li>div {
-  padding: 20px;
+  padding: var(--space-600);
 
 }
 
@@ -53,7 +54,11 @@
 .navButton {
   padding-block: var(--space-300);
   padding-inline: var(--space-300);
-  /* border: 1px solid red; */
+  transition: var(--transition-400)
+}
+
+.navButton:hover {
+  color: var(--tertiary-10);
 }
 
 
@@ -65,11 +70,10 @@
 
 .menuCarousel {
   display: flex;
-  gap: 5px;
+  gap: var(--space-100);
   justify-content: space-between;
   padding-inline: var(--space-400);
   margin-block: var(--space-500);
-  /* gap: 5px; */
 }
 
 .menuCarouselBtn {
@@ -82,10 +86,11 @@
   padding: var(--space-200);
   border-radius: var(--space-200);
   border: 1px solid var(--primary-7);
-  transition: all 0.3s ease-in-out;
+  transition: var(--transition-400);
 }
 
 .menuCarouselBtn:hover {
   background-color: var(--primary-2);
-
+  box-shadow: var(--shadow-400);
+  /* border: 1px solid transparent; */
 }

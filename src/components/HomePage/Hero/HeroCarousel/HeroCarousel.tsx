@@ -7,7 +7,6 @@ import {
   ArrowFatLinesLeftIcon,
   ArrowFatLinesRightIcon,
   DotsSixIcon,
-  EraserIcon,
   FirstAidIcon,
   PaintBrushIcon,
   PaintBucketIcon,
@@ -30,7 +29,7 @@ export default function HeroCarousel() {
     });
   }
 
-  const scrollToSlide = (direction: "prev" | "next") => {
+  const arrowToSlide = (direction: "prev" | "next") => {
     let newSlide =
       direction === "next"
         ? (currentSlide + 1) % totalSlides
@@ -40,7 +39,7 @@ export default function HeroCarousel() {
     scrollTheSlide(newSlide);
   };
 
-  const goToSlide = (slideNumber: number) => {
+  const clickToSlide = (slideNumber: number) => {
     setCurrentSlide(slideNumber);
     scrollTheSlide(slideNumber);
   };
@@ -77,7 +76,7 @@ export default function HeroCarousel() {
       <div className={styles.buttonsContainer}>
         <button
           className={styles.navButton}
-          onClick={() => scrollToSlide("prev")}
+          onClick={() => arrowToSlide("prev")}
           aria-label="Previous slide"
         >
           <ArrowFatLinesLeftIcon />
@@ -86,7 +85,7 @@ export default function HeroCarousel() {
         <DotsSixIcon weight="bold" />
         <button
           className={styles.navButton}
-          onClick={() => scrollToSlide("next")}
+          onClick={() => arrowToSlide("next")}
           aria-label="Next slide"
         >
           <ArrowFatLinesRightIcon />
@@ -101,7 +100,7 @@ export default function HeroCarousel() {
       <menu className={styles.menuCarousel}>
         <button
           className={styles.menuCarouselBtn}
-          onClick={() => goToSlide(0)}
+          onClick={() => clickToSlide(0)}
         >
           <PaintBrushIcon
             size={32}
@@ -111,7 +110,7 @@ export default function HeroCarousel() {
         </button>
         <button
           className={styles.menuCarouselBtn}
-          onClick={() => goToSlide(1)}
+          onClick={() => clickToSlide(1)}
         >
           <AlignCenterHorizontalIcon
             size={32}
@@ -121,7 +120,7 @@ export default function HeroCarousel() {
         </button>
         <button
           className={styles.menuCarouselBtn}
-          onClick={() => goToSlide(2)}
+          onClick={() => clickToSlide(2)}
         >
           <ToothIcon
             size={32}
@@ -131,7 +130,7 @@ export default function HeroCarousel() {
         </button>
         <button
           className={styles.menuCarouselBtn}
-          onClick={() => goToSlide(3)}
+          onClick={() => clickToSlide(3)}
         >
           <FirstAidIcon
             size={32}
@@ -141,7 +140,7 @@ export default function HeroCarousel() {
         </button>
         <button
           className={styles.menuCarouselBtn}
-          onClick={() => goToSlide(4)}
+          onClick={() => clickToSlide(4)}
         >
           <PaintBucketIcon
             size={32}
@@ -151,7 +150,7 @@ export default function HeroCarousel() {
         </button>
         <button
           className={styles.menuCarouselBtn}
-          onClick={() => goToSlide(5)}
+          onClick={() => clickToSlide(5)}
         >
           <SprayBottleIcon
             size={32}
