@@ -74,7 +74,23 @@ export default function HeroCarousel() {
             </div>
           </li>
           <li>
-            <div>Slide 2</div>
+            <div className={styles.slideContainer}>
+              <h2>Ortodoncia invisible</h2>
+              <h3>Ya no hay escusas para no sonreir.</h3>
+              <p>
+                La ortodoncia te permite corregir la mala posición de los
+                dientes. Es mucho más que una solución estética, más que una
+                simple alineación de los dientes. Se consigue la vida saludable
+                de los dientes, encías y la mordida correcta, proporcionando así
+                el bienestar de tu boca.
+              </p>
+              <Link
+                className={`btnLink`}
+                href={"#"}
+              >
+                Más informacion
+              </Link>
+            </div>
           </li>
           <li>
             <div>Slide 3</div>
