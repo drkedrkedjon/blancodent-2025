@@ -21,6 +21,7 @@
   /* Hide scrollbar Firefox & Edge */
   scrollbar-width: none;
   -ms-overflow-style: none;
+  height: 100%;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -32,6 +33,7 @@
   flex: 0 0 100%;
   scroll-snap-align: center;
   background-color: var(--segunda-90);
+  height: 100%;
 }
 
 .slideContainer {
@@ -39,7 +41,9 @@
   padding: var(--space-600);
   display: flex;
   flex-direction: column;
+  align-items: start;
   background-color: var(--segunda-90);
+  height: 100%;
 }
 
 .slideContainer h2 {
@@ -48,19 +52,17 @@
 
 .slideContainer p {
   margin-block-start: var(--space-400);
+  justify-self: end;
   /* Safari & Firefox */
-  -webkit-line-clamp: 6;
+  -webkit-line-clamp: 5;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
   /* Chromium */
-  line-clamp: 6;
+  line-clamp: 5;
 }
 
-.slideContainer a {
-  margin-block-start: var(--space-400);
-  align-self: start;
-  justify-content: space-between;
+.btnLink {
   margin-block-start: auto
 }
 
@@ -114,9 +116,9 @@
 
 
 .menuCarouselBtn {
-  color: inherit;
+  color: var(--segunda-20);
   flex: 1 1 0;
-  font-size: var(--fs-300);
+  font-size: var(--fs-100);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -126,15 +128,22 @@
   transition: var(--transition-400);
 }
 
-@media (max-width: 500px) {
+@media (min-width: 31rem) {
 
+  /* change to container query */
   .menuCarouselBtn {
-    font-size: var(--fs-100);
+    font-size: var(--fs-200);
+  }
+
+  .slideContainer p {
+
+    -webkit-line-clamp: 8;
+    line-clamp: 8;
   }
 }
 
 .menuCarouselBtn:hover {
-  background-color: var(--segunda-90);
+  background-color: var(--base-white-20);
   box-shadow: var(--shadow-400);
   border: 1px solid transparent;
 }

@@ -70,7 +70,7 @@ export default function HeroCarousel() {
                 className={`btnLink`}
                 href={"#"}
               >
-                Más informacion
+                Más informacion...
               </Link>
             </div>
           </li>
@@ -86,10 +86,10 @@ export default function HeroCarousel() {
                 el bienestar de tu boca.
               </p>
               <Link
-                className={`btnLink`}
+                className={`btnLink ${styles.btnLink}`}
                 href={"#"}
               >
-                Más informacion
+                Más informacion...
               </Link>
             </div>
           </li>
