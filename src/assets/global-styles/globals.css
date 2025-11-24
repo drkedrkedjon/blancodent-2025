@@ -61,7 +61,7 @@ button {
 }
 
 .btnLink {
-  background-color: var(--cuarta-80);
+  background-color: var(--cuarta-90);
   border: 3px solid var(--cuarta-30);
   color: inherit;
   font-weight: var(--f-wei-600);

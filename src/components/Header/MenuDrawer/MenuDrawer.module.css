@@ -13,7 +13,7 @@
 .navDrawer {
   position: absolute;
   inset: min(1.5vw, var(--space-400));
-  background-color: var(--primera-80);
+  background-color: var(--primera-90);
   color: var(--primera-10);
   padding-block: min(3vw, var(--space-400));
   overflow-y: auto;
@@ -35,7 +35,7 @@
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 21rem;
-  border-top: var(--space-100) solid var(--sexta-40);
+  border-top: var(--space-100) solid var(--sexta-30);
   padding-block-start: var(--space-500);
 }
 
@@ -62,12 +62,12 @@
 .closeBtn>svg {
   width: var(--space-800);
   height: var(--space-800);
-  color: var(--sexta-40);
+  color: var(--sexta-30);
 }
 
 .details {
   margin-block: var(--space-200);
-  background-color: var(--primera-80);
+  background-color: var(--primera-100);
   border-radius: var(--b-radius-100)
 }
 
@@ -104,7 +104,7 @@
   user-select: none;
   -webkit-user-select: none;
   padding: var(--space-100) var(--space-300);
-  background-color: var(--primera-40);
+  background-color: var(--primera-20);
   border-radius: var(--b-radius-100);
   /* list-style-position: outside; */
   color: var(--primera-100);

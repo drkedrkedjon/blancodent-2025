@@ -2,7 +2,7 @@
   align-self: stretch;
   display: flex;
   flex-direction: column;
-  background-color: var(--segunda-90);
+  background-color: var(--segunda-100);
   color: var(--segunda-10);
   padding: var(--space-300);
   border-radius: var(--space-700);
@@ -30,7 +30,7 @@
 .slider li {
   flex: 0 0 100%;
   scroll-snap-align: center;
-  background-color: var(--segunda-80);
+  background-color: var(--segunda-90);
 }
 
 .slideContainer {
@@ -38,7 +38,7 @@
   padding: var(--space-600);
   display: flex;
   flex-direction: column;
-  background-color: var(--segunda-80);
+  background-color: var(--segunda-90);
 }
 
 .slideContainer h2 {
@@ -67,7 +67,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--segunda-80);
+  background-color: var(--segunda-90);
   border-bottom-left-radius: calc(var(--space-700) - var(--space-300));
   border-bottom-right-radius: calc(var(--space-700) - var(--space-300));
 }
@@ -84,7 +84,7 @@
 }
 
 .navButton:hover {
-  color: var(--segunda-100);
+  color: var(--segunda-40);
 }
 
 
@@ -111,12 +111,12 @@
   align-items: center;
   padding: var(--space-200);
   border-radius: var(--space-200);
-  border: 1px solid var(--segunda-30);
+  border: 1px solid var(--segunda-80);
   transition: var(--transition-400);
 }
 
 .menuCarouselBtn:hover {
-  background-color: var(--segunda-100);
+  background-color: var(--segunda-90);
   box-shadow: var(--shadow-400);
   border: 1px solid transparent;
 }

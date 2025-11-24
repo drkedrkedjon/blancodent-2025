@@ -1,6 +1,6 @@
 .header {
   background-color: var(--primera-80);
-  color: var(--primera-30);
+  color: var(--primera-10);
   padding-block: min(1.5vw, var(--space-300));
 }
 
@@ -30,7 +30,7 @@
   font-size: min(5vw, var(--fs-700));
   font-weight: var(--f-wei-700);
   font-stretch: var(--f-str-90);
-  /* color: var(--base-gray-4); */
+  color: var(--primera-20);
   margin-left: var(--space-300);
   text-shadow: var(--shadow-300);
 }
