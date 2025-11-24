@@ -1,7 +1,6 @@
 .navContainer {
   position: fixed;
   inset: 0;
-  /* z-index: 10000; */
 }
 
 .navBackground {
@@ -14,8 +13,8 @@
 .navDrawer {
   position: absolute;
   inset: min(1.5vw, var(--space-400));
-  background-color: var(--primary-10);
-  color: var(--gray-2);
+  background-color: var(--primera-80);
+  color: var(--primera-10);
   padding-block: min(3vw, var(--space-400));
   overflow-y: auto;
   border-radius: min(2vw, var(--space-400));
@@ -36,7 +35,7 @@
   flex-grow: 1;
   flex-shrink: 1;
   flex-basis: 21rem;
-  border-top: var(--space-100) solid var(--primary-6);
+  border-top: var(--space-100) solid var(--sexta-40);
   padding-block-start: var(--space-500);
 }
 
@@ -57,18 +56,19 @@
   right: min(0.4vw, var(--space-400));
   border: none;
   background: none;
-  padding: 0.5rem;
+  padding: var(--space-100);
 }
 
 .closeBtn>svg {
-  width: var(--space-700);
-  height: var(--space-700);
-  color: var(--gray-2);
+  width: var(--space-800);
+  height: var(--space-800);
+  color: var(--sexta-40);
 }
 
 .details {
   margin-block: var(--space-200);
-  background-color: var(--primary-11);
+  background-color: var(--primera-80);
+  border-radius: var(--b-radius-100)
 }
 
 /* This part is for animating details opening but it will work soon, hope so...  */
@@ -104,14 +104,15 @@
   user-select: none;
   -webkit-user-select: none;
   padding: var(--space-100) var(--space-300);
-  background-color: var(--primary-12);
-  border-radius: var(--space-100);
+  background-color: var(--primera-40);
+  border-radius: var(--b-radius-100);
   /* list-style-position: outside; */
+  color: var(--primera-100);
 }
 
 .summary::marker,
 .summary::-webkit-details-marker {
-  color: var(--primary-6);
+  color: var(--sexta-70);
 }
 
 .containerQuery {

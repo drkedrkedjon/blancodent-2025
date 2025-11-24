@@ -1,7 +1,8 @@
 .footer {
-  background-color: var(--primary-6);
+  background-color: var(--primera-80);
   padding-block: var(--space-900);
   text-align: center;
+  color: var(--primera-10);
 }
 
 .cardsContainer {

@@ -8,11 +8,15 @@
   background: none;
   border: none;
   padding: 0;
-  color: var(--gray-15);
 }
 
 .button>svg {
   width: 2.5rem;
   height: 2.5rem;
-  color: var(--gray-15);
+  color: var(--sexta-30);
+  transition: var(--transition-400);
+}
+
+.button>svg:hover {
+  color: var(--sexta-50);
 }

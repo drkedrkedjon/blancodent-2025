@@ -53,7 +53,25 @@ export default function HeroCarousel() {
           ref={sliderRef}
         >
           <li>
-            <div>Slide 1</div>
+            <div className={styles.slideContainer}>
+              <h2>Blanqueamiento Dental</h2>
+              <h3>Dientes blancos, boca sana y sonrisa feliz.</h3>
+              <p>
+                Este tratamiento dental permite solucionar las alteraciones en
+                el color de los dientes. La boca es una de las partes del cuerpo
+                que más refleja la personalidad y más dice de una persona. Tener
+                una sonrisa sana y unos dientes blancos es un deseo que todos
+                tenemos. Por tanto, para mostrar tu mejor versión, no dudes en
+                realizar el mejor blanqueamiento dental con Blancodent, tu
+                dentista en Las Palmas.
+              </p>
+              <Link
+                className={`btnLink`}
+                href={"#"}
+              >
+                Más informacion
+              </Link>
+            </div>
           </li>
           <li>
             <div>Slide 2</div>
