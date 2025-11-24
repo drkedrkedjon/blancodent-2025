@@ -17,6 +17,7 @@
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
   /* Hide scrollbar Firefox & Edge */
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -96,11 +97,21 @@
 
 .menuCarousel {
   display: flex;
+  flex-wrap: wrap;
   gap: var(--space-100);
-  justify-content: space-between;
+  justify-content: center;
   padding-inline: var(--space-400);
   margin-block: var(--space-500);
 }
+
+.leftCollumn,
+.rightCollumn {
+  display: flex;
+  flex: 1 1 0;
+  gap: var(--space-100);
+}
+
+
 
 .menuCarouselBtn {
   color: inherit;
@@ -113,6 +124,13 @@
   border-radius: var(--space-200);
   border: 1px solid var(--segunda-80);
   transition: var(--transition-400);
+}
+
+@media (max-width: 500px) {
+
+  .menuCarouselBtn {
+    font-size: var(--fs-100);
+  }
 }
 
 .menuCarouselBtn:hover {

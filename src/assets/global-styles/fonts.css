@@ -1,5 +1,5 @@
 :root {
-  --fs-100: clamp(0.51rem, -0.02vi + 0.52rem, 0.5rem);
+  --fs-100: clamp(0.59rem, -0.02vi + 0.52rem, 0.5rem);
   --fs-200: clamp(0.64rem, 0.10vi + 0.70rem, 0.85rem);
   --fs-300: clamp(0.8rem, 0.16vi + 0.76rem, 0.89rem);
   --fs-400: clamp(1rem, 0.33vi + 1.12rem, 1.24rem);

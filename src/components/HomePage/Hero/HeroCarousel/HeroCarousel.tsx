@@ -23,6 +23,7 @@ export default function HeroCarousel() {
     if (!sliderRef.current) return;
 
     const slideWidth = sliderRef.current.offsetWidth;
+
     sliderRef.current.scrollTo({
       left: slideWidth * slideNumber,
       behavior: "smooth",
@@ -132,66 +133,70 @@ export default function HeroCarousel() {
         </p>
       </div>
       <menu className={styles.menuCarousel}>
-        <button
-          className={styles.menuCarouselBtn}
-          onClick={() => clickToSlide(0)}
-        >
-          <PaintBrushIcon
-            size={32}
-            weight="duotone"
-          />
-          Blanqueamiento
-        </button>
-        <button
-          className={styles.menuCarouselBtn}
-          onClick={() => clickToSlide(1)}
-        >
-          <AlignCenterHorizontalIcon
-            size={32}
-            weight="duotone"
-          />
-          Ortodoncia
-        </button>
-        <button
-          className={styles.menuCarouselBtn}
-          onClick={() => clickToSlide(2)}
-        >
-          <ToothIcon
-            size={32}
-            weight="duotone"
-          />
-          Implantologia
-        </button>
-        <button
-          className={styles.menuCarouselBtn}
-          onClick={() => clickToSlide(3)}
-        >
-          <FirstAidIcon
-            size={32}
-            weight="duotone"
-          />
-          Periodoncia
-        </button>
-        <button
-          className={styles.menuCarouselBtn}
-          onClick={() => clickToSlide(4)}
-        >
-          <PaintBucketIcon
-            size={32}
-            weight="duotone"
-          />
-          Empastes
-        </button>
-        <button
-          className={styles.menuCarouselBtn}
-          onClick={() => clickToSlide(5)}
-        >
-          <SprayBottleIcon
-            size={32}
-            weight="duotone"
-          />
-          Higiene
-        </button>
+        <div className={styles.leftCollumn}>
+          <button
+            className={styles.menuCarouselBtn}
+            onClick={() => clickToSlide(0)}
+          >
+            <PaintBrushIcon
+              size={32}
+              weight="duotone"
+            />
+            Blanqueamiento
+          </button>
+          <button
+            className={styles.menuCarouselBtn}
+            onClick={() => clickToSlide(1)}
+          >
+            <AlignCenterHorizontalIcon
+              size={32}
+              weight="duotone"
+            />
+            Ortodoncia
+          </button>
+          <button
+            className={styles.menuCarouselBtn}
+            onClick={() => clickToSlide(2)}
+          >
+            <ToothIcon
+              size={32}
+              weight="duotone"
+            />
+            Implantologia
+          </button>
+        </div>
+        <div className={styles.rightCollumn}>
+          <button
+            className={styles.menuCarouselBtn}
+            onClick={() => clickToSlide(3)}
+          >
+            <FirstAidIcon
+              size={32}
+              weight="duotone"
+            />
+            Periodoncia
+          </button>
+          <button
+            className={styles.menuCarouselBtn}
+            onClick={() => clickToSlide(4)}
+          >
+            <PaintBucketIcon
+              size={32}
+              weight="duotone"
+            />
+            Empastes
+          </button>
+          <button
+            className={styles.menuCarouselBtn}
+            onClick={() => clickToSlide(5)}
+          >
+            <SprayBottleIcon
+              size={32}
+              weight="duotone"
+            />
+            Higiene
+          </button>
+        </div>
       </menu>
     </div>
   );
