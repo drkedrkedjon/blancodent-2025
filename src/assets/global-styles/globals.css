@@ -16,8 +16,8 @@
   --space-800: 2rem;
   --space-900: 3rem;
 
-  --shadow-300: 1px 1px 4px var(--base-gray-9);
-  --shadow-400: 2px 2px 6px var(--base-gray-8);
+  --shadow-300: 1px 1px 4px var(--base-gray-10);
+  --shadow-400: 2px 2px 6px var(--base-gray-9);
 
   --transition-400: all 0.2s ease-in-out;
 
@@ -47,6 +47,7 @@ button {
   font-weight: var(--f-wei-600);
   text-decoration: none;
   padding: var(--space-200) var(--space-600);
+  border: 2px solid var(--base-gray-5);
   border-radius: 16px;
   box-shadow: var(--shadow-400);
   text-decoration: none;
@@ -61,8 +62,8 @@ button {
 }
 
 .btnLink {
-  background-color: var(--cuarta-90);
-  border: 3px solid var(--cuarta-30);
+  /* background-color: var(--cuarta-90); */
+  border: 2px solid var(--base-gray-5);
   color: inherit;
   font-weight: var(--f-wei-600);
   text-decoration: none;
@@ -75,7 +76,7 @@ button {
 
 .btnLink:hover,
 .btnLink:focus {
-  scale: 1.03;
+  scale: 1.02;
 }
 
 a {

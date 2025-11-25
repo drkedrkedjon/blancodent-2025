@@ -13,10 +13,10 @@
 .button>svg {
   width: 2.5rem;
   height: 2.5rem;
-  color: var(--sexta-20);
+  /* color: var(--sexta-20); */
   transition: var(--transition-400);
 }
 
 .button>svg:hover {
-  color: var(--sexta-30);
+  /* color: var(--sexta-30); */
 }

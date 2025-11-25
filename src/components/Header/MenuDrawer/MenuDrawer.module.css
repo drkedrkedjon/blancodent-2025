@@ -13,7 +13,7 @@
 .navDrawer {
   position: absolute;
   inset: min(1.5vw, var(--space-400));
-  background-color: var(--primera-90);
+  background-color: var(--primera-80);
   color: var(--primera-10);
   padding-block: min(3vw, var(--space-400));
   overflow-y: auto;
