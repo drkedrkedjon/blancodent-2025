@@ -43,41 +43,39 @@ button {
 
 .btn {
   cursor: pointer;
-  border: none;
   font-weight: var(--f-wei-600);
-  text-decoration: none;
   padding: var(--space-200) var(--space-600);
   border: 2px solid var(--base-gray-5);
-  border-radius: 16px;
+  border-radius: var(--space-400);
   box-shadow: var(--shadow-400);
   text-decoration: none;
   color: inherit;
-  transition: all 0.3s ease-in-out;
+  transition: var(--transition-400);
   display: inline-block;
 }
 
 .btn:hover,
 .btn:focus {
-  scale: 1.03;
+  scale: 1.02;
 }
 
-.btnLink {
-  /* background-color: var(--cuarta-90); */
-  border: 2px solid var(--base-gray-5);
-  color: inherit;
+/* .btnLink {
+  cursor: pointer;
   font-weight: var(--f-wei-600);
-  text-decoration: none;
   padding: var(--space-200) var(--space-600);
-  border-radius: 16px;
+  border: 2px solid var(--base-gray-5);
+  border-radius: var(--space-400);
   box-shadow: var(--shadow-400);
-  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition-400);
   display: inline-block;
 }
 
 .btnLink:hover,
 .btnLink:focus {
   scale: 1.02;
-}
+} */
 
 a {
   text-underline-offset: 0.14em;

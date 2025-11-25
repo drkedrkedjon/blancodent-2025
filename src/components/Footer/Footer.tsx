@@ -120,7 +120,7 @@ export default function Footer() {
             <p>{t("newsletter.text")}</p>
             <Link
               target="_blank"
-              className="btnLink"
+              className={`btn ${styles.subscriptionBtn}`}
               href="https://mailchi.mp/blancodent.com/blancodent-web"
             >
               {t("newsletter.link")}

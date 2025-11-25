@@ -22,7 +22,7 @@
 .logo svg {
   height: min(12vw, 60px);
   width: auto;
-  /* filter: drop-shadow(var(--shadow-400)); */
+  filter: drop-shadow(var(--shadow-300));
 }
 
 .logo .p {
@@ -30,7 +30,7 @@
   font-size: min(5vw, var(--fs-700));
   font-weight: var(--f-wei-700);
   font-stretch: var(--f-str-90);
-  color: var(--primera-20);
+  /* color: var(--primera-20); */
   margin-left: var(--space-300);
   /* text-shadow: var(--shadow-300); */
 }
@@ -48,7 +48,7 @@
 
 @media (min-width: 55rem) {
   .logo .p {
-    display: block;
+    /* display: block; */
   }
 }
 

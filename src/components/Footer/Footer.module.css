@@ -53,3 +53,7 @@
 .notaLegalContainer h3 {
   font-size: var(--fs-400);
 }
+
+.subscriptionBtn {
+  background-color: var(--tercera-90);
+}

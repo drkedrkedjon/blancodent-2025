@@ -67,7 +67,7 @@ export default function HeroCarousel() {
                 dentista en Las Palmas.
               </p>
               <Link
-                className={`btnLink`}
+                className={`btn ${styles.slideBtnLink}`}
                 href={"#"}
               >
                 Más informacion...
@@ -86,7 +86,7 @@ export default function HeroCarousel() {
                 el bienestar de tu boca.
               </p>
               <Link
-                className={`btnLink ${styles.btnLink}`}
+                className={`btn ${styles.slideBtnLink}`}
                 href={"#"}
               >
                 Más informacion...

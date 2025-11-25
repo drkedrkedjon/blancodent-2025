@@ -6,13 +6,13 @@
   padding: var(--space-100);
   padding-inline: var(--space-300);
   border-radius: var(--space-200);
-  /* background-color: var(--primera-90); */
+  background-color: var(--primera-90);
   font-size: var(--fs-300);
   transition: var(--transition-400);
 }
 
 .container:hover {
-  /* background-color: var(--primera-100); */
+  background-color: var(--primera-100);
 }
 
 .select {

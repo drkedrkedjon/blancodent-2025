@@ -1,5 +1,5 @@
 .carouselContainer {
-  align-self: stretch;
+  /* align-self: stretch; */
   display: flex;
   flex-direction: column;
   background-color: var(--primera-100);
@@ -62,8 +62,11 @@
   line-clamp: 5;
 }
 
-.btnLink {
-  margin-block-start: auto
+.slideBtnLink {
+  margin-block-start: auto;
+  background-color: var(--primera-80);
+  border-color: var(--primera-40);
+  font-size: var(--fs-300);
 }
 
 .buttonsContainer {
@@ -76,18 +79,21 @@
 }
 
 .buttonsContainer svg {
-  height: 1.6rem;
+  height: 1.8rem;
   width: auto;
 }
 
 .navButton {
-  padding-block: var(--space-300);
+  color: var(--primera-20);
+  padding-block: var(--space-200);
   padding-inline: var(--space-300);
-  transition: var(--transition-400)
+  transition: var(--transition-400);
 }
 
-.navButton:hover {
-  color: var(--primera-40);
+.navButton:hover,
+.navButton:focus {
+  color: var(--tercera-20);
+  scale: 1.1;
 }
 
 
@@ -103,7 +109,7 @@
   gap: var(--space-100);
   justify-content: center;
   padding-inline: var(--space-400);
-  margin-block: var(--space-500);
+  margin-block: var(--space-400);
 }
 
 .leftCollumn,
@@ -113,19 +119,24 @@
   gap: var(--space-100);
 }
 
-
-
 .menuCarouselBtn {
-  color: var(--primera-20);
+  color: var(--primera-10);
   flex: 1 1 0;
   font-size: var(--fs-100);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: var(--space-200);
+  padding: var(--space-200) var(--space-100);
   border-radius: var(--space-200);
-  border: 1px solid var(--primera-80);
+  border: 1px solid var(--primera-40);
   transition: var(--transition-400);
+}
+
+.menuCarouselBtn:hover {
+  background-color: var(--base-white-20);
+  box-shadow: var(--shadow-400);
+  border: 1px solid transparent;
+  /* flex-direction: column-reverse; */
 }
 
 @media (min-width: 31rem) {
@@ -136,14 +147,7 @@
   }
 
   .slideContainer p {
-
     -webkit-line-clamp: 8;
     line-clamp: 8;
   }
-}
-
-.menuCarouselBtn:hover {
-  background-color: var(--base-white-20);
-  box-shadow: var(--shadow-400);
-  border: 1px solid transparent;
 }
