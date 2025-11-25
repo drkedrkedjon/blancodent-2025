@@ -9,7 +9,7 @@
   box-shadow: var(--shadow-400);
 }
 
-.slider>ul {
+.ulOuter {
   /* height: max(750px, 200px); */
   border-top-left-radius: calc(var(--space-700) - var(--space-300));
   border-top-right-radius: calc(var(--space-700) - var(--space-300));
@@ -25,11 +25,11 @@
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
-.slider>ul::-webkit-scrollbar {
+.ulOuter::-webkit-scrollbar {
   display: none;
 }
 
-.slider li {
+.ulOuter li {
   flex: 0 0 100%;
   scroll-snap-align: center;
   background-color: var(--primera-90);
@@ -39,6 +39,7 @@
 .slideContainer {
   /* text-align: end; */
   padding: var(--space-600);
+  padding-block-end: var(--space-200);
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -48,18 +49,19 @@
 
 .slideContainer h2 {
   font-size: var(--fs-700);
+  margin-block-end: var(--space-200);
 }
 
 .slideContainer p {
   margin-block-start: var(--space-400);
   justify-self: end;
   /* Safari & Firefox */
-  -webkit-line-clamp: 5;
+  -webkit-line-clamp: 6;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
   /* Chromium */
-  line-clamp: 5;
+  line-clamp: 6;
 }
 
 .slideBtnLink {

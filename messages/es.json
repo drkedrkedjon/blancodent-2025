@@ -162,6 +162,44 @@
         "4": "Encías",
         "5": "Empastes",
         "6": "Higiene"
+      },
+      "heroSlides": {
+        "slide1": {
+          "h2": "Blanqueamiento dental",
+          "h3": "Dientes blancos, boca sana y sonrisa feliz.",
+          "p": "Este tratamiento dental permite solucionar las alteraciones en el color de los dientes. La boca es una de las partes del cuerpo que más refleja la personalidad y más dice de una persona. Tener una sonrisa sana y unos dientes blancos es un deseo que todos tenemos. Por tanto, para mostrar tu mejor versión, no dudes en realizar el mejor blanqueamiento dental con Blancodent, tu dentista en La Palmas.",
+          "link": "Más información..."
+        },
+        "slide2": {
+          "h2": "Ortodoncia invisible",
+          "h3": "Ya no hay excusas para no sonreír.",
+          "p": "La ortodoncia te permite corregir la mala posición de los dientes. Es mucho más que una solución estética, más que una simple alineación de los dientes. Se consigue la vida saludable de los dientes, encías y la mordida correcta, proporcionando así el bienestar de tu boca.",
+          "link": "Más información..."
+        },
+        "slide3": {
+          "h2": "Implantologia",
+          "h3": "Sólucion permanente para tu dentadura.",
+          "p": "Utilizamos la última tecnología para proporcionarte la colocación de implantes dentales prácticamente sin cirugía, molestias ni dolor, recuperando el funcionamiento y la estética de tu boca. Además, disponemos de una tecnología novedosa donde podemos utilizar el biomaterial obtenido del diente extraído del propio paciente, con el fin de proporcionar la osteointegración casi perfecta.",
+          "link": "Más información..."
+        },
+        "slide4": {
+          "h2": "Periodoncia",
+          "h3": "Si sientes inflamacíon o te sangra las encias.",
+          "p": "Entre el 85-90% de la población mayor de 35 años padece estas patologías en algún grado, principalmente gingivitis. Además, repercuten en la salud dental y en la general, incrementan el riesgo cardiovascular, complican la diabetes, aumentan el riesgo de un parto prematuro, etc.",
+          "link": "Más información..."
+        },
+        "slide5": {
+          "h2": "Empastes dentales",
+          "h3": "El objetivo es restaurar el diente afectado.",
+          "p": "El tratamiento de la caries dental mediante empastes dentales es un procedimiento muy común y sencillo. Después de eliminar el tejido dental afectado, se limpia y rellena la cavidad dental con materiales estéticos y biodegradables.",
+          "link": "Más información..."
+        },
+        "slide6": {
+          "h2": "Higiene dental",
+          "h3": "Conseguir y mantener una dentadura sana.",
+          "p": "La higiene bucal, sin duda, empieza por el habitual cepillo y pasta dental, aunque no debería terminar aquí. La mayoría de nosotros deberíamos utilizar métodos adicionales: hilo dental, cepillo interdental, irrigador bucal, colutorios... Además de visitar a tu dentista en Las Palmas y hacer una limpieza dental cada 6 meses.",
+          "link": "Más información..."
+        }
       }
     }
   },

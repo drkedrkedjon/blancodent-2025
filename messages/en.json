@@ -164,6 +164,44 @@
         "4": "Gums",
         "5": "Fillings",
         "6": "Hygiene"
+      },
+      "heroSlides": {
+        "slide1": {
+          "h2": "Teeth whitening",
+          "h3": "White teeth, healthy mouth and happy smile.",
+          "p": "This dental care treatment allows to solve the alterations of the color of the teeth. The mouth is one of the parts of the body that reflects the personality and says the most about a person. Having a correct dental care, a healthy smile and white teeth is a wish that we all have.",
+          "link": "More information..."
+        },
+        "slide2": {
+          "h2": "Orthodontics",
+          "h3": "There ara no excuses for not smiling.",
+          "p": "Orthodontics is a dental care treatment that allows you to correct the bad position of the teeth. It is much more than an aesthetic solution, more than a simple alignment of the teeth. The healthy life of the teeth, gums and the correct bite are achieved, thus providing the well-being of your mouth.",
+          "link": "More information..."
+        },
+        "slide3": {
+          "h2": "Implantology",
+          "h3": "Permanent solution to your denture.",
+          "p": "Dental care’s latest technology to provide you with the placement of dental implants practically without surgery, discomfort or pain, recovering the function and aesthetics of your mouth. In addition, we have innovative dental technology where we can use the dental biomaterial obtained from the patient's own tooth, in order to provide almost perfect osteointegration.",
+          "link": "More information..."
+        },
+        "slide4": {
+          "h2": "Gum desease, gingivitis",
+          "h3": "If you feel inflamation or bleeding.",
+          "p": "Between 85-90% of the population over 35 years of age suffers from these pathologies to some degree, mainly gingivitis. In addition, they affect dental and general health, increase cardiovascular risk, complicate diabetes, increase the risk of premature birth, etc.",
+          "link": "More information..."
+        },
+        "slide5": {
+          "h2": "Dental fillings",
+          "h3": "The objective is to restore the affected tooth.",
+          "p": "The treatment of dental caries with dental fillings is a very common and simple procedure. After removing the affected dental tissue, the dental cavity is cleaned and filled with esthetic and dental biomaterials.",
+          "link": "More information..."
+        },
+        "slide6": {
+          "h2": "Dental hygiene",
+          "h3": "Carrying out a correct dental cleaning you can achive a helthy denture.",
+          "p": "Dental hygiene, without a doubt, begins with the usual dental brush and toothpaste, although it should not end here. Most of us should use additional methods: dental floss, interdental brush, oral irrigator, mouthwashes... As well as visiting a Dentist nearby in Las Palmas and having a dental cleaning every 6 months.",
+          "link": "More information..."
+        }
       }
     }
   },

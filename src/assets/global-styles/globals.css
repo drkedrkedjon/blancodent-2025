@@ -59,26 +59,8 @@ button {
   scale: 1.02;
 }
 
-/* .btnLink {
-  cursor: pointer;
-  font-weight: var(--f-wei-600);
-  padding: var(--space-200) var(--space-600);
-  border: 2px solid var(--base-gray-5);
-  border-radius: var(--space-400);
-  box-shadow: var(--shadow-400);
-  text-decoration: none;
-  color: inherit;
-  transition: var(--transition-400);
-  display: inline-block;
-}
-
-.btnLink:hover,
-.btnLink:focus {
-  scale: 1.02;
-} */
-
 a {
-  text-underline-offset: 0.14em;
+  text-underline-offset: 0.13em;
 }
 
 a:hover,

@@ -57,55 +57,81 @@ export default function HeroCarousel() {
         >
           <li>
             <div className={styles.slideContainer}>
-              <h2>Blanqueamiento Dental</h2>
-              <h3>Dientes blancos, boca sana y sonrisa feliz.</h3>
-              <p>
-                Este tratamiento dental permite solucionar las alteraciones en
-                el color de los dientes. La boca es una de las partes del cuerpo
-                que más refleja la personalidad y más dice de una persona. Tener
-                una sonrisa sana y unos dientes blancos es un deseo que todos
-                tenemos. Por tanto, para mostrar tu mejor versión, no dudes en
-                realizar el mejor blanqueamiento dental con Blancodent, tu
-                dentista en Las Palmas.
-              </p>
+              <h2>{t("heroCarousel.heroSlides.slide1.h2")}</h2>
+              <h3>{t("heroCarousel.heroSlides.slide1.h3")}</h3>
+              <p>{t("heroCarousel.heroSlides.slide1.p")}</p>
               <Link
                 className={`btn ${styles.slideBtnLink}`}
                 href={"#"}
               >
-                Más informacion...
+                {t("heroCarousel.heroSlides.slide1.link")}
               </Link>
             </div>
           </li>
           <li>
             <div className={styles.slideContainer}>
-              <h2>Ortodoncia invisible</h2>
-              <h3>Ya no hay escusas para no sonreir.</h3>
-              <p>
-                La ortodoncia te permite corregir la mala posición de los
-                dientes. Es mucho más que una solución estética, más que una
-                simple alineación de los dientes. Se consigue la vida saludable
-                de los dientes, encías y la mordida correcta, proporcionando así
-                el bienestar de tu boca.
-              </p>
+              <h2>{t("heroCarousel.heroSlides.slide2.h2")}</h2>
+              <h3>{t("heroCarousel.heroSlides.slide2.h3")}</h3>
+              <p>{t("heroCarousel.heroSlides.slide2.p")}</p>
               <Link
                 className={`btn ${styles.slideBtnLink}`}
                 href={"#"}
               >
-                Más informacion...
+                {t("heroCarousel.heroSlides.slide1.link")}
               </Link>
             </div>
           </li>
           <li>
-            <div>Slide 3</div>
+            <div className={styles.slideContainer}>
+              <h2>{t("heroCarousel.heroSlides.slide3.h2")}</h2>
+              <h3>{t("heroCarousel.heroSlides.slide3.h3")}</h3>
+              <p>{t("heroCarousel.heroSlides.slide3.p")}</p>
+              <Link
+                className={`btn ${styles.slideBtnLink}`}
+                href={"#"}
+              >
+                {t("heroCarousel.heroSlides.slide1.link")}
+              </Link>
+            </div>
           </li>
           <li>
-            <div>Slide 4</div>
+            <div className={styles.slideContainer}>
+              <h2>{t("heroCarousel.heroSlides.slide4.h2")}</h2>
+              <h3>{t("heroCarousel.heroSlides.slide4.h3")}</h3>
+              <p>{t("heroCarousel.heroSlides.slide4.p")}</p>
+              <Link
+                className={`btn ${styles.slideBtnLink}`}
+                href={"#"}
+              >
+                {t("heroCarousel.heroSlides.slide1.link")}
+              </Link>
+            </div>
           </li>
           <li>
-            <div>Slide 5</div>
+            <div className={styles.slideContainer}>
+              <h2>{t("heroCarousel.heroSlides.slide5.h2")}</h2>
+              <h3>{t("heroCarousel.heroSlides.slide5.h3")}</h3>
+              <p>{t("heroCarousel.heroSlides.slide5.p")}</p>
+              <Link
+                className={`btn ${styles.slideBtnLink}`}
+                href={"#"}
+              >
+                {t("heroCarousel.heroSlides.slide1.link")}
+              </Link>
+            </div>
           </li>
           <li>
-            <div>Slide 6</div>
+            <div className={styles.slideContainer}>
+              <h2>{t("heroCarousel.heroSlides.slide6.h2")}</h2>
+              <h3>{t("heroCarousel.heroSlides.slide6.h3")}</h3>
+              <p>{t("heroCarousel.heroSlides.slide6.p")}</p>
+              <Link
+                className={`btn ${styles.slideBtnLink}`}
+                href={"#"}
+              >
+                {t("heroCarousel.heroSlides.slide1.link")}
+              </Link>
+            </div>
           </li>
         </ul>
       </div>
