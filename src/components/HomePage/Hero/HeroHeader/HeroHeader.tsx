@@ -2,6 +2,7 @@ import { ArrowFatRightIcon } from "@phosphor-icons/react/dist/ssr";
 import styles from "./heroHeader.module.css";
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
+import { contacto } from "@/assets/links";
 
 export default function Hero() {
   const t = useTranslations("HomePage");
@@ -26,7 +27,7 @@ export default function Hero() {
         >
           {t("heroHeader.actionBtn")}
         </a>
-        <Link href="/varios/cita-previa">
+        <Link href={contacto()}>
           {t("heroHeader.actionLink")}
           <ArrowFatRightIcon
             weight="duotone"

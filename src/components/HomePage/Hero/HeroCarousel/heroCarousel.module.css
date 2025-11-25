@@ -66,6 +66,7 @@
 
 .slideBtnLink {
   margin-block-start: auto;
+  align-self: flex-end;
   background-color: var(--primera-80);
   border-color: var(--primera-40);
   font-size: var(--fs-300);

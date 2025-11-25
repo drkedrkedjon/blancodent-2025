@@ -1,3 +1,10 @@
+import {
+  contacto,
+  faq,
+  home,
+  notaLegal,
+  ofertasContinuas,
+} from "@/assets/links";
 import styles from "./Footer.module.css";
 import { Link } from "@/i18n/navigation";
 import {
@@ -19,18 +26,16 @@ export default function Footer() {
             <h2 id="nav-label-footer">{t("links.title")}</h2>
             <ul role="list">
               <li>
-                <Link href="/">{t("links.link1")}</Link>
+                <Link href={home()}>{t("links.link1")}</Link>
               </li>
               <li>
-                <Link href="/varios/preguntas-frecuentes">
-                  {t("links.link2")}
-                </Link>
+                <Link href={faq()}>{t("links.link2")}</Link>
               </li>
               <li>
-                <Link href="/varios/ofertas-continuas">{t("links.link3")}</Link>
+                <Link href={ofertasContinuas()}>{t("links.link3")}</Link>
               </li>
               <li>
-                <Link href="/contacto">{t("links.link4")}</Link>
+                <Link href={contacto()}>{t("links.link4")}</Link>
               </li>
               <li>
                 <Link href="tel:+34928292455">{t("links.link5")}</Link>
@@ -131,7 +136,7 @@ export default function Footer() {
       <div className={`narrow-grid ${styles.notaLegalContainer}`}>
         <h3>{t("legal.title")}</h3>
         <p>{t("legal.text")}</p>
-        <Link href="/varios/nota-legal">{t("legal.link")}</Link>
+        <Link href={notaLegal()}>{t("legal.link")}</Link>
       </div>
     </footer>
   );

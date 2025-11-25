@@ -14,6 +14,15 @@ import {
   ToothIcon,
 } from "@phosphor-icons/react/dist/ssr";
 import { useTranslations } from "next-intl";
+import {
+  blanqueamiento,
+  contacto,
+  higiene,
+  implantologia,
+  odontologiaConservadora,
+  ortodoncia,
+  periodoncia,
+} from "@/assets/links";
 
 export default function HeroCarousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -62,7 +71,7 @@ export default function HeroCarousel() {
               <p>{t("heroCarousel.heroSlides.slide1.p")}</p>
               <Link
                 className={`btn ${styles.slideBtnLink}`}
-                href={"#"}
+                href={blanqueamiento()}
               >
                 {t("heroCarousel.heroSlides.slide1.link")}
               </Link>
@@ -75,7 +84,7 @@ export default function HeroCarousel() {
               <p>{t("heroCarousel.heroSlides.slide2.p")}</p>
               <Link
                 className={`btn ${styles.slideBtnLink}`}
-                href={"#"}
+                href={ortodoncia()}
               >
                 {t("heroCarousel.heroSlides.slide1.link")}
               </Link>
@@ -88,7 +97,7 @@ export default function HeroCarousel() {
               <p>{t("heroCarousel.heroSlides.slide3.p")}</p>
               <Link
                 className={`btn ${styles.slideBtnLink}`}
-                href={"#"}
+                href={implantologia()}
               >
                 {t("heroCarousel.heroSlides.slide1.link")}
               </Link>
@@ -101,7 +110,7 @@ export default function HeroCarousel() {
               <p>{t("heroCarousel.heroSlides.slide4.p")}</p>
               <Link
                 className={`btn ${styles.slideBtnLink}`}
-                href={"#"}
+                href={periodoncia()}
               >
                 {t("heroCarousel.heroSlides.slide1.link")}
               </Link>
@@ -114,7 +123,7 @@ export default function HeroCarousel() {
               <p>{t("heroCarousel.heroSlides.slide5.p")}</p>
               <Link
                 className={`btn ${styles.slideBtnLink}`}
-                href={"#"}
+                href={odontologiaConservadora()}
               >
                 {t("heroCarousel.heroSlides.slide1.link")}
               </Link>
@@ -127,7 +136,7 @@ export default function HeroCarousel() {
               <p>{t("heroCarousel.heroSlides.slide6.p")}</p>
               <Link
                 className={`btn ${styles.slideBtnLink}`}
-                href={"#"}
+                href={higiene()}
               >
                 {t("heroCarousel.heroSlides.slide1.link")}
               </Link>
@@ -157,9 +166,7 @@ export default function HeroCarousel() {
       <div className={styles.tagLineContainer}>
         <p>
           {t("heroCarousel.tagLine.p")}{" "}
-          <Link href="/varios/cita-previa">
-            {t("heroCarousel.tagLine.link")}
-          </Link>
+          <Link href={contacto()}>{t("heroCarousel.tagLine.link")}</Link>
         </p>
       </div>
       <menu className={styles.menuCarousel}>

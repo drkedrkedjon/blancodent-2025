@@ -9,6 +9,35 @@ import { Link } from "@/i18n/navigation";
 import Image from "next/image";
 import smallMap from "./assets/menu-map.png";
 import { motion } from "motion/react";
+import {
+  anestesia,
+  blanqueamiento,
+  bruxismo,
+  contacto,
+  covid19,
+  dienteBiomaterial,
+  elPersonal,
+  endodoncia,
+  faq,
+  financiacion,
+  higiene,
+  implantologia,
+  laSaludEstaNavidad,
+  laserDental,
+  lasImagenes,
+  losHorarios,
+  malAliento,
+  notaLegal,
+  odontologiaConservadora,
+  ofertasContinuas,
+  ortodoncia,
+  paraFumadores,
+  paraPeques,
+  periodoncia,
+  protesis,
+  transporte,
+  ubicacion,
+} from "@/assets/links";
 
 interface MenuDrawerProps {
   handleCloseDrawer: () => void;
@@ -86,7 +115,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
               <li>
                 <Link
                   onClick={handleCloseDrawer}
-                  href="/contacto"
+                  href={contacto()}
                 >
                   {t("quickLinks.quickLinksContact")}
                 </Link>{" "}
@@ -121,7 +150,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     <li>
                       <Link
                         onClick={handleCloseDrawer}
-                        href="/servicios/implantologia"
+                        href={implantologia()}
                       >
                         {t("services.link1")}
                       </Link>
@@ -129,7 +158,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     <li>
                       <Link
                         onClick={handleCloseDrawer}
-                        href="/servicios/ortodoncia"
+                        href={ortodoncia()}
                       >
                         {t("services.link2")}
                       </Link>
@@ -137,7 +166,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     <li>
                       <Link
                         onClick={handleCloseDrawer}
-                        href="/servicios/periodoncia"
+                        href={periodoncia()}
                       >
                         {t("services.link3")}
                       </Link>
@@ -145,7 +174,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     <li>
                       <Link
                         onClick={handleCloseDrawer}
-                        href="/servicios/blanqueamiento-dental"
+                        href={blanqueamiento()}
                       >
                         {t("services.link4")}
                       </Link>
@@ -153,7 +182,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     <li>
                       <Link
                         onClick={handleCloseDrawer}
-                        href="/servicios/bruxismo-o-rechinchar-de-dientes"
+                        href={bruxismo()}
                       >
                         {t("services.link5")}
                       </Link>
@@ -161,7 +190,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     <li>
                       <Link
                         onClick={handleCloseDrawer}
-                        href="/servicios/odontologia-conservadora"
+                        href={odontologiaConservadora()}
                       >
                         {t("services.link6")}
                       </Link>
@@ -169,7 +198,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     <li>
                       <Link
                         onClick={handleCloseDrawer}
-                        href="/servicios/endodoncia"
+                        href={endodoncia()}
                       >
                         {t("services.link7")}
                       </Link>
@@ -177,7 +206,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     <li>
                       <Link
                         onClick={handleCloseDrawer}
-                        href="/servicios/protesis-dentales"
+                        href={protesis()}
                       >
                         {t("services.link8")}
                       </Link>
@@ -185,7 +214,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     <li>
                       <Link
                         onClick={handleCloseDrawer}
-                        href="/servicios/higiene-dental"
+                        href={higiene()}
                       >
                         {t("services.link9")}
                       </Link>
@@ -207,7 +236,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     <li>
                       <Link
                         onClick={handleCloseDrawer}
-                        href="/asi-somos/ubicacion"
+                        href={ubicacion()}
                       >
                         {t("aboutClinic.link1")}
                       </Link>
@@ -215,7 +244,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     <li>
                       <Link
                         onClick={handleCloseDrawer}
-                        href="/asi-somos/transporte"
+                        href={transporte()}
                       >
                         {t("aboutClinic.link2")}
                       </Link>
@@ -223,7 +252,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     <li>
                       <Link
                         onClick={handleCloseDrawer}
-                        href="/asi-somos/los-horarios"
+                        href={losHorarios()}
                       >
                         {t("aboutClinic.link3")}
                       </Link>
@@ -231,7 +260,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     <li>
                       <Link
                         onClick={handleCloseDrawer}
-                        href="/asi-somos/las-imagenes"
+                        href={lasImagenes()}
                       >
                         {t("aboutClinic.link4")}
                       </Link>
@@ -239,7 +268,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     <li>
                       <Link
                         onClick={handleCloseDrawer}
-                        href="/asi-somos/el-personal"
+                        href={elPersonal()}
                       >
                         {t("aboutClinic.link5")}
                       </Link>
@@ -247,7 +276,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     <li>
                       <Link
                         onClick={handleCloseDrawer}
-                        href="/asi-somos/financiacion"
+                        href={financiacion()}
                       >
                         {t("aboutClinic.link6")}
                       </Link>
@@ -265,7 +294,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     <li>
                       <Link
                         onClick={handleCloseDrawer}
-                        href="/articulos/tu-propio-diente-como-biomaterial"
+                        href={dienteBiomaterial()}
                       >
                         {t("articles.link1")}
                       </Link>
@@ -273,7 +302,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     <li>
                       <Link
                         onClick={handleCloseDrawer}
-                        href="/articulos/laser-dental"
+                        href={laserDental()}
                       >
                         {t("articles.link2")}
                       </Link>
@@ -281,7 +310,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     <li>
                       <Link
                         onClick={handleCloseDrawer}
-                        href="/articulos/anestesia"
+                        href={anestesia()}
                       >
                         {t("articles.link3")}
                       </Link>
@@ -289,7 +318,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     <li>
                       <Link
                         onClick={handleCloseDrawer}
-                        href="/articulos/para-los-peques"
+                        href={paraPeques()}
                       >
                         {t("articles.link4")}
                       </Link>
@@ -297,7 +326,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     <li>
                       <Link
                         onClick={handleCloseDrawer}
-                        href="/articulos/para-los-fumadores"
+                        href={paraFumadores()}
                       >
                         {t("articles.link5")}
                       </Link>
@@ -305,7 +334,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     <li>
                       <Link
                         onClick={handleCloseDrawer}
-                        href="/articulos/mal-aliento"
+                        href={malAliento()}
                       >
                         {t("articles.link6")}
                       </Link>
@@ -323,7 +352,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     <li>
                       <Link
                         onClick={handleCloseDrawer}
-                        href="/varios/la-salud-esta-navidad"
+                        href={laSaludEstaNavidad()}
                       >
                         {t("others.link1")}
                       </Link>
@@ -331,7 +360,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     <li>
                       <Link
                         onClick={handleCloseDrawer}
-                        href="/varios/preguntas-frecuentes"
+                        href={faq()}
                       >
                         {t("others.link2")}
                       </Link>
@@ -339,7 +368,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     <li>
                       <Link
                         onClick={handleCloseDrawer}
-                        href="/varios/ofertas-continuas"
+                        href={ofertasContinuas()}
                       >
                         {t("others.link3")}
                       </Link>
@@ -347,7 +376,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     <li>
                       <Link
                         onClick={handleCloseDrawer}
-                        href="/contacto"
+                        href={contacto()}
                       >
                         {t("others.link4")}
                       </Link>
@@ -355,7 +384,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     <li>
                       <Link
                         onClick={handleCloseDrawer}
-                        href="/varios/nota-legal"
+                        href={notaLegal()}
                       >
                         {t("others.link5")}
                       </Link>
@@ -363,7 +392,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     <li>
                       <Link
                         onClick={handleCloseDrawer}
-                        href="/varios/covid-19"
+                        href={covid19()}
                       >
                         {t("others.link6")}
                       </Link>
@@ -410,7 +439,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                       {t("contact.text1.text")}{" "}
                       <Link
                         onClick={handleCloseDrawer}
-                        href="/contacto"
+                        href={contacto()}
                       >
                         {t("contact.text1.link")}
                       </Link>
