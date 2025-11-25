@@ -109,7 +109,8 @@
       },
       "map": {
         "link1": "Abrir en el mapa de Google",
-        "link2": "Abrir en el mapa de Apple"
+        "link2": "Abrir en el mapa de Apple",
+        "imageAlt": "El mapa de ubicación de la clínica en Las Palmas"
       }
     },
     "contact": {
@@ -125,25 +126,43 @@
     },
     "timetable": {
       "title": "Horario de apertura:",
+      "dayColumn": "Días",
+      "hoursColumn": "Horas",
       "days": {
         "monday": "Lunes:",
         "tuesday": "Martes:",
         "wednesday": "Miércoles:",
         "thursday": "Jueves:",
         "friday": "Viernes:",
-        "weekend": "Sabados y Domingos:",
+        "weekend": "Sáb. y Festivos:",
         "closed": "Cerrado."
       }
     }
   },
   "HomePage": {
-    "hero": {
+    "heroHeader": {
       "titleSmall": "Clínica Dental",
       "titleBig": "Blancodent",
       "tagLine": "Tus dentistas en Las Palmas de G.C.",
       "address": "Avenida Mesa y López 1, Las Palmas de Gran Canaria",
       "actionBtn": "Llámenos ahora",
       "actionLink": "Solicite cita previa"
+    },
+    "heroCarousel": {
+      "navButtonLeftAlt": "Diapositiva anterior",
+      "navButtonRightAlt": "Siguiente diapositiva",
+      "tagLine": {
+        "p": "Puedes hacer cualquier pregunta.",
+        "link": "Blancodent le responderá..."
+      },
+      "heroMenuBtns": {
+        "1": "Blanqueamiento",
+        "2": "Ortodoncia",
+        "3": "Implantes",
+        "4": "Encías",
+        "5": "Empastes",
+        "6": "Higiene"
+      }
     }
   },
   "NotFoundPage": {

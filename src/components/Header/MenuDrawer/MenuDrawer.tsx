@@ -386,7 +386,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                 </address>
                 <Image
                   src={smallMap}
-                  alt="Map showing the location of the clinic"
+                  alt={t("location.map.imageAlt")}
                 />
                 <Link
                   target="_blank"
@@ -424,20 +424,40 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                   </div>
                   <div className={styles.timetable}>
                     <h2>{t("timetable.title")}</h2>
-                    <p>
-                      <strong>{t("timetable.days.monday")}</strong> 09:30 -
-                      16:00. <br />
-                      <strong>{t("timetable.days.tuesday")}</strong> 14:00 -
-                      20:00. <br />
-                      <strong>{t("timetable.days.wednesday")}</strong> 09:30 -
-                      16:00. <br />
-                      <strong>{t("timetable.days.thursday")}</strong> 14:00 -
-                      20:00. <br />
-                      <strong>{t("timetable.days.friday")}</strong> 09:30 -
-                      16:00. <br />
-                      <strong>{t("timetable.days.weekend")}</strong>{" "}
-                      {t("timetable.days.closed")}
-                    </p>
+                    <table>
+                      <thead className="visually-hidden">
+                        <tr>
+                          <th scope="col">{t("timetable.dayColumn")}</th>
+                          <th scope="col">{t("timetable.hoursColumn")}</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">{t("timetable.days.monday")}</th>
+                          <td>09:30 - 16:00</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">{t("timetable.days.tuesday")}</th>
+                          <td>14:00 - 20:00</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">{t("timetable.days.wednesday")}</th>
+                          <td>09:30 - 16:00</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">{t("timetable.days.thursday")}</th>
+                          <td>14:00 - 20:00</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">{t("timetable.days.friday")}</th>
+                          <td>09:30 - 16:00</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">{t("timetable.days.weekend")}</th>
+                          <td>{t("timetable.days.closed")}</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>

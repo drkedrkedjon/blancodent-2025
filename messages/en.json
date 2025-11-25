@@ -21,6 +21,8 @@
     },
     "timetable": {
       "title": "Opening Hours:",
+      "dayColumn": "Day",
+      "hoursColumn": "Hours",
       "days": {
         "monday": "Monday:",
         "tuesday": "Tuesday:",
@@ -109,7 +111,8 @@
       },
       "map": {
         "link1": "Open in Google Maps",
-        "link2": "Open in Apple Maps"
+        "link2": "Open in Apple Maps",
+        "imageAlt": "The location map of the clinic in Las Palmas"
       }
     },
     "contact": {
@@ -125,25 +128,43 @@
     },
     "timetable": {
       "title": "Opening Hours:",
+      "dayColumn": "Days",
+      "hoursColumn": "Hours",
       "days": {
         "monday": "Monday:",
         "tuesday": "Tuesday:",
         "wednesday": "Wednesday:",
         "thursday": "Thursday:",
         "friday": "Friday:",
-        "weekend": "Saturday & Sunday:",
+        "weekend": "Sat. & Holidays:",
         "closed": "Closed."
       }
     }
   },
   "HomePage": {
-    "hero": {
+    "heroHeader": {
       "titleSmall": "Dental Clinic",
       "titleBig": "Blancodent",
       "tagLine": "Your dentists in Las Palmas de G.C.",
       "address": "Avenida Mesa y López 1, Las Palmas de Gran Canaria",
       "actionBtn": "Call us now",
       "actionLink": "Book appointment online"
+    },
+    "heroCarousel": {
+      "navButtonLeftAlt": "Previous slide",
+      "navButtonRightAlt": "Next slide",
+      "tagLine": {
+        "p": "You can ask any question.",
+        "link": "Blancodent will answers..."
+      },
+      "heroMenuBtns": {
+        "1": "Whitening",
+        "2": "Orthodontics",
+        "3": "Implants",
+        "4": "Gums",
+        "5": "Fillings",
+        "6": "Hygiene"
+      }
     }
   },
   "NotFoundPage": {

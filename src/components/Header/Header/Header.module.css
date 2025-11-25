@@ -23,6 +23,12 @@
   height: min(12vw, 60px);
   width: auto;
   filter: drop-shadow(var(--shadow-300));
+  transition: var(--transition-400);
+}
+
+.logo svg:hover,
+.logo svg:focus {
+  scale: 1.05;
 }
 
 .logo .p {

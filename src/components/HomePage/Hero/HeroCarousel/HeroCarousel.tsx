@@ -13,11 +13,13 @@ import {
   SprayBottleIcon,
   ToothIcon,
 } from "@phosphor-icons/react/dist/ssr";
+import { useTranslations } from "next-intl";
 
 export default function HeroCarousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const sliderRef = useRef<HTMLUListElement>(null);
   const totalSlides = 6;
+  const t = useTranslations("HomePage");
 
   function scrollTheSlide(slideNumber: number) {
     if (!sliderRef.current) return;
@@ -112,7 +114,7 @@ export default function HeroCarousel() {
         <button
           className={styles.navButton}
           onClick={() => arrowToSlide("prev")}
-          aria-label="Previous slide"
+          aria-label={t("heroCarousel.navButtonLeftAlt")}
         >
           <ArrowFatLinesLeftIcon />
         </button>
@@ -121,15 +123,17 @@ export default function HeroCarousel() {
         <button
           className={styles.navButton}
           onClick={() => arrowToSlide("next")}
-          aria-label="Next slide"
+          aria-label={t("heroCarousel.navButtonRightAlt")}
         >
           <ArrowFatLinesRightIcon />
         </button>
       </div>
       <div className={styles.tagLineContainer}>
         <p>
-          Cualquiera pregunta. Blancodent responde.{" "}
-          <Link href="/varios/cita-previa">Saber mas...</Link>
+          {t("heroCarousel.tagLine.p")}{" "}
+          <Link href="/varios/cita-previa">
+            {t("heroCarousel.tagLine.link")}
+          </Link>
         </p>
       </div>
       <menu className={styles.menuCarousel}>
@@ -142,7 +146,7 @@ export default function HeroCarousel() {
               size={32}
               weight="duotone"
             />
-            Blanqueamiento
+            {t("heroCarousel.heroMenuBtns.1")}
           </button>
           <button
             className={styles.menuCarouselBtn}
@@ -152,7 +156,7 @@ export default function HeroCarousel() {
               size={32}
               weight="duotone"
             />
-            Ortodoncia
+            {t("heroCarousel.heroMenuBtns.2")}
           </button>
           <button
             className={styles.menuCarouselBtn}
@@ -162,7 +166,7 @@ export default function HeroCarousel() {
               size={32}
               weight="duotone"
             />
-            Implantologia
+            {t("heroCarousel.heroMenuBtns.3")}
           </button>
         </div>
         <div className={styles.rightCollumn}>
@@ -174,7 +178,7 @@ export default function HeroCarousel() {
               size={32}
               weight="duotone"
             />
-            Periodoncia
+            {t("heroCarousel.heroMenuBtns.4")}
           </button>
           <button
             className={styles.menuCarouselBtn}
@@ -184,7 +188,7 @@ export default function HeroCarousel() {
               size={32}
               weight="duotone"
             />
-            Empastes
+            {t("heroCarousel.heroMenuBtns.5")}
           </button>
           <button
             className={styles.menuCarouselBtn}
@@ -194,7 +198,7 @@ export default function HeroCarousel() {
               size={32}
               weight="duotone"
             />
-            Higiene
+            {t("heroCarousel.heroMenuBtns.6")}
           </button>
         </div>
       </menu>
