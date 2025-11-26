@@ -12,6 +12,9 @@ export default function Hero() {
       <section className={`narrow-grid ${styles.hero}`}>
         <HeroHeader />
         <HeroCarousel />
+        <div id="skip-after-carousel">
+          <a href="#">Test skip link</a>
+        </div>
       </section>
     </>
   );

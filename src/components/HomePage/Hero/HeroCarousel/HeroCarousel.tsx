@@ -168,7 +168,6 @@ export default function HeroCarousel() {
           ))}
         </div>
       </menu>
-      <div id="skip-after-carousel" />
     </div>
   );
 }
