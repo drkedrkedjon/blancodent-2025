@@ -166,6 +166,7 @@
         "6": "Hygiene"
       },
       "heroSlides": {
+        "skipLink": "Skip carousel",
         "slide1": {
           "h2": "Teeth whitening",
           "h3": "White teeth, healthy mouth and happy smile.",

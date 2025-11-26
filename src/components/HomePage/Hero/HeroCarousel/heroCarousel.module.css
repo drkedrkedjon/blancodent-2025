@@ -9,8 +9,13 @@
   box-shadow: var(--shadow-400);
 }
 
+.slider {
+  overscroll-behavior-x: contain;
+  overscroll-behavior-y: none;
+  scroll-snap-stop: normal;
+}
+
 .ulOuter {
-  /* height: max(750px, 200px); */
   border-top-left-radius: calc(var(--space-700) - var(--space-300));
   border-top-right-radius: calc(var(--space-700) - var(--space-300));
   display: flex;
@@ -34,10 +39,10 @@
   scroll-snap-align: center;
   background-color: var(--primera-90);
   height: 100%;
+  will-change: transform;
 }
 
 .slideContainer {
-  /* text-align: end; */
   padding: var(--space-600);
   padding-block-end: var(--space-200);
   display: flex;
@@ -55,12 +60,11 @@
 .slideContainer p {
   margin-block-start: var(--space-400);
   justify-self: end;
-  /* Safari & Firefox */
+  /* limit number of lines */
   -webkit-line-clamp: 6;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  /* Chromium */
   line-clamp: 6;
 }
 
@@ -94,7 +98,7 @@
 }
 
 .navButton:hover,
-.navButton:focus {
+.navButton:focus-visible {
   color: var(--tercera-20);
   scale: 1.1;
 }
@@ -103,7 +107,7 @@
 .tagLineContainer {
   font-size: var(--fs-200);
   text-align: center;
-  margin-block-start: var(--space-100)
+  margin-block-start: var(--space-100);
 }
 
 .menuCarousel {
@@ -115,14 +119,15 @@
   margin-block: var(--space-400);
 }
 
-.leftCollumn,
-.rightCollumn {
+.leftColumn,
+.rightColumn {
   display: flex;
   flex: 1 1 0;
   gap: var(--space-100);
 }
 
 .menuCarouselBtn {
+
   color: var(--primera-10);
   flex: 1 1 0;
   font-size: var(--fs-100);
@@ -135,11 +140,16 @@
   transition: var(--transition-400);
 }
 
-.menuCarouselBtn:hover {
+.menuCarouselBtn:hover,
+.menuCarouselBtn:focus-visible {
   background-color: var(--base-white-20);
   box-shadow: var(--shadow-400);
   border: 1px solid transparent;
-  /* flex-direction: column-reverse; */
+}
+
+.menuCarouselBtn svg {
+  width: 32px;
+  height: auto;
 }
 
 @media (min-width: 31rem) {

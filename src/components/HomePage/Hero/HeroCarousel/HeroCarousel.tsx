@@ -1,5 +1,5 @@
 "use client";
-import { useState, useRef } from "react";
+import { useState, useRef, useMemo } from "react";
 import { Link } from "@/i18n/navigation";
 import styles from "./heroCarousel.module.css";
 import {
@@ -23,6 +23,13 @@ import {
   ortodoncia,
   periodoncia,
 } from "@/assets/links";
+import SkipLink from "@/components/SkipLink/SkipLink";
+import type { Icon } from "@phosphor-icons/react";
+
+type SlideData = {
+  slideBtnLinks: Array<() => string>;
+  slideBtnIcons: Icon[];
+};
 
 export default function HeroCarousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -30,18 +37,17 @@ export default function HeroCarousel() {
   const totalSlides = 6;
   const t = useTranslations("HomePage");
 
-  function scrollTheSlide(slideNumber: number) {
+  const scrollTheSlide = (slideNumber: number) => {
     if (!sliderRef.current) return;
-
     const slideWidth = sliderRef.current.offsetWidth;
 
     sliderRef.current.scrollTo({
       left: slideWidth * slideNumber,
       behavior: "smooth",
     });
-  }
+  };
 
-  const arrowToSlide = (direction: "prev" | "next") => {
+  const handleLeftAndRightSlide = (direction: "prev" | "next") => {
     let newSlide =
       direction === "next"
         ? (currentSlide + 1) % totalSlides
@@ -51,104 +57,67 @@ export default function HeroCarousel() {
     scrollTheSlide(newSlide);
   };
 
-  const clickToSlide = (slideNumber: number) => {
+  const handleDirectButtonSlide = (slideNumber: number) => {
     setCurrentSlide(slideNumber);
     scrollTheSlide(slideNumber);
   };
 
+  const slideData = useMemo<SlideData>(
+    () => ({
+      slideBtnLinks: [
+        blanqueamiento,
+        ortodoncia,
+        implantologia,
+        periodoncia,
+        odontologiaConservadora,
+        higiene,
+      ],
+      slideBtnIcons: [
+        PaintBrushIcon,
+        AlignCenterHorizontalIcon,
+        ToothIcon,
+        FirstAidIcon,
+        PaintBucketIcon,
+        SprayBottleIcon,
+      ],
+    }),
+    []
+  );
+
   return (
     <div className={styles.carouselContainer}>
+      <SkipLink
+        link="skip-after-carousel"
+        content={t("heroCarousel.heroSlides.skipLink")}
+      />
       <div className={styles.slider}>
         <ul
           className={styles.ulOuter}
           role="list"
           ref={sliderRef}
         >
-          <li>
-            <div className={styles.slideContainer}>
-              <h2>{t("heroCarousel.heroSlides.slide1.h2")}</h2>
-              <h3>{t("heroCarousel.heroSlides.slide1.h3")}</h3>
-              <p>{t("heroCarousel.heroSlides.slide1.p")}</p>
-              <Link
-                className={`btn ${styles.slideBtnLink}`}
-                href={blanqueamiento()}
-              >
-                {t("heroCarousel.heroSlides.slide1.link")}
-              </Link>
-            </div>
-          </li>
-          <li>
-            <div className={styles.slideContainer}>
-              <h2>{t("heroCarousel.heroSlides.slide2.h2")}</h2>
-              <h3>{t("heroCarousel.heroSlides.slide2.h3")}</h3>
-              <p>{t("heroCarousel.heroSlides.slide2.p")}</p>
-              <Link
-                className={`btn ${styles.slideBtnLink}`}
-                href={ortodoncia()}
-              >
-                {t("heroCarousel.heroSlides.slide1.link")}
-              </Link>
-            </div>
-          </li>
-          <li>
-            <div className={styles.slideContainer}>
-              <h2>{t("heroCarousel.heroSlides.slide3.h2")}</h2>
-              <h3>{t("heroCarousel.heroSlides.slide3.h3")}</h3>
-              <p>{t("heroCarousel.heroSlides.slide3.p")}</p>
-              <Link
-                className={`btn ${styles.slideBtnLink}`}
-                href={implantologia()}
-              >
-                {t("heroCarousel.heroSlides.slide1.link")}
-              </Link>
-            </div>
-          </li>
-          <li>
-            <div className={styles.slideContainer}>
-              <h2>{t("heroCarousel.heroSlides.slide4.h2")}</h2>
-              <h3>{t("heroCarousel.heroSlides.slide4.h3")}</h3>
-              <p>{t("heroCarousel.heroSlides.slide4.p")}</p>
-              <Link
-                className={`btn ${styles.slideBtnLink}`}
-                href={periodoncia()}
-              >
-                {t("heroCarousel.heroSlides.slide1.link")}
-              </Link>
-            </div>
-          </li>
-          <li>
-            <div className={styles.slideContainer}>
-              <h2>{t("heroCarousel.heroSlides.slide5.h2")}</h2>
-              <h3>{t("heroCarousel.heroSlides.slide5.h3")}</h3>
-              <p>{t("heroCarousel.heroSlides.slide5.p")}</p>
-              <Link
-                className={`btn ${styles.slideBtnLink}`}
-                href={odontologiaConservadora()}
-              >
-                {t("heroCarousel.heroSlides.slide1.link")}
-              </Link>
-            </div>
-          </li>
-          <li>
-            <div className={styles.slideContainer}>
-              <h2>{t("heroCarousel.heroSlides.slide6.h2")}</h2>
-              <h3>{t("heroCarousel.heroSlides.slide6.h3")}</h3>
-              <p>{t("heroCarousel.heroSlides.slide6.p")}</p>
-              <Link
-                className={`btn ${styles.slideBtnLink}`}
-                href={higiene()}
-              >
-                {t("heroCarousel.heroSlides.slide1.link")}
-              </Link>
-            </div>
-          </li>
+          {slideData.slideBtnLinks.map((link, index) => (
+            <li key={index}>
+              <div className={styles.slideContainer}>
+                <h2>{t(`heroCarousel.heroSlides.slide${index + 1}.h2`)}</h2>
+                <h3>{t(`heroCarousel.heroSlides.slide${index + 1}.h3`)}</h3>
+                <p>{t(`heroCarousel.heroSlides.slide${index + 1}.p`)}</p>
+                <Link
+                  className={`btn ${styles.slideBtnLink}`}
+                  href={link()}
+                >
+                  {t(`heroCarousel.heroSlides.slide${index + 1}.link`)}
+                </Link>
+              </div>
+            </li>
+          ))}
         </ul>
       </div>
 
       <div className={styles.buttonsContainer}>
         <button
           className={styles.navButton}
-          onClick={() => arrowToSlide("prev")}
+          onClick={() => handleLeftAndRightSlide("prev")}
           aria-label={t("heroCarousel.navButtonLeftAlt")}
         >
           <ArrowFatLinesLeftIcon />
@@ -157,84 +126,49 @@ export default function HeroCarousel() {
         <DotsSixIcon weight="bold" />
         <button
           className={styles.navButton}
-          onClick={() => arrowToSlide("next")}
+          onClick={() => handleLeftAndRightSlide("next")}
           aria-label={t("heroCarousel.navButtonRightAlt")}
         >
           <ArrowFatLinesRightIcon />
         </button>
       </div>
+
       <div className={styles.tagLineContainer}>
         <p>
           {t("heroCarousel.tagLine.p")}{" "}
           <Link href={contacto()}>{t("heroCarousel.tagLine.link")}</Link>
         </p>
       </div>
+
       <menu className={styles.menuCarousel}>
-        <div className={styles.leftCollumn}>
-          <button
-            className={styles.menuCarouselBtn}
-            onClick={() => clickToSlide(0)}
-          >
-            <PaintBrushIcon
-              size={32}
-              weight="duotone"
-            />
-            {t("heroCarousel.heroMenuBtns.1")}
-          </button>
-          <button
-            className={styles.menuCarouselBtn}
-            onClick={() => clickToSlide(1)}
-          >
-            <AlignCenterHorizontalIcon
-              size={32}
-              weight="duotone"
-            />
-            {t("heroCarousel.heroMenuBtns.2")}
-          </button>
-          <button
-            className={styles.menuCarouselBtn}
-            onClick={() => clickToSlide(2)}
-          >
-            <ToothIcon
-              size={32}
-              weight="duotone"
-            />
-            {t("heroCarousel.heroMenuBtns.3")}
-          </button>
+        <div className={styles.leftColumn}>
+          {slideData.slideBtnIcons.slice(0, 3).map((Icon, index) => (
+            <button
+              key={index}
+              className={styles.menuCarouselBtn}
+              onClick={() => handleDirectButtonSlide(index)}
+              aria-current={currentSlide === index ? "true" : undefined}
+            >
+              <Icon weight="duotone" />
+              {t(`heroCarousel.heroMenuBtns.${index + 1}`)}
+            </button>
+          ))}
         </div>
-        <div className={styles.rightCollumn}>
-          <button
-            className={styles.menuCarouselBtn}
-            onClick={() => clickToSlide(3)}
-          >
-            <FirstAidIcon
-              size={32}
-              weight="duotone"
-            />
-            {t("heroCarousel.heroMenuBtns.4")}
-          </button>
-          <button
-            className={styles.menuCarouselBtn}
-            onClick={() => clickToSlide(4)}
-          >
-            <PaintBucketIcon
-              size={32}
-              weight="duotone"
-            />
-            {t("heroCarousel.heroMenuBtns.5")}
-          </button>
-          <button
-            className={styles.menuCarouselBtn}
-            onClick={() => clickToSlide(5)}
-          >
-            <SprayBottleIcon
-              size={32}
-              weight="duotone"
-            />
-            {t("heroCarousel.heroMenuBtns.6")}
-          </button>
+        <div className={styles.rightColumn}>
+          {slideData.slideBtnIcons.slice(3).map((Icon, index) => (
+            <button
+              key={index}
+              className={styles.menuCarouselBtn}
+              onClick={() => handleDirectButtonSlide(index + 3)}
+              aria-current={currentSlide === index + 3 ? "true" : undefined}
+            >
+              <Icon weight="duotone" />
+              {t(`heroCarousel.heroMenuBtns.${index + 4}`)}
+            </button>
+          ))}
         </div>
       </menu>
+      <div id="skip-after-carousel" />
     </div>
   );
 }

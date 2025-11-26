@@ -27,7 +27,7 @@
 }
 
 .logo svg:hover,
-.logo svg:focus {
+.logo svg:focus-visible {
   scale: 1.05;
 }
 

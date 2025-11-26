@@ -164,6 +164,7 @@
         "6": "Higiene"
       },
       "heroSlides": {
+        "skipLink": "Saltar carrusel",
         "slide1": {
           "h2": "Blanqueamiento dental",
           "h3": "Dientes blancos, boca sana y sonrisa feliz.",

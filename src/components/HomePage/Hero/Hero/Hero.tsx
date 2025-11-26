@@ -8,9 +8,11 @@ export default function Hero() {
   const t = useTranslations("HomePage");
 
   return (
-    <section className={`narrow-grid ${styles.hero}`}>
-      <HeroHeader />
-      <HeroCarousel />
-    </section>
+    <>
+      <section className={`narrow-grid ${styles.hero}`}>
+        <HeroHeader />
+        <HeroCarousel />
+      </section>
+    </>
   );
 }
