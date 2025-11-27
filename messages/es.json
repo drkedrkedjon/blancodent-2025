@@ -148,6 +148,7 @@
       "actionBtn": "Llámenos ahora",
       "actionLink": "Solicite cita previa"
     },
+
     "heroCarousel": {
       "navButtonLeftAlt": "Diapositiva anterior",
       "navButtonRightAlt": "Siguiente diapositiva",
@@ -155,6 +156,7 @@
         "p": "Puedes hacer cualquier pregunta.",
         "link": "Blancodent le responderá..."
       },
+      "carouselControls": "Controles de diapositivas del carrusel",
       "heroMenuBtns": {
         "1": "Blanqueamiento",
         "2": "Ortodoncia",

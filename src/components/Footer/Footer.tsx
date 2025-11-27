@@ -43,7 +43,7 @@ export default function Footer() {
             </ul>
           </nav>
           <address>
-            <h2>{t("address.title")}</h2>
+            <p className={styles.addressTitle}>{t("address.title")}</p>
             <p>
               {t("address.street")}
               <br />

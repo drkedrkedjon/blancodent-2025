@@ -10,8 +10,7 @@ export default function SkipLink({
 }) {
   return (
     <Link
-      id={styles.skipLink}
-      className={styles.visuallyHidden}
+      className={`${styles.visuallyHidden} ${styles.skipLink}`}
       href={`#${link}`}
     >
       {content}

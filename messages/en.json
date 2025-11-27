@@ -150,6 +150,7 @@
       "actionBtn": "Call us now",
       "actionLink": "Book appointment online"
     },
+
     "heroCarousel": {
       "navButtonLeftAlt": "Previous slide",
       "navButtonRightAlt": "Next slide",
@@ -157,6 +158,7 @@
         "p": "You can ask any question.",
         "link": "Blancodent will answer..."
       },
+      "carouselControls": "Carousel slide controls",
       "heroMenuBtns": {
         "1": "Whitening",
         "2": "Orthodontics",

@@ -151,7 +151,11 @@ export default function HeroCarousel() {
         </p>
       </div>
       <div className={styles.menuCarouselContainerQuery}>
-        <menu className={styles.menuCarousel}>
+        <div
+          className={styles.menuCarousel}
+          role="group"
+          aria-label={t("heroCarousel.carouselControls")}
+        >
           <div className={styles.leftColumn}>
             {slideData.slideBtnIcons.slice(0, 3).map((Icon, index) => (
               <button
@@ -178,7 +182,7 @@ export default function HeroCarousel() {
               </button>
             ))}
           </div>
-        </menu>
+        </div>
       </div>
     </div>
   );
