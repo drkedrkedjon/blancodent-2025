@@ -1,5 +1,4 @@
 .carouselContainer {
-  /* align-self: stretch; */
   position: relative;
   display: flex;
   flex-direction: column;
@@ -131,13 +130,27 @@
   }
 }
 
+.menuCarouselContainerQuery {
+  container-type: inline-size;
+  container-name: menu-carousel-container;
+}
+
+
 .menuCarousel {
+  container-type: inline-size;
+  container-name: menu-carousel;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: var(--space-100);
   justify-content: center;
   padding-inline: var(--space-400);
   margin-block: var(--space-400);
+}
+
+@container menu-carousel-container (min-width: 40rem) {
+  .menuCarousel {
+    flex-direction: row;
+  }
 }
 
 .leftColumn,
@@ -148,7 +161,6 @@
 }
 
 .menuCarouselBtn {
-
   color: var(--primera-10);
   flex: 1 1 0;
   font-size: var(--fs-100);
@@ -173,11 +185,9 @@
   height: auto;
 }
 
-@media (min-width: 31rem) {
-
-  /* change to container query */
+@container menu-carousel (min-width: 50rem) {
   .menuCarouselBtn {
-    font-size: var(--fs-200);
+    font-size: var(--fs-300);
   }
 
   .slideContainer p {

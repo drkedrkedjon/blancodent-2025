@@ -150,35 +150,36 @@ export default function HeroCarousel() {
           <Link href={contacto()}>{t("heroCarousel.tagLine.link")}</Link>
         </p>
       </div>
-
-      <menu className={styles.menuCarousel}>
-        <div className={styles.leftColumn}>
-          {slideData.slideBtnIcons.slice(0, 3).map((Icon, index) => (
-            <button
-              key={index}
-              className={styles.menuCarouselBtn}
-              onClick={() => handleDirectButtonSlide(index)}
-              aria-current={currentSlide === index ? "true" : undefined}
-            >
-              <Icon weight="duotone" />
-              {t(`heroCarousel.heroMenuBtns.${index + 1}`)}
-            </button>
-          ))}
-        </div>
-        <div className={styles.rightColumn}>
-          {slideData.slideBtnIcons.slice(3).map((Icon, index) => (
-            <button
-              key={index}
-              className={styles.menuCarouselBtn}
-              onClick={() => handleDirectButtonSlide(index + 3)}
-              aria-current={currentSlide === index + 3 ? "true" : undefined}
-            >
-              <Icon weight="duotone" />
-              {t(`heroCarousel.heroMenuBtns.${index + 4}`)}
-            </button>
-          ))}
-        </div>
-      </menu>
+      <div className={styles.menuCarouselContainerQuery}>
+        <menu className={styles.menuCarousel}>
+          <div className={styles.leftColumn}>
+            {slideData.slideBtnIcons.slice(0, 3).map((Icon, index) => (
+              <button
+                key={index}
+                className={styles.menuCarouselBtn}
+                onClick={() => handleDirectButtonSlide(index)}
+                aria-current={currentSlide === index ? "true" : undefined}
+              >
+                <Icon weight="duotone" />
+                {t(`heroCarousel.heroMenuBtns.${index + 1}`)}
+              </button>
+            ))}
+          </div>
+          <div className={styles.rightColumn}>
+            {slideData.slideBtnIcons.slice(3).map((Icon, index) => (
+              <button
+                key={index}
+                className={styles.menuCarouselBtn}
+                onClick={() => handleDirectButtonSlide(index + 3)}
+                aria-current={currentSlide === index + 3 ? "true" : undefined}
+              >
+                <Icon weight="duotone" />
+                {t(`heroCarousel.heroMenuBtns.${index + 4}`)}
+              </button>
+            ))}
+          </div>
+        </menu>
+      </div>
     </div>
   );
 }
