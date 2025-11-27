@@ -16,12 +16,12 @@ export default async function HomePage({
       tabIndex={-1}
     >
       <Hero />
-      {/* <div>
-        <h1>{t("title")}</h1>
-
-
-        <Link href="/about">{t("about")}</Link>
-      </div> */}
+      <div
+        id="skip-after-carousel"
+        tabIndex={-1}
+      >
+        <a href="#">Test skip link</a>
+      </div>
     </main>
   );
 }

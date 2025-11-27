@@ -1,5 +1,6 @@
 .carouselContainer {
   /* align-self: stretch; */
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: var(--primera-100);
@@ -7,6 +8,16 @@
   padding: var(--space-300);
   border-radius: var(--space-700);
   box-shadow: var(--shadow-400);
+
+  &>img {
+    position: absolute;
+    top: -10rem;
+    right: 2rem;
+    height: 14rem;
+    width: auto;
+    opacity: 80%;
+    z-index: -20;
+  }
 }
 
 .slider {
@@ -105,9 +116,19 @@
 
 
 .tagLineContainer {
+  position: relative;
   font-size: var(--fs-200);
   text-align: center;
   margin-block-start: var(--space-100);
+
+  &>img {
+    position: absolute;
+    bottom: 22;
+    left: 2rem;
+    height: 8rem;
+    width: auto;
+    opacity: 80%;
+  }
 }
 
 .menuCarousel {

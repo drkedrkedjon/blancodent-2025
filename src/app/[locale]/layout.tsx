@@ -73,7 +73,8 @@ export default async function RootLayout({
         <MotionConfig reducedMotion="user">
           <NextIntlClientProvider messages={messages}>
             <SkipLink
-              link={t("href")}
+              link="main"
+              // link={t("href")}
               content={t("content")}
             />
             <Header />

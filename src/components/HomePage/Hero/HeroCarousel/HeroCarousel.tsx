@@ -25,6 +25,8 @@ import {
 } from "@/assets/links";
 import SkipLink from "@/components/SkipLink/SkipLink";
 import type { Icon } from "@phosphor-icons/react";
+import Image from "next/image";
+import PalmTrees from "@/assets/images/palm-trees.svg";
 
 type SlideData = {
   slideBtnLinks: Array<() => string>;
@@ -86,6 +88,10 @@ export default function HeroCarousel() {
 
   return (
     <div className={styles.carouselContainer}>
+      <Image
+        src={PalmTrees}
+        alt="test"
+      />
       <SkipLink
         link="skip-after-carousel"
         content={t("heroCarousel.heroSlides.skipLink")}
@@ -134,6 +140,11 @@ export default function HeroCarousel() {
       </div>
 
       <div className={styles.tagLineContainer}>
+        {/* Remowe this test image */}
+        <Image
+          src={PalmTrees}
+          alt="test"
+        />
         <p>
           {t("heroCarousel.tagLine.p")}{" "}
           <Link href={contacto()}>{t("heroCarousel.tagLine.link")}</Link>

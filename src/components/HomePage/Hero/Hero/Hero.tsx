@@ -8,14 +8,9 @@ export default function Hero() {
   const t = useTranslations("HomePage");
 
   return (
-    <>
-      <section className={`narrow-grid ${styles.hero}`}>
-        <HeroHeader />
-        <HeroCarousel />
-        <div id="skip-after-carousel">
-          <a href="#">Test skip link</a>
-        </div>
-      </section>
-    </>
+    <section className={`narrow-grid ${styles.hero}`}>
+      <HeroHeader />
+      <HeroCarousel />
+    </section>
   );
 }
