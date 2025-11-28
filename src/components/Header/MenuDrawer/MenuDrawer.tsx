@@ -7,7 +7,7 @@ import FocusLock from "react-focus-lock";
 import { RemoveScroll } from "react-remove-scroll";
 import { Link } from "@/i18n/navigation";
 import Image from "next/image";
-import smallMap from "./assets/menu-map.png";
+import smallMap from "./assets/menu-map.webp";
 import { motion } from "motion/react";
 import {
   anestesia,
