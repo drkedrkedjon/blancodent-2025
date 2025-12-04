@@ -18,6 +18,11 @@
 
   --shadow-300: 1px 1px 4px var(--base-gray-10);
   --shadow-400: 2px 2px 6px var(--base-gray-9);
+  /* --shadow-300: 0px 8px 20px 0px rgba(0, 0, 0, 0.12),
+    0px 18px 40px 0px rgba(0, 0, 0, 0.08);
+  --shadow-400: 0px 6px 8px -3px rgba(0, 0, 0, 0.18),
+    0px 12px 18px -6px rgba(0, 0, 0, 0.14),
+    0px 24px 36px -10px rgba(0, 0, 0, 0.1); */
 
   --transition-400: all 0.2s ease-in-out;
 
