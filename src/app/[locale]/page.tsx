@@ -30,7 +30,7 @@ export default async function HomePage({
         content={t("AdBloques.first.content")}
         image={firstAdBloqueImage}
         imageAlt={t("AdBloques.first.imageAlt")}
-        direction="left"
+        direction="right"
       />
     </main>
   );
