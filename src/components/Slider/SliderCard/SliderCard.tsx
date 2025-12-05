@@ -1,5 +1,32 @@
+import Image from "next/image";
 import styles from "./SliderCard.module.css";
+import image from "@/assets/images/personal.jpg";
+import Link from "next/link";
 
 export default function SliderCard() {
-  return <p>SliderCard</p>;
+  return (
+    <div className={styles.container}>
+      <div className={styles.titleContainer}>
+        <Image
+          src={image}
+          alt=""
+        />
+        <h3 className={styles.h3}>Personal</h3>
+      </div>
+      <div className={styles.contentContainer}>
+        <p className={styles.p}>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure ullam,
+          dolor distinctio adipisci placeat optio beatae eius? Non, dolorem
+          amet. Totam earum ipsam ea quae tempore aut dolorum laboriosam
+          suscipit.
+        </p>
+        <Link
+          className={styles.link}
+          href={"#"}
+        >
+          Leer mas...
+        </Link>
+      </div>
+    </div>
+  );
 }

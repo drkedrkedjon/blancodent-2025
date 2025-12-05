@@ -36,6 +36,11 @@ export default async function HomePage({
       />
       <Slider>
         <SliderCard />
+        <SliderCard />
+        <SliderCard />
+        <SliderCard />
+        <SliderCard />
+        <SliderCard />
       </Slider>
       <AdBloque
         title={t("AdBloques.second.title")}
