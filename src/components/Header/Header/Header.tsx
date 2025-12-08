@@ -1,14 +1,14 @@
-import styles from "./Header.module.css";
-import { Link } from "@/i18n/navigation";
-import { useTranslations } from "next-intl";
-import LangSwitcher from "@/components/Header/LangSwitcher";
-import Menu from "@/components/Header/Menu";
 import {
   home,
   localizacion,
   losHorarios,
   ofertasContinuas,
 } from "@/assets/links";
+import LangSwitcher from "@/components/Header/LangSwitcher";
+import Menu from "@/components/Header/Menu";
+import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
+import styles from "./Header.module.css";
 
 export default function Header() {
   const t = useTranslations("Header");

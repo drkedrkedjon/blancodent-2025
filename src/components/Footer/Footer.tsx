@@ -5,13 +5,13 @@ import {
   notaLegal,
   ofertasContinuas,
 } from "@/assets/links";
-import styles from "./Footer.module.css";
 import { Link } from "@/i18n/navigation";
 import {
-  InstagramLogoIcon,
   FacebookLogoIcon,
+  InstagramLogoIcon,
 } from "@phosphor-icons/react/dist/ssr";
 import { useTranslations } from "next-intl";
+import styles from "./Footer.module.css";
 
 export default function Footer() {
   const t = useTranslations("Footer");
