@@ -16,13 +16,12 @@
   --space-800: 2rem;
   --space-900: 3rem;
 
-  --shadow-300: 1px 1px 4px var(--base-gray-10);
-  --shadow-400: 2px 2px 6px var(--base-gray-9);
-  /* --shadow-300: 0px 8px 20px 0px rgba(0, 0, 0, 0.12),
-    0px 18px 40px 0px rgba(0, 0, 0, 0.08);
-  --shadow-400: 0px 6px 8px -3px rgba(0, 0, 0, 0.18),
-    0px 12px 18px -6px rgba(0, 0, 0, 0.14),
-    0px 24px 36px -10px rgba(0, 0, 0, 0.1); */
+  /* --shadow-300: 1px 1px 4px var(--base-gray-10); */
+  /* --shadow-400: 2px 2px 6px var(--base-gray-9); */
+  --shadow-300: rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  --shadow-400: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  --shadow-500: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
 
   --transition-400: all 0.2s ease-in-out;
 
@@ -52,7 +51,7 @@ button {
   padding: var(--space-200) var(--space-600);
   border: 2px solid var(--base-gray-5);
   border-radius: var(--space-400);
-  box-shadow: var(--shadow-400);
+  box-shadow: var(--shadow-300);
   text-decoration: none;
   color: inherit;
   transition: var(--transition-400);
