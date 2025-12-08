@@ -9,7 +9,7 @@
 .title {
   color: var(--primera-30);
   font-size: var(--fs-hero-100);
-  text-shadow: var(--shadow-400);
+  text-shadow: var(--text-shadow);
   line-height: 0.8;
   margin-block-start: -2.8rem;
 }
