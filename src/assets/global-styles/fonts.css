@@ -72,7 +72,6 @@ h4 {
 }
 
 p {
-  font-size: var(--fs-400);
   line-height: var(--lh-500);
 }
 
