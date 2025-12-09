@@ -1,9 +1,10 @@
-import Hero from "@/components/HomePage/Hero/Hero/Hero";
-import AdBloque from "@/components/AdBloque/AdBloque";
-import { setRequestLocale, getTranslations } from "next-intl/server";
+import { homePageSlider } from "@/assets/data/home-page-slider";
 import firstAdBloqueImage from "@/assets/images/palm-trees.svg";
+import AdBloque from "@/components/AdBloque/AdBloque";
+import Hero from "@/components/HomePage/Hero/Hero/Hero";
 import Slider from "@/components/Slider/Slider/Slider";
 import SliderCard from "@/components/Slider/SliderCard/SliderCard";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 
 export default async function HomePage({
   params,

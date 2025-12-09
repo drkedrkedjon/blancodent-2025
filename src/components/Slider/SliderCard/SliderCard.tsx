@@ -11,7 +11,7 @@ export default function SliderCard() {
           src={image}
           alt=""
         />
-        <h3 className={styles.h3}>Personal</h3>
+        <h3 className={styles.h3}>Odontologia Conservadora</h3>
       </div>
       <div className={styles.contentContainer}>
         <p className={styles.p}>

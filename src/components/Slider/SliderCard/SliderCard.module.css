@@ -33,6 +33,7 @@
   opacity: 0.8;
   transform: translateY(30%);
   box-shadow: var(--shadow-400);
+  font-stretch: var(--f-str-75);
 }
 
 .contentContainer {
@@ -48,6 +49,7 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   line-clamp: 7;
+  color: var(--quinta-10);
 }
 
 .link {
