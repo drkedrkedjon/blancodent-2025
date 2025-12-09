@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   background-color: var(--quinta-90);
-  flex: 0 0 clamp(16.8rem, 40vw, 21.25rem);
+  flex: 0 0 clamp(16.8rem, 35vw, 21.25rem);
   border-radius: var(--b-radius-400);
   overflow: hidden;
   box-shadow: var(--shadow-400);
@@ -44,12 +44,13 @@
 
 .p {
   /* limit number of lines */
-  -webkit-line-clamp: 7;
+  -webkit-line-clamp: 9;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  line-clamp: 7;
+  line-clamp: 9;
   color: var(--quinta-10);
+  /* font-size: var(--fs-300); */
 }
 
 .link {

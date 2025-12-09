@@ -39,6 +39,8 @@
 
 .gridImg {
   display: none;
+  /* remove this latter */
+  opacity: 0.8;
 }
 
 /* left */
