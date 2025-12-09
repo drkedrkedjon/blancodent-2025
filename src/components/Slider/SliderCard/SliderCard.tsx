@@ -1,7 +1,7 @@
-import Image from "next/image";
-import styles from "./SliderCard.module.css";
 import image from "@/assets/images/personal.jpg";
+import Image from "next/image";
 import Link from "next/link";
+import styles from "./SliderCard.module.css";
 
 export default function SliderCard() {
   return (
@@ -18,6 +18,9 @@ export default function SliderCard() {
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure ullam,
           dolor distinctio adipisci placeat optio beatae eius? Non, dolorem
           amet. Totam earum ipsam ea quae tempore aut dolorum laboriosam
+          suscipit. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Iure ullam, dolor distinctio adipisci placeat optio beatae eius? Non,
+          dolorem amet. Totam earum ipsam ea quae tempore aut dolorum laboriosam
           suscipit.
         </p>
         <Link
