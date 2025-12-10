@@ -3,6 +3,7 @@ import { sliderServices } from "@/assets/data/home-page-slider-services";
 import firstAdBloqueImage from "@/assets/images/palm-trees.svg";
 import AdBloque from "@/components/AdBloque/AdBloque";
 import Hero from "@/components/HomePage/Hero/Hero/Hero";
+import Offers from "@/components/HomePage/Offers/Offers";
 import Slider from "@/components/Slider/Slider/Slider";
 import SliderCard from "@/components/Slider/SliderCard/SliderCard";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -26,14 +27,12 @@ export default async function HomePage({
       <div
         id="skip-after-carousel"
         tabIndex={-1}
-      >
-        {/* <a href="#">Test skip link</a> */}
-      </div>
+      ></div>
       <AdBloque
-        title={t("AdBloques.first.title")}
-        content={t("AdBloques.first.content")}
+        title={t("adBloques.first.title")}
+        content={t("adBloques.first.content")}
         image={firstAdBloqueImage}
-        imageAlt={t("AdBloques.first.imageAlt")}
+        imageAlt={t("adBloques.first.imageAlt")}
         direction="left"
       />
       <Slider>
@@ -42,33 +41,38 @@ export default async function HomePage({
             key={index}
             img={card.img}
             link={card.link}
-            title={t(`Sliders.sliderClinica.card${index + 1}.title`)}
-            content={t(`Sliders.sliderClinica.card${index + 1}.content`)}
-            alt={t(`Sliders.sliderClinica.card${index + 1}.alt`)}
+            title={t(`sliders.sliderClinica.card${index + 1}.title`)}
+            content={t(`sliders.sliderClinica.card${index + 1}.content`)}
+            alt={t(`sliders.sliderClinica.card${index + 1}.alt`)}
             linkContent={t(
-              `Sliders.sliderClinica.card${index + 1}.linkContent`
+              `sliders.sliderClinica.card${index + 1}.linkContent`
             )}
           />
         ))}
       </Slider>
       <AdBloque
-        title={t("AdBloques.second.title")}
-        content={t("AdBloques.second.content")}
+        title={t("adBloques.second.title")}
+        content={t("adBloques.second.content")}
         image={firstAdBloqueImage}
-        imageAlt={t("AdBloques.second.imageAlt")}
+        imageAlt={t("adBloques.second.imageAlt")}
         direction="right"
       />
+      <Offers>
+        <h3>{t("offers.title")}</h3>
+        <p>{t("offers.p1")}</p>
+        <p>{t("offers.p2")}</p>
+      </Offers>
       <Slider>
         {sliderServices.map((card, index) => (
           <SliderCard
             key={index}
             img={card.img}
             link={card.link}
-            title={t(`Sliders.sliderServices.card${index + 1}.title`)}
-            content={t(`Sliders.sliderServices.card${index + 1}.content`)}
-            alt={t(`Sliders.sliderServices.card${index + 1}.alt`)}
+            title={t(`sliders.sliderServices.card${index + 1}.title`)}
+            content={t(`sliders.sliderServices.card${index + 1}.content`)}
+            alt={t(`sliders.sliderServices.card${index + 1}.alt`)}
             linkContent={t(
-              `Sliders.sliderServices.card${index + 1}.linkContent`
+              `sliders.sliderServices.card${index + 1}.linkContent`
             )}
           />
         ))}
