@@ -20,7 +20,7 @@ import ortodonciaImg from "@/assets/images/home-page/ortodoncia.jpg";
 import periodonciaImg from "@/assets/images/home-page/periodoncia.jpg";
 import protesisImg from "@/assets/images/home-page/protesis.jpg";
 
-export const homePageSlider = [
+export const sliderServices = [
   {
     img: implantologiaImg,
     link: implantologia(),
