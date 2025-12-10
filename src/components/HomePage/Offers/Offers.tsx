@@ -23,10 +23,3 @@ export default function Offers({ children }: { children: ReactNode }) {
     </section>
   );
 }
-
-// <h3>Oferta ferula de descarga</h3>
-// <p>
-//   50% de descuento en férula de descarga "semirrígida" + revisión +
-//   radiografía gratuita.
-// </p>
-// <p>¿Llevas tiempo queriendo tener una sonrisa más sana?</p>
