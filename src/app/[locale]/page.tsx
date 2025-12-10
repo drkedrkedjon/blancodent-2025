@@ -14,6 +14,7 @@ export default async function HomePage({
   params: Promise<{ locale: string }>;
 }>) {
   const { locale } = await params;
+
   // Enable static rendering in next-intl
   setRequestLocale(locale);
   const t = await getTranslations("HomePage");
