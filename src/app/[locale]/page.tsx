@@ -1,9 +1,12 @@
 import { sliderClinica } from "@/assets/data/home-page-slider-clinica";
 import { sliderServices } from "@/assets/data/home-page-slider-services";
+import { cardImages } from "@/assets/data/home-page-why-blancodent";
 import firstAdBloqueImage from "@/assets/images/palm-trees.svg";
 import AdBloque from "@/components/AdBloque/AdBloque";
 import Hero from "@/components/HomePage/Hero/Hero/Hero";
 import Offers from "@/components/HomePage/Offers/Offers";
+import WhyBlancodent from "@/components/HomePage/WhyBlancodent/WhyBlancodent";
+import WhyBlancodentCard from "@/components/HomePage/WhyBlancodent/WhyBlancodentCard";
 import Slider from "@/components/Slider/Slider/Slider";
 import SliderCard from "@/components/Slider/SliderCard/SliderCard";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -63,6 +66,14 @@ export default async function HomePage({
         <p>{t("offers.p1")}</p>
         <p>{t("offers.p2")}</p>
       </Offers>
+      <WhyBlancodent title="Por que Blancodent">
+        <WhyBlancodentCard
+          title="Personal"
+          img={cardImages[0]}
+          alt=""
+          content="Odontólogos con titulaciones Españolas y Alemanas. Personal auxiliar preparado, amable y atento al paciente. Trato familiar."
+        />
+      </WhyBlancodent>
       <Slider>
         {sliderServices.map((card, index) => (
           <SliderCard
