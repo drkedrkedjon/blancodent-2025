@@ -3,6 +3,7 @@
   padding-block: var(--space-900);
   text-align: center;
   color: var(--primera-10);
+  margin-block-start: var(--space-900);
 }
 
 .cardsContainer {

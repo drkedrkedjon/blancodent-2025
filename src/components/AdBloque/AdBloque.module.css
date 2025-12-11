@@ -3,7 +3,7 @@
   grid-template-rows: repeat(2, auto);
   grid-template-columns: auto 15%;
   column-gap: var(--space-600);
-  margin-block: var(--space-900)
+  margin-block: var(--space-900);
 }
 
 .titleContainer {
