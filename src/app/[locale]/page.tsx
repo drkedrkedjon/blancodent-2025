@@ -72,7 +72,6 @@ export default async function HomePage({
             key={index}
             img={img}
             title={t(`whyBlancodent.card${index + 1}.title`)}
-            alt=""
             content={t(`whyBlancodent.card${index + 1}.content`)}
             color={`color-${index + 1}`}
           />
