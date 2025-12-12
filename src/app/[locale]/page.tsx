@@ -5,6 +5,7 @@ import firstAdBloqueImage from "@/assets/images/palm-trees.svg";
 import AdBloque from "@/components/AdBloque/AdBloque";
 import Hero from "@/components/HomePage/Hero/Hero/Hero";
 import Offers from "@/components/HomePage/Offers/Offers";
+import Opinions from "@/components/HomePage/Opinions/Opinions";
 import WhyBlancodent from "@/components/HomePage/WhyBlancodent/WhyBlancodent";
 import WhyBlancodentCard from "@/components/HomePage/WhyBlancodent/WhyBlancodentCard";
 import Slider from "@/components/Slider/Slider/Slider";
@@ -84,6 +85,7 @@ export default async function HomePage({
         imageAlt={t("adBloques.second.imageAlt")}
         direction="left"
       />
+      <Opinions />
       <Slider>
         {sliderServices.map((card, index) => (
           <SliderCard
