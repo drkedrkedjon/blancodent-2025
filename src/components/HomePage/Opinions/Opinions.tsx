@@ -1,4 +1,5 @@
 import img from "@/assets/images/home-page/porque-card/cardimg-1.png";
+import { StarHalfIcon, StarIcon } from "@phosphor-icons/react/dist/ssr";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import styles from "./opinions.module.css";
@@ -16,7 +17,13 @@ export default async function Opinions() {
         <article className={styles.firstOpinionArticle}>
           <header className={styles.firstOpinionHeader}>
             <h3>Jordan</h3>
-            <span>*****</span>
+            <span className={styles.starIcons}>
+              <StarIcon weight="fill" />
+              <StarIcon weight="fill" />
+              <StarIcon weight="fill" />
+              <StarIcon weight="fill" />
+              <StarHalfIcon weight="fill" />
+            </span>
           </header>
           <blockquote>
             <p>
@@ -36,7 +43,13 @@ export default async function Opinions() {
             />
             <header>
               <h3>Matt</h3>
-              <span>*****</span>
+              <span className={styles.starIcons}>
+                <StarIcon weight="fill" />
+                <StarIcon weight="fill" />
+                <StarIcon weight="fill" />
+                <StarIcon weight="fill" />
+                <StarHalfIcon weight="fill" />
+              </span>
             </header>
             <blockquote>
               <p>
@@ -55,7 +68,13 @@ export default async function Opinions() {
             />
             <header>
               <h3>Brendann</h3>
-              <span>*****</span>
+              <span className={styles.starIcons}>
+                <StarIcon weight="fill" />
+                <StarIcon weight="fill" />
+                <StarIcon weight="fill" />
+                <StarIcon weight="fill" />
+                <StarIcon weight="fill" />
+              </span>
             </header>
             <blockquote>
               <p>
@@ -74,7 +93,13 @@ export default async function Opinions() {
             />
             <header>
               <h3>Maria</h3>
-              <span>*****</span>
+              <span className={styles.starIcons}>
+                <StarIcon weight="fill" />
+                <StarIcon weight="fill" />
+                <StarIcon weight="fill" />
+                <StarIcon weight="fill" />
+                <StarIcon weight="fill" />
+              </span>
             </header>
             <blockquote>
               <p>
@@ -90,7 +115,13 @@ export default async function Opinions() {
             >
               <header>
                 <h3>Maria</h3>
-                <span>*****</span>
+                <span className={styles.starIcons}>
+                  <StarIcon weight="fill" />
+                  <StarIcon weight="fill" />
+                  <StarIcon weight="fill" />
+                  <StarIcon weight="fill" />
+                  <StarHalfIcon weight="fill" />
+                </span>
               </header>
               <blockquote>
                 <p>
@@ -105,7 +136,13 @@ export default async function Opinions() {
             >
               <header>
                 <h3>Maria</h3>
-                <span>*****</span>
+                <span className={styles.starIcons}>
+                  <StarIcon weight="fill" />
+                  <StarIcon weight="fill" />
+                  <StarIcon weight="fill" />
+                  <StarIcon weight="fill" />
+                  <StarIcon weight="fill" />
+                </span>
               </header>
               <blockquote>
                 <p>

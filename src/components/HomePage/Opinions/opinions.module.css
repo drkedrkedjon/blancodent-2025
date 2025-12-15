@@ -14,6 +14,10 @@
   border-radius: var(--b-radius-100);
 }
 
+.starIcons {
+  display: flex;
+}
+
 .opinionsContainer {
   background: linear-gradient(to bottom, var(--segunda-80), var(--base-white-20) 90%);
   border-radius: clamp(var(--space-600), 4vw, var(--space-900));
@@ -50,7 +54,7 @@
   flex-direction: column;
   gap: var(--space-300);
   background-color: var(--base-white-20);
-  margin-inline: clamp(1rem, 6vw, 6rem);
+  margin-inline: clamp(1rem, 6vw, 8rem);
   border-radius: var(--b-radius-400);
   padding: clamp(var(--space-300), 3vw, var(--space-700));
   margin-block-start: var(--space-900);
