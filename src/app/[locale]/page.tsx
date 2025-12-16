@@ -87,7 +87,8 @@ export default async function HomePage({
       />
       <Opinions />
       <AdBloque
-        title={t("adBloques.second.title")}
+        // title={t("adBloques.second.title")}
+        title="Servicios"
         content={t("adBloques.second.content")}
         image={firstAdBloqueImage}
         imageAlt={t("adBloques.second.imageAlt")}

@@ -16,6 +16,7 @@
 
 .starIcons {
   display: flex;
+  font-size: var(--fs-300);
 }
 
 .opinionsContainer {
@@ -62,15 +63,20 @@
 
 .secondOpinionArticle {
   background-color: var(--sexta-70);
-  padding: var(--space-200);
+  padding: var(--space-600);
+  padding: clamp(var(--space-300), 3vw, var(--space-600));
   border-radius: calc(var(--b-radius-400) - var(--space-300));
   box-shadow: var(--shadow-300);
 }
 
 .secondOpinionArticle img {
-  width: 4rem;
+  width: 4em;
   height: auto;
   float: right;
+}
+
+.secondOpinionArticle p {
+  margin-block-start: var(--space-300);
 }
 
 .bgColor1 {

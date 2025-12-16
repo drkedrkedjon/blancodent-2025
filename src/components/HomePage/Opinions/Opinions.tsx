@@ -22,7 +22,7 @@ export default async function Opinions() {
               <StarIcon weight="fill" />
               <StarIcon weight="fill" />
               <StarIcon weight="fill" />
-              <StarHalfIcon weight="fill" />
+              <StarIcon weight="fill" />
             </span>
           </header>
           <blockquote>
@@ -114,7 +114,11 @@ export default async function Opinions() {
               className={`${styles.secondOpinionArticle} ${styles.bgColor4}`}
             >
               <header>
-                <h3>Maria</h3>
+                <Image
+                  src={img}
+                  alt=""
+                />
+                <h3>Juan Martinex</h3>
                 <span className={styles.starIcons}>
                   <StarIcon weight="fill" />
                   <StarIcon weight="fill" />
@@ -135,7 +139,11 @@ export default async function Opinions() {
               className={`${styles.secondOpinionArticle} ${styles.bgColor5}`}
             >
               <header>
-                <h3>Maria</h3>
+                <Image
+                  src={img}
+                  alt=""
+                />
+                <h3>Josefina</h3>
                 <span className={styles.starIcons}>
                   <StarIcon weight="fill" />
                   <StarIcon weight="fill" />
