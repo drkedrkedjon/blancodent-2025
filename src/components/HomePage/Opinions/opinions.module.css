@@ -81,22 +81,27 @@
 
 .bgColor1 {
   background-color: var(--sexta-70);
+  color: var(--sexta-10);
 }
 
 .bgColor2 {
   background-color: var(--cuarta-70);
+  color: var(--cuarta-10);
 }
 
 .bgColor3 {
   background-color: var(--primera-70);
+  color: var(--primera-10);
 }
 
 .bgColor4 {
   background-color: var(--tercera-90);
+  color: var(--tercera-10);
 }
 
 .bgColor5 {
   background-color: var(--segunda-90);
+  color: var(--segunda-10);
 }
 
 .thirdOpinionsContainer {
@@ -125,6 +130,7 @@
 
   .bgColor4 {
     background-color: var(--segunda-90);
+    color: var(--segunda-10);
   }
 
   .thirdOpinionsContainer {
