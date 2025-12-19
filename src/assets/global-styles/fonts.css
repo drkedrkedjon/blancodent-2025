@@ -73,6 +73,8 @@ h4 {
 
 p {
   line-height: var(--lh-500);
+  hyphens: auto;
+  hyphenate-limit-chars: 4 2;
 }
 
 strong {
