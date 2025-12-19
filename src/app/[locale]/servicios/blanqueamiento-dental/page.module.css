@@ -1,0 +1,53 @@
+.container {
+  background-image: url("@/assets/images/fondo-articulos.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: grid;
+  grid-template-columns: 25% 20px 1fr;
+  column-gap: 20px;
+}
+
+.header {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  padding-inline: 50px;
+}
+
+.h1 {
+  color: var(--primera-20);
+  font-size: var(--fs-hero-100);
+  text-shadow: var(--text-shadow);
+  max-width: 16ch;
+  margin-block: 80px;
+  text-align: left;
+}
+
+.subTitle {
+  font-weight: var(--f-wei-600);
+  line-height: var(--lh-300);
+  padding-left: 200px;
+  text-align: right;
+}
+
+.date {
+  text-align: right;
+  margin-block: 20px;
+  font-weight: var(--f-wei-600);
+  font-size: var(--fs-300);
+}
+
+.line {
+  background-color: var(--primera-90);
+  border-radius: 20px;
+}
+
+.content {
+  grid-column: -2/-1;
+  grid-row: 2/3
+}
+
+.aside {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  /* background-color: var(--cuarta-100); */
+}
