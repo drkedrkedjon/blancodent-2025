@@ -32,7 +32,32 @@ export default async function BlanqueamientoDental({
       <div className={styles.content}>
         <Content />
       </div>
-      <aside className={styles.aside}>aside</aside>
+      <aside className={styles.aside}>
+        <h4>Title bla bla</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sint
+          omnis tempore enim voluptatibus tempora laborum! Nostrum atque
+          repellendus non qui sit. Ratione accusamus nam a corporis porro odio
+          laboriosam?
+        </p>
+        <br />
+        <h4>Title bla bla</h4>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, odit id
+          temporibus adipisci obcaecati quos doloribus quisquam aliquam ab
+          beatae tempore qui est atque impedit nesciunt minima dignissimos
+          facere voluptates?
+        </p>
+        <br />
+        <h4>Title bla bla</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, odit id
+          temporibus adipisci obcaecati quos doloribus quisquam aliquam ab
+          beatae tempore qui est atque impedit nesciunt minima dignissimos
+          facere voluptates?
+        </p>
+      </aside>
     </article>
   );
 }
