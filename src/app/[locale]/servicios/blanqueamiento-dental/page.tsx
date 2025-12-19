@@ -1,6 +1,7 @@
 import { routing } from "@/i18n/routing";
 import { hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
+import styles from "./page.module.css";
 
 interface ServiciosLayoutProps {
   params: Promise<{ locale: string }>;
@@ -23,7 +24,6 @@ export default async function BlanqueamientoDental({
   return (
     <section>
       <h1>{metadata.title}</h1>
-      <h3>Layout H3</h3>
       <p>{metadata.subTitle}</p>
       <Content />
     </section>
