@@ -1,7 +1,7 @@
 import { routing } from "@/i18n/routing";
 import { hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
-import styles from "./page.module.css";
+// import styles from "./page.module.css";
 
 interface ServiciosLayoutProps {
   params: Promise<{ locale: string }>;
