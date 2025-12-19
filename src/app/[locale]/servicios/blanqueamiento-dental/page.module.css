@@ -1,19 +1,15 @@
 .container {
-  /* background-image: url("@/assets/images/fondo-articulos-2.png");
-  background-repeat: no-repeat;
-  background-size: contain; */
+
   display: grid;
   grid-template-columns: 25% 20px 1fr;
   column-gap: 20px;
   row-gap: 50px;
-  /* position: relative; */
   color: var(--primera-10);
   margin-block-end: var(--space-900);
 }
 
 .container::before {
   content: "";
-  /* Create a pseudo-element */
   position: absolute;
   top: 0;
   left: 0;
@@ -23,15 +19,14 @@
   background-repeat: no-repeat;
   background-size: contain;
   filter: hue-rotate(260deg);
-  /* Apply the filter here */
-  z-index: -1;
-  /* Place it behind the content */
+  z-index: -10;
+  opacity: 0.6;
 }
 
 .header {
   grid-column: 1/-1;
   grid-row: 1/2;
-  padding-inline: 50px;
+  padding-inline: var(--space-900);
 }
 
 .h1 {
@@ -39,7 +34,7 @@
   font-size: var(--fs-hero-100);
   text-shadow: var(--text-shadow);
   max-width: 16ch;
-  margin-block: 80px;
+  margin-block: 80px 40px;
   text-align: left;
 }
 
@@ -53,13 +48,13 @@
 
 .date {
   text-align: right;
-  margin-block: 20px;
-  font-weight: var(--f-wei-600);
+  margin-block: var(--space-300);
+  font-weight: var(--f-wei-900);
   font-size: var(--fs-300);
 }
 
 .line {
-  background-color: var(--primera-80);
+  background-color: var(--primera-90);
   border-radius: 20px;
 }
 
@@ -68,12 +63,17 @@
   grid-row: 2/3;
 }
 
+.content h2:not(:first-of-type) {
+  margin-top: 2rem;
+}
+
 .aside {
   grid-column: 1/2;
   grid-row: 2/3;
-  background-color: var(--primera-90);
+  background-color: var(--primera-100);
   border-radius: var(--b-radius-300);
   padding: 20px;
   font-size: var(--fs-300);
   text-align: right;
+  box-shadow: var(--shadow-300);
 }

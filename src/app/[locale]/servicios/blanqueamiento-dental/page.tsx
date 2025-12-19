@@ -33,7 +33,7 @@ export default async function BlanqueamientoDental({
         <Content />
       </div>
       <aside className={styles.aside}>
-        <h4>Title bla bla</h4>
+        <h4>Implants</h4>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sint
           omnis tempore enim voluptatibus tempora laborum! Nostrum atque
@@ -41,7 +41,7 @@ export default async function BlanqueamientoDental({
           laboriosam?
         </p>
         <br />
-        <h4>Title bla bla</h4>
+        <h4>Bruxismo</h4>
 
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, odit id
@@ -50,7 +50,7 @@ export default async function BlanqueamientoDental({
           facere voluptates?
         </p>
         <br />
-        <h4>Title bla bla</h4>
+        <h4>Ortodoncia</h4>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, odit id
           temporibus adipisci obcaecati quos doloribus quisquam aliquam ab
