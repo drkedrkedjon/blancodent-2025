@@ -1,10 +1,5 @@
 "use client";
-import {
-  home,
-  localizacion,
-  losHorarios,
-  ofertasContinuas,
-} from "@/assets/links";
+import { home, losHorarios, ofertasContinuas, ubicacion } from "@/assets/links";
 import LangSwitcher from "@/components/Header/LangSwitcher";
 import Menu from "@/components/Header/Menu";
 import { Link } from "@/i18n/navigation";
@@ -88,7 +83,7 @@ export default function Header() {
         >
           <ul role="list">
             <li>
-              <Link href={localizacion()}>{t("quickLinksOne")}</Link> •{" "}
+              <Link href={ubicacion()}>{t("quickLinksOne")}</Link> •{" "}
             </li>
             <li>
               <Link href={ofertasContinuas()}>{t("quickLinksTwo")}</Link> •{" "}
