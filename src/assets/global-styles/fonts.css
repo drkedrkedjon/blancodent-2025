@@ -49,13 +49,17 @@ h1 {
   font-weight: var(--f-wei-900);
   font-stretch: var(--f-str-90);
   line-height: var(--lh-100);
+  hyphens: auto;
+  hyphenate-limit-chars: 4 2;
 }
 
 h2 {
   font-size: var(--fs-700);
   font-weight: var(--f-wei-800);
   font-stretch: var(--f-str-90);
-  line-height: var(--lh-100);
+  line-height: var(--lh-200);
+  hyphens: auto;
+  hyphenate-limit-chars: 4 2;
 }
 
 h3 {
@@ -63,6 +67,8 @@ h3 {
   font-weight: var(--f-wei-700);
   font-stretch: var(--f-str-100);
   line-height: var(--lh-200);
+  hyphens: auto;
+  hyphenate-limit-chars: 4 2;
 }
 
 h4 {
