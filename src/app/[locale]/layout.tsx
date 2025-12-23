@@ -1,18 +1,18 @@
+import "@/assets/global-styles/globals.css";
+import Footer from "@/components/Footer/Footer";
+import Header from "@/components/Header/Header";
+import SkipLink from "@/components/SkipLink/SkipLink";
+import { routing } from "@/i18n/routing";
+import { MotionConfig } from "motion/react";
+import { Metadata } from "next";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import {
   getMessages,
-  setRequestLocale,
   getTranslations,
+  setRequestLocale,
 } from "next-intl/server";
-import { notFound } from "next/navigation";
-import { Metadata } from "next";
-import { routing } from "@/i18n/routing";
 import localFont from "next/font/local";
-import "@/assets/global-styles/globals.css";
-import Header from "@/components/Header/Header";
-import Footer from "@/components/Footer/Footer";
-import SkipLink from "@/components/SkipLink/SkipLink";
-import { MotionConfig } from "motion/react";
+import { notFound } from "next/navigation";
 
 // Load the local font
 const monaSansFont = localFont({
@@ -54,9 +54,6 @@ export default async function RootLayout({
   // Enable static rendering
   setRequestLocale(locale);
   // Ensure that the incoming `locale` is valid
-  // if (!routing.locales.includes(locale as "en" | "es")) {
-  //   notFound();
-  // }
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
@@ -64,6 +61,7 @@ export default async function RootLayout({
   // side is the easiest way to get started
   const messages = await getMessages();
   const t = await getTranslations("SkipLinkMain");
+
   return (
     <html
       lang={locale}

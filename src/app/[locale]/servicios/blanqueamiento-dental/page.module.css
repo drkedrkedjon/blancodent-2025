@@ -12,10 +12,6 @@
   margin-block: var(--space-600) var(--space-400);
 }
 
-.subTitle {
-  font-weight: var(--f-wei-600);
-}
-
 .date {
   text-align: right;
   margin-block: var(--space-300);
@@ -23,17 +19,24 @@
   font-size: var(--fs-300);
 }
 
+.subTitle {
+  font-weight: var(--f-wei-600);
+}
+
 .line {
   display: none;
+  background-color: var(--primera-90);
+  border-radius: var(--b-radius-300);
 }
 
 .content h2:not(:first-of-type) {
-  margin-top: var(--space-400);
+  margin-block-start: var(--space-400);
 }
 
 .aside {
   background-color: var(--primera-100);
   border-radius: var(--b-radius-300);
+  overflow: hidden;
   padding: var(--space-400);
   box-shadow: var(--shadow-300);
   display: flex;
@@ -47,9 +50,10 @@
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 44rem) {
   .container {
     grid-template-columns: 25% 1rem 1fr;
+    grid-template-rows: auto auto;
     column-gap: var(--space-400);
     row-gap: var(--space-800);
     margin-block-end: clamp(var(--space-400), 2vw, var(--space-900));
@@ -62,20 +66,19 @@
   }
 
   .h1 {
+    margin-block: 5rem var(--space-800);
     max-width: 16ch;
-    margin-block: 5rem 2rem;
-    line-height: var(--lh-300);
   }
 
   .subTitle {
-    padding-left: clamp(var(--space-600), 7vw, 6rem);
     text-align: right;
+    padding-inline-start: clamp(var(--space-600), 7vw, 6rem);
   }
 
   .line {
     display: block;
-    background-color: var(--primera-90);
-    border-radius: var(--b-radius-300);
+    grid-column: 2/3;
+    grid-row: 2/3;
   }
 
   .content {
@@ -90,16 +93,12 @@
   .aside {
     grid-column: 1/2;
     grid-row: 2/3;
-    border-radius: var(--b-radius-300);
     padding: var(--space-300);
-
-    & img {
-      border-radius: calc(var(--b-radius-300) - var(--space-200))
-    }
+    gap: var(--space-300);
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 57rem) {
   .container {
     grid-template-columns: 30% 1.6rem 1fr;
     column-gap: var(--space-600);
@@ -107,7 +106,7 @@
   }
 
   .subTitle {
-    padding-left: clamp(var(--space-600), 7vw, 6rem);
+    padding-inline-start: clamp(var(--space-900), 9vw, 10rem);
   }
 
   .content h2:not(:first-of-type) {

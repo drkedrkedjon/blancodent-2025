@@ -29,59 +29,31 @@ export default async function BlanqueamientoDental({
   return (
     <article className={styles.container}>
       <header className={styles.header}>
-        <h1 className={styles.h1}>{metadata.title}</h1>
-        <p className={styles.date}>Ultima edicion: {metadata.fecha}</p>
-        <p className={styles.subTitle}>{metadata.subTitle}</p>
+        <h1 className={styles.h1}>{metadata?.title}</h1>
+        <p className={styles.date}>Última edición: {metadata?.date}</p>
+        <p className={styles.subTitle}>{metadata?.subTitle}</p>
       </header>
-      <div className={styles.line}></div>
+      <div className={styles.line} />
       <div className={styles.content}>
         <Content />
       </div>
       <aside className={styles.aside}>
-        {/* <h3>Recepcion</h3> */}
         <Image
           src={recepcion}
           alt=""
         />
-        {/* <h3>Personal</h3> */}
         <Image
           src={personal}
           alt=""
         />
-        {/* <h3>Consulta</h3> */}
         <Image
           src={consulta}
           alt=""
         />
-        {/* <h3>Consulta</h3> */}
         <Image
           src={noSeQue}
           alt=""
         />
-        {/* <h3>Implants</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sint
-          omnis tempore enim voluptatibus tempora laborum! Nostrum atque
-          repellendus non qui sit. Ratione accusamus nam a corporis porro odio
-          laboriosam?
-        </p>
-        <br />
-        <h3>Bruxismo</h3>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, odit id
-          temporibus adipisci obcaecati quos doloribus quisquam aliquam ab
-          beatae tempore qui est atque impedit nesciunt minima dignissimos
-          facere voluptates?
-        </p>
-        <br />
-        <h3>Ortodoncia</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, odit id
-          temporibus adipisci obcaecati quos doloribus quisquam aliquam ab
-          beatae tempore qui est atque impedit nesciunt minima dignissimos
-          facere voluptates?
-        </p> */}
       </aside>
     </article>
   );
