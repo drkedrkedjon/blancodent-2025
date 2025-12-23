@@ -1,7 +1,8 @@
 .header {
   background-color: var(--base-white-20);
-  /* color: var(--primera-10); */
+  color: var(--primera-10);
   padding-block: min(1.5vw, var(--space-300));
+  box-shadow: var(--shadow-300);
   position: sticky;
   top: 0;
   z-index: 999;
@@ -66,11 +67,11 @@
   padding-inline-end: var(--space-400)
 }
 
-@media (min-width: 55rem) {
+/* @media (min-width: 55rem) {
   .logo .p {
-    /* display: block; */
+    display: block;
   }
-}
+} */
 
 @media (min-width: 41rem) {
   .quickLinks {
