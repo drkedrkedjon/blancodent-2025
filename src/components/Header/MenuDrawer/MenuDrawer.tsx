@@ -132,7 +132,8 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
               >
                 <span
                   id="nav-links-group-label"
-                  className="visually-hidden"
+                  // className="visually-hidden"
+                  hidden
                 >
                   {t("disclosureGroupLabel")}
                 </span>
@@ -492,6 +493,6 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
         </RemoveScroll>
       </FocusLock>
     </div>,
-    portalRoot
+    portalRoot,
   );
 }

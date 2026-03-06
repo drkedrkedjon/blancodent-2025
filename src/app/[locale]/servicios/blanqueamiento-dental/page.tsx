@@ -6,7 +6,7 @@ import { routing } from "@/i18n/routing";
 import { hasLocale } from "next-intl";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import styles from "./page.module.css";
+import styles from "../servicios.module.css";
 
 interface ServiciosLayoutProps {
   params: Promise<{ locale: string }>;

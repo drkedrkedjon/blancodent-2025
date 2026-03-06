@@ -34,7 +34,7 @@ export default function SliderCard({
           className={styles.link}
           href={link}
         >
-          {linkContent}
+          {linkContent + title}
         </Link>
       </div>
     </article>
