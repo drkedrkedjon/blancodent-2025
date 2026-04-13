@@ -1,7 +1,7 @@
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: var(--space-400);
+  row-gap: var(--space-600);
   color: var(--primera-10);
 }
 
@@ -14,7 +14,7 @@
 
 .date {
   text-align: right;
-  margin-block: var(--space-300);
+  margin-block: var(--space-500);
   font-weight: var(--f-wei-900);
   font-size: var(--fs-300);
 }
@@ -26,35 +26,22 @@
 .line {
   display: none;
   background-color: var(--primera-90);
-  border-radius: var(--b-radius-300);
+  border-radius: var(--b-radius-100);
+}
+
+.content h2:first-of-type {
+  margin-block: var(--space-200) var(--space-400);
 }
 
 .content h2:not(:first-of-type) {
-  margin-block-start: var(--space-400);
-}
-
-.aside {
-  background-color: var(--primera-100);
-  border-radius: var(--b-radius-300);
-  overflow: hidden;
-  padding: var(--space-400);
-  box-shadow: var(--shadow-300);
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-400);
-
-  & img {
-    border-radius: calc(var(--b-radius-300) - var(--space-200));
-    aspect-ratio: 16/9;
-    object-fit: cover;
-  }
+  margin-block: var(--space-800) var(--space-400);
 }
 
 @media (min-width: 44rem) {
   .container {
     grid-template-columns: 25% 1rem 1fr;
     grid-template-rows: auto auto;
-    column-gap: var(--space-400);
+    column-gap: var(--space-600);
     row-gap: var(--space-800);
     margin-block-end: clamp(var(--space-400), 2vw, var(--space-900));
   }
@@ -86,39 +73,20 @@
     grid-row: 2/3;
   }
 
-  .content h2:not(:first-of-type) {
-    margin-top: var(--space-500);
-  }
-
-  .aside {
+  .asideContainer {
     grid-column: 1/2;
     grid-row: 2/3;
-    padding: var(--space-300);
-    gap: var(--space-300);
   }
 }
 
 @media (min-width: 57rem) {
   .container {
     grid-template-columns: 30% 1.6rem 1fr;
-    column-gap: var(--space-600);
+    column-gap: var(--space-800);
     row-gap: var(--space-900);
   }
 
   .subTitle {
     padding-inline-start: clamp(var(--space-900), 9vw, 10rem);
-  }
-
-  .content h2:not(:first-of-type) {
-    margin-top: var(--space-600);
-  }
-
-  .aside {
-    border-radius: var(--b-radius-400);
-    padding: var(--space-400);
-
-    & img {
-      border-radius: calc(var(--b-radius-400) - var(--space-200))
-    }
   }
 }
