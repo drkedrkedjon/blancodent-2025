@@ -22,18 +22,22 @@ export default async function AsideImageBlock({
       <Image
         src={url1}
         alt=""
+        className={styles.imageQuery}
       />
       <Image
         src={url2}
         alt=""
+        className={styles.imageQuery}
       />
       <Image
         src={url3}
         alt=""
+        className={styles.imageQuery}
       />
       <Image
         src={url4}
         alt=""
+        className={styles.imageQuery}
       />
     </aside>
   );
