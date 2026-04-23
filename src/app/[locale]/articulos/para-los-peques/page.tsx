@@ -4,11 +4,27 @@ import noSeQue from "@/assets/images/home-page/imagenes.jpg";
 import consulta from "@/assets/images/home-page/ortodoncia.jpg";
 import AsideImageBlock from "@/components/AsideImageBlock/AsideImageBlock";
 import { routing } from "@/i18n/routing";
+import { Metadata } from "next";
 import { hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import styles from "../articulos.module.css";
+
 interface ServiciosLayoutProps {
   params: Promise<{ locale: string }>;
+}
+// Generate metadata for a title and content...
+export async function generateMetadata({
+  params,
+}: ServiciosLayoutProps): Promise<Metadata> {
+  const { locale } = await params;
+  const { metadata } = await import(
+    locale && `./markdown/content-${locale}.mdx`
+  );
+
+  return {
+    title: metadata?.title,
+    description: metadata?.subTitle,
+  };
 }
 
 export default async function BlanqueamientoDental({
