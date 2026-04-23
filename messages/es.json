@@ -140,6 +140,9 @@
     }
   },
   "HomePage": {
+    "meta": {
+      "title": "Página de inicio"
+    },
     "heroHeader": {
       "titleSmall": "Clínica Dental",
       "titleBig": "Blancodent",

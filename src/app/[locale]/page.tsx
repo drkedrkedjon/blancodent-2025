@@ -50,7 +50,7 @@ export default async function HomePage({
             content={t(`sliders.sliderClinica.card${index + 1}.content`)}
             alt={t(`sliders.sliderClinica.card${index + 1}.alt`)}
             linkContent={t(
-              `sliders.sliderClinica.card${index + 1}.linkContent`
+              `sliders.sliderClinica.card${index + 1}.linkContent`,
             )}
           />
         ))}
@@ -104,7 +104,7 @@ export default async function HomePage({
             content={t(`sliders.sliderServices.card${index + 1}.content`)}
             alt={t(`sliders.sliderServices.card${index + 1}.alt`)}
             linkContent={t(
-              `sliders.sliderServices.card${index + 1}.linkContent`
+              `sliders.sliderServices.card${index + 1}.linkContent`,
             )}
           />
         ))}

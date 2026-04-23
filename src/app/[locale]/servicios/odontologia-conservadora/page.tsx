@@ -5,7 +5,7 @@ import consulta from "@/assets/images/home-page/ortodoncia.jpg";
 import AsideImageBlock from "@/components/AsideImageBlock/AsideImageBlock";
 import { routing } from "@/i18n/routing";
 import { hasLocale } from "next-intl";
-// import Image from "next/image";
+
 import { notFound } from "next/navigation";
 import styles from "../servicios.module.css";
 
