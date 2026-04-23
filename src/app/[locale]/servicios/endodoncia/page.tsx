@@ -6,11 +6,26 @@ import AsideImageBlock from "@/components/AsideImageBlock/AsideImageBlock";
 import { routing } from "@/i18n/routing";
 import { hasLocale } from "next-intl";
 
+import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import styles from "../servicios.module.css";
 
 interface ServiciosLayoutProps {
   params: Promise<{ locale: string }>;
+}
+// Generate metadata for a title and content...
+export async function generateMetadata({
+  params,
+}: ServiciosLayoutProps): Promise<Metadata> {
+  const { locale } = await params;
+  const { metadata } = await import(
+    locale && `./markdown/content-${locale}.mdx`
+  );
+
+  return {
+    title: metadata?.title,
+    description: metadata?.subTitle,
+  };
 }
 
 export default async function BlanqueamientoDental({
