@@ -1,3 +1,6 @@
+import Image from "next/image";
+import graph from "../images/periodoncia-1.jpeg";
+
 export const metadata = {
   title: "Periodontics",
   subTitle:
@@ -13,7 +16,10 @@ In Spain, according to the 2005 National Health Survey, between 85-90% of the po
 
 Get to know these new terms:
 
-![Drawing of three molars, from healthy to severely damaged gums](/images-md/periodoncia-1.jpeg)
+<Image
+  src={graph}
+  alt="Drawing of three molars, showing the progression from a healthy tooth to one with severely damaged gums"
+/>
 
 - Dental plaque: is the main factor in periodontal or gum diseases. Plaque is a thin and harmful layer or film, which forms continuously as a result of the bacteria living in our mouths (over 700 types), and its accumulation causes gingivitis and periodontitis.
 
