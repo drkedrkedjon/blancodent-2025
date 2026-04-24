@@ -1,3 +1,7 @@
+import Image from "next/image";
+import comparativa from "../images/coparativa.jpeg";
+import grinder from "../images/grinder.jpeg";
+
 export const metadata = {
   title: "Your own tooth as biomaterial",
   subTitle:
@@ -13,6 +17,13 @@ This involves a novel device called the "Smart Dentin Grinder," which allows us 
 
 ## Smart dental grinder
 
+<Image
+  src={grinder}
+  alt={
+    "Medical device, similar to a blender, that turns your tooth into powder"
+  }
+/>
+
 ### How does it work?
 
 Thanks to the patented SMART GRINDER process, developed by Prof. Binderman, it is possible to transform the extracted tooth into a bone graft.
@@ -24,5 +35,10 @@ The process is as follows: first, the extracted teeth are cleaned, disinfected, 
 Scientific explanation: The composition of the tooth is almost identical to that of human bone, in terms of calcium and phosphorus ions; 70% are mineral substances, 20% organic components (especially collagen), and the remaining 10% is water, which makes it ideal for use as an autograft.
 
 This autologous graft does not provoke an immune reaction; its incorporation is quick and effective, and in a few months it becomes bone.
+
+<Image
+  src={comparativa}
+  alt={"Four dental X-ray images comparing before and after"}
+/>
 
 [**Scientific references >>>**](https://www.kometabio.com/scientific-publications)
