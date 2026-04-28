@@ -1,10 +1,10 @@
-import recepcion from "@/assets/images/home-page/blanqueamiento.jpg";
-import personal from "@/assets/images/home-page/conservadora.jpg";
-import noSeQue from "@/assets/images/home-page/imagenes.jpg";
-import consulta from "@/assets/images/home-page/ortodoncia.jpg";
 import AsideImageBlock from "@/components/AsideImageBlock/AsideImageBlock";
 import { routing } from "@/i18n/routing";
 import { hasLocale } from "next-intl";
+import firstImg from "./images/001.png";
+import secondImg from "./images/002.jpg";
+import thirdImg from "./images/003.jpg";
+import fourthImg from "./images/004.jpg";
 
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
@@ -55,10 +55,10 @@ export default async function BlanqueamientoDental({
       </div>
       <div className={styles.asideContainer}>
         <AsideImageBlock
-          url1={recepcion}
-          url2={personal}
-          url3={noSeQue}
-          url4={consulta}
+          url1={firstImg}
+          url2={secondImg}
+          url3={thirdImg}
+          url4={fourthImg}
         />
       </div>
     </article>

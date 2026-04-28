@@ -1,13 +1,13 @@
-import recepcion from "@/assets/images/home-page/blanqueamiento.jpg";
-import personal from "@/assets/images/home-page/conservadora.jpg";
-import noSeQue from "@/assets/images/home-page/imagenes.jpg";
-import consulta from "@/assets/images/home-page/ortodoncia.jpg";
 import AsideImageBlock from "@/components/AsideImageBlock/AsideImageBlock";
 import { routing } from "@/i18n/routing";
 import { Metadata } from "next";
 import { hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import styles from "../asi-somos.module.css";
+import firstImg from "./images/001.jpg";
+import secondImg from "./images/002.jpg";
+import thirdImg from "./images/003.jpg";
+import fourthImg from "./images/004.jpg";
 
 interface ServiciosLayoutProps {
   params: Promise<{ locale: string }>;
@@ -54,10 +54,10 @@ export default async function BlanqueamientoDental({
       </div>
       <div className={styles.asideContainer}>
         <AsideImageBlock
-          url1={recepcion}
-          url2={personal}
-          url3={noSeQue}
-          url4={consulta}
+          url1={firstImg}
+          url2={secondImg}
+          url3={thirdImg}
+          url4={fourthImg}
         />
       </div>
     </article>
