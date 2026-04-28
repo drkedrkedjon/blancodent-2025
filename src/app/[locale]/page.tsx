@@ -94,6 +94,17 @@ export default async function HomePage({
         direction="right"
       />
       <Opinions />
+      <div style={{ position: "relative", paddingTop: "56.25%" }}>
+        <iframe
+          title="Interior de la clínica"
+          width="100%"
+          height="100%"
+          src="https://peertube.alexdebosnia.eu/videos/embed/ka86UPsbcHnHUetT1zFdX7"
+          allow="fullscreen"
+          sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+          style={{ border: "0px", position: "absolute", inset: "0px" }}
+        ></iframe>
+      </div>
       <AdBloque
         // title={t("adBloques.second.title")}
         title={t("adBloques.fourth.title")}
