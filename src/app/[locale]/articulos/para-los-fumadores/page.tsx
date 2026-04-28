@@ -1,4 +1,5 @@
 import secondImg from "@/assets/images/clinica/clinica-4.jpg";
+import thirdImg from "@/assets/images/clinica/detalle-4.jpg";
 import AsideImageBlock from "@/components/AsideImageBlock/AsideImageBlock";
 import { routing } from "@/i18n/routing";
 import { Metadata } from "next";
@@ -6,7 +7,6 @@ import { hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import styles from "../articulos.module.css";
 import firstImg from "./images/001.jpg";
-import thirdImg from "./images/003.jpg";
 import fourthImg from "./images/004.jpg";
 
 interface ServiciosLayoutProps {
