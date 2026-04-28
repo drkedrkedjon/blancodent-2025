@@ -1,21 +1,21 @@
-import Mailjet from "node-mailjet";
 import { NextResponse } from "next/server"; // Must for next.js
+import Mailjet from "node-mailjet";
 
 export async function POST(req) {
   // Must be POST for post and GET for get...
-  const { name, email, message } = await req.json();
+  const { name, email, phone, message } = await req.json();
 
-  if (!name || !email || !message) {
+  if (!name || !email) {
     return NextResponse.json(
       { error: "Missing required fields" },
-      { status: 400 }
+      { status: 400 },
     );
   }
 
   const mailjet = Mailjet.apiConnect(
     // Mailjet API call
     process.env.MAILJET_API_KEY,
-    process.env.MAILJET_SECRET_KEY
+    process.env.MAILJET_SECRET_KEY,
   );
 
   try {
@@ -24,16 +24,17 @@ export async function POST(req) {
         {
           From: {
             Email: process.env.MAILJET_FROM_EMAIL,
-            Name: "Website Form on Bubulazy.com",
+            Name: "Cliente de Blancodent.com",
           },
           To: [
             {
               Email: process.env.MAILJET_TO_EMAIL,
-              Name: "For Drkedrkedjon",
+              Name: "Gestión Clínica Blancodent",
             },
           ],
-          Subject: "New Contact Form Submission on Bubulazy.com",
-          TextPart: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
+          Subject:
+            "Nuevo mensaje desde el formulario de contacto en Blancodent.com",
+          TextPart: `Nombre: ${name}\nEmail: ${email}\nTelefono: ${phone}\nMensaje: ${message}`,
         },
       ],
     });

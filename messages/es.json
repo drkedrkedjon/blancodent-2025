@@ -361,5 +361,25 @@
   },
   "SkipLinkMain": {
     "content": "Saltar al contenido principal"
+  },
+  "ContactForm": {
+    "handleSubmit": {
+      "sending": "Enviando su mensaje a nuestro equipo...",
+      "success": "¡Mensaje enviado con éxito! Gracias.",
+      "error": "Error al enviar el mensaje, por favor inténtelo de nuevo más tarde o llame al: +34 928 292 455."
+    },
+    "name": "Su nombre",
+    "namePh": "¿Cómo quiere que le llamemos?",
+    "nameDesc": "Por su privacidad, no es necesario que ponga su nombre verdadero. Si lo prefiere, puede usar un apodo y estaremos encantados de dirigirnos a usted así.",
+    "email": "Correo electrónico",
+    "emailPh": "¿Cuál es su correo electrónico?",
+    "emailDesc": "Es obligatorio y necesario para poder responder a su solicitud. Si no lo indica, no podremos contactarle.",
+    "phone": "Teléfono de contacto",
+    "phonePh": "No olvide el prefijo de su país.",
+    "phoneDesc": "No es obligatorio, pero le recomendamos que lo rellene porque facilita la comunicación. Si lo proporciona, asumimos que es su forma preferida de contacto.",
+    "message": "Su mensaje o solicitud de cita previa",
+    "messagePh": "Escríbanos su mensaje...",
+    "messageDesc": "Si se trata de una solicitud de cita previa, indíquenos la franja de fechas deseadas y los turnos (mañana o tarde). Y gracias por contactarnos.",
+    "btn": "Enviar mensaje..."
   }
 }

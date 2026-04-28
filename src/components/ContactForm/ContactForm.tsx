@@ -1,6 +1,3 @@
-// export default function ContactForm() {
-//   return <h2>Contact Form</h2>;
-// }
 "use client";
 import { useTranslations } from "next-intl";
 import type { SubmitEvent } from "react";
@@ -13,13 +10,14 @@ export default function Formulario() {
     name: "",
     email: "",
     message: "",
+    phone: "",
   });
-  const t = useTranslations("Formulario");
+  const t = useTranslations("ContactForm");
 
   const handleSubmit = async (e: SubmitEvent<HTMLFormElement>) => {
     // THIS IS NEW mailjet SHIT, HOPE IT WORKS NOW - IT DOES...
     e.preventDefault();
-    setStatus("Sending...");
+    setStatus(t("handleSubmit.sending"));
 
     const res = await fetch("/api/mailjet", {
       method: "POST",
@@ -28,10 +26,10 @@ export default function Formulario() {
     });
 
     if (res.ok) {
-      setStatus("Message sent successfully!");
-      setForm({ name: "", email: "", message: "" });
+      setStatus(t("handleSubmit.success"));
+      setForm({ name: "", email: "", phone: "", message: "" });
     } else {
-      setStatus("Error sending message.");
+      setStatus(t("handleSubmit.error"));
     }
   };
 
@@ -48,7 +46,7 @@ export default function Formulario() {
           className={styles.label}
           htmlFor="name"
         >
-          Nombre:
+          {t("name")}: *
         </label>
         <input
           required
@@ -58,13 +56,14 @@ export default function Formulario() {
           type="text"
           name="Nombre"
           id="name"
-          placeholder={t("nombrePlhol")}
+          placeholder={t("namePh")}
         />
+        <span className={styles.description}>{t("nameDesc")}</span>
         <label
           className={styles.label}
           htmlFor="email"
         >
-          Email:
+          {t("email")}: *
         </label>
         <input
           required
@@ -74,13 +73,31 @@ export default function Formulario() {
           type="email"
           id="email"
           name="Email"
-          placeholder={t("emailPlhol")}
+          placeholder={t("emailPh")}
         />
+        <span className={styles.description}>{t("emailDesc")}</span>
+        <label
+          className={styles.label}
+          htmlFor="phone"
+        >
+          {t("phone")}:
+        </label>
+        <input
+          // required
+          value={form.phone}
+          onChange={(e) => setForm({ ...form, phone: e.target.value })}
+          className={styles.input}
+          type="text"
+          id="phone"
+          name="Phone"
+          placeholder={t("phonePh")}
+        />
+        <span className={styles.description}>{t("phoneDesc")}</span>
         <label
           className={styles.label}
           htmlFor="message"
         >
-          Mensaje:
+          {t("message")}:
         </label>
         <input
           type="text"
@@ -88,7 +105,7 @@ export default function Formulario() {
           style={{ display: "none" }}
         ></input>
         <textarea
-          required
+          // required
           value={form.message}
           onChange={(e) => setForm({ ...form, message: e.target.value })}
           className={styles.input}
@@ -96,10 +113,11 @@ export default function Formulario() {
           id="message"
           cols={30}
           rows={6}
-          placeholder={t("mensajePlhol")}
+          placeholder={t("messagePh")}
         />
+        <span className={styles.description}>{t("messageDesc")}</span>
         <p className={styles.formMessage}>{status}</p>
-        <button className={styles.button}>{t("btnEnviar")}</button>
+        <button className={`btn ${styles.button}`}>{t("btn")}</button>
       </form>
     </section>
   );
