@@ -16,6 +16,8 @@
 
   & .input {
     padding-inline: var(--space-400);
+    border: 1px solid var(--primera-30);
+    border-radius: var(--b-radius-100);
   }
 
   & .input:not(textarea) {
