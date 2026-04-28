@@ -209,14 +209,24 @@
     },
     "adBloques": {
       "first": {
-        "title": "Así somos",
-        "content": "Somos una sociedad profesional fundada y administrada por odontólogos colegiados. Detrás de la marca registrada “blancodent” no se oculta ningún propietario o empleado ajeno a la profesión odontológica o médica. Eso le garantiza un nivel profesional en la calidad de nuestros servicios, en los materiales usados en la clínica y en el cumplimiento de los procedimientos sanitarios.",
-        "imageAlt": "Futura descripcion de imagen"
+        "title": "Sobre la clínica",
+        "content": "La clínica dental Blancodent lleva más de veinte y cinco años abriendo sus puertas a los/as ciudadanos/as de Las Palmas de Gran Canaria. Estamos situados en la emblemática y peatonal avenida Mesa y López, Nº1 ubicada en el corazón de nuestra bella ciudad. Con acceso peatonal fácil, las bicicletas y las guaguas paran en frente de nuestras puertas y hay una multitud de aparcamientos para motos y vehículos en los alrededores. Estamos en el centro de la zona comercial y a 5 minutos a pie del puerto marítimo. Explora las tarjetas de abajo para conocernos en detalle.",
+        "imageAlt": ""
       },
       "second": {
+        "title": "Quien somos",
+        "content": "Clínica dental Blancodent es una sociedad profesional fundada y administrada por odontólogos colegiados. Detrás de la marca registrada “blancodent” no se oculta ningún propietario o empleado ajeno a la profesión odontológica o médica. Eso le garantiza un nivel profesional en la calidad de nuestros servicios, en los materiales usados en la clínica y en el cumplimiento de los procedimientos sanitarios de la Union Europea y de España.",
+        "imageAlt": ""
+      },
+      "third": {
         "title": "¿Qué es lo que nos hace diferente?",
         "content": "¿Es por no mezclar intereses económicos con la profesión médica o es por no unirnos con grandes franquicias odontológicas que existen en el mercado? Nuestros clientes nos cuentan que estas son dos razones por las que les gustamos. Pero hay muchísimas más. ¿Las quieres descubrir?",
-        "imageAlt": "Futura descripcion de imagen"
+        "imageAlt": ""
+      },
+      "fourth": {
+        "title": "Especialidades Odontológicas.",
+        "content": "Cuidamos tu salud y tu sonrisa mejorando tu imagen. Analizaremos tu problema y aplicaremos las especialidades que mejor se adapten en tu caso: implantes, ortodoncia o un simple arreglo en 5 minutos. Explora las tarjetas de abajo para conocernos en detalle.",
+        "imageAlt": ""
       }
     },
     "sliders": {
@@ -316,9 +326,22 @@
       }
     },
     "offers": {
-      "title": "Oferta ferula de descarga",
-      "p1": "50% de descuento en férula de descarga semirrígida + revisión + radiografía gratuita.",
-      "p2": "¿Llevas tiempo queriendo tener una sonrisa más sana?"
+      "title": "Últimas ofertas",
+      "one": {
+        "title": "Oferta ferula de descarga",
+        "p1": "50% de descuento en férula de descarga semirrígida + revisión + radiografía gratuita.",
+        "p2": "¿Llevas tiempo queriendo tener una sonrisa más sana?"
+      },
+      "two": {
+        "title": "10% de descuento para estudiantes y desempleados.",
+        "p1": "También incluye revisión, presupuesto y radiografías gratuitas. ¡Anímate!",
+        "p2": "(No acumulable a otras ofertas)"
+      },
+      "three": {
+        "title": "",
+        "p1": "",
+        "p2": ""
+      }
     },
     "whyBlancodent": {
       "title": "¿Por qué Blancodent?",
@@ -348,7 +371,31 @@
       }
     },
     "opinions": {
-      "title": "Lo que dicen de nosotros..."
+      "title": "Lo que dicen de nosotros...",
+      "first": {
+        "name": "Matt",
+        "opinion": "A cualquier persona de habla inglesa con poco español que necesite tratamiento dental en Las Palmas de G.C., recomiendo de todo corazón la Clínica Dental Blancodent. No puedo ni empezar a describir lo mucho mejor que ha sido esta experiencia comparada con cualquier problema dental que he tenido que tratar en el Reino Unido. Mucho más barato, mucho más eficiente y todo el personal es encantador."
+      },
+      "second": {
+        "name": "Jordan M.",
+        "opinion": "Blancodent ha sido mi dentista de confianza durante los últimos 8 años y ¡nunca me he sentido en mejores manos! Tras muchos tratamientos necesarios solo puedo decir una y otra vez que son los mejores en lo que hacen, honestos y atentos a cada detalle."
+      },
+      "third": {
+        "name": "Rhiannon W.",
+        "opinion": "Fantástico, me atendieron en el último momento tras un problema dental mientras viajaba. Un equipo realmente agradable, muchas gracias por ayudarme."
+      },
+      "fourth": {
+        "name": "Beatriz S.C.",
+        "opinion": "Excelentes profesionales. Siempre cuidando mi salud bucodental. Servicio excelente y muy amable. Te hacen sentir como en casa. Micki y Tania me atienden desde 2010, así que sé de lo que hablo. Desde que empecé, mi marido y mis hijos también se han ido sumando. Tengo total confianza en ellos."
+      },
+      "fifth": {
+        "name": "Paolo M.",
+        "opinion": "Tuve una experiencia excelente en Blancodent. Me hicieron una limpieza dental completa y un empaste, y todo el proceso fue muy profesional y minucioso. El personal fue muy amable y atento, y me hicieron sentir cómodo en todo momento. La limpieza fue muy a fondo y el empaste perfecto, sin molestias. La clínica es moderna, limpia y bien organizada."
+      },
+      "sixt": {
+        "name": "Marta O.",
+        "opinion": "Han sido mis dentistas de confianza durante años. Me he hecho varios tratamientos con ellos y siempre he quedado contenta y satisfecha con los resultados. El servicio es excelente; todo el personal es muy amable y profesional, te explican todo con detalle y trabajan con mucho esmero. Muy recomendables."
+      }
     }
   },
   "NotFoundPage": {

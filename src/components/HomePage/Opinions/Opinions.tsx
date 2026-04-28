@@ -16,7 +16,7 @@ export default async function Opinions() {
       <div className={styles.opinionsContainer}>
         <article className={styles.firstOpinionArticle}>
           <header className={styles.firstOpinionHeader}>
-            <h3>Jordan</h3>
+            <h3>{t("first.name")}</h3>
             <span className={styles.starIcons}>
               <StarIcon weight="fill" />
               <StarIcon weight="fill" />
@@ -26,11 +26,7 @@ export default async function Opinions() {
             </span>
           </header>
           <blockquote>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, ab
-              officiis. Consequuntur, pariatur ullam tempore fugiat sit officiis
-              dignissimos explicabo consequatur vel sint
-            </p>
+            <p>{t("first.opinion")}</p>
           </blockquote>
         </article>
         <div className={styles.otherOpinionsContainer}>
@@ -42,7 +38,7 @@ export default async function Opinions() {
               alt=""
             />
             <header>
-              <h3>Matt</h3>
+              <h3>{t("second.name")}</h3>
               <span className={styles.starIcons}>
                 <StarIcon weight="fill" />
                 <StarIcon weight="fill" />
@@ -52,11 +48,7 @@ export default async function Opinions() {
               </span>
             </header>
             <blockquote>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Reiciendis, possimus quisquam aperiam deserunt provident facilis
-                sit odio accusamus, ea molestias tempore sint
-              </p>
+              <p>{t("second.opinion")}</p>
             </blockquote>
           </article>
           <article
@@ -67,7 +59,7 @@ export default async function Opinions() {
               alt=""
             />
             <header>
-              <h3>Brendann</h3>
+              <h3>{t("third.name")}</h3>
               <span className={styles.starIcons}>
                 <StarIcon weight="fill" />
                 <StarIcon weight="fill" />
@@ -77,11 +69,7 @@ export default async function Opinions() {
               </span>
             </header>
             <blockquote>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Reiciendis, possimus quisquam aperiam deserunt provident facilis
-                sit odio accusamus, ea molestias tempore sint
-              </p>
+              <p>{t("third.opinion")}</p>
             </blockquote>
           </article>
           <article
@@ -92,7 +80,7 @@ export default async function Opinions() {
               alt=""
             />
             <header>
-              <h3>Maria</h3>
+              <h3>{t("fourth.name")}</h3>
               <span className={styles.starIcons}>
                 <StarIcon weight="fill" />
                 <StarIcon weight="fill" />
@@ -102,11 +90,7 @@ export default async function Opinions() {
               </span>
             </header>
             <blockquote>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Reiciendis, possimus quisquam aperiam deserunt provident facilis
-                sit odio accusamus, ea molestias tempore sint
-              </p>
+              <p>{t("fourth.opinion")}</p>
             </blockquote>
           </article>
           <div className={styles.thirdOpinionsContainer}>
@@ -118,7 +102,7 @@ export default async function Opinions() {
                   src={img}
                   alt=""
                 />
-                <h3>Juan Martinex</h3>
+                <h3>{t("fifth.name")}</h3>
                 <span className={styles.starIcons}>
                   <StarIcon weight="fill" />
                   <StarIcon weight="fill" />
@@ -128,11 +112,7 @@ export default async function Opinions() {
                 </span>
               </header>
               <blockquote>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Reiciendis, possimus quisquam aperiam deserunt provident
-                  facilis sit odio accusamus, ea molestias tempore sint
-                </p>
+                <p>{t("fifth.opinion")}</p>
               </blockquote>
             </article>
             <article
@@ -143,7 +123,7 @@ export default async function Opinions() {
                   src={img}
                   alt=""
                 />
-                <h3>Josefina</h3>
+                <h3>{t("sixt.name")}</h3>
                 <span className={styles.starIcons}>
                   <StarIcon weight="fill" />
                   <StarIcon weight="fill" />
@@ -153,11 +133,7 @@ export default async function Opinions() {
                 </span>
               </header>
               <blockquote>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Reiciendis, possimus quisquam aperiam deserunt provident
-                  facilis sit odio accusamus, ea molestias tempore sint
-                </p>
+                <p>{t("sixt.opinion")}</p>
               </blockquote>
             </article>
           </div>

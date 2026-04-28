@@ -1,7 +1,12 @@
 import { sliderClinica } from "@/assets/data/home-page-slider-clinica";
 import { sliderServices } from "@/assets/data/home-page-slider-services";
 import { cardImages } from "@/assets/data/home-page-why-blancodent";
-import firstAdBloqueImage from "@/assets/images/palm-trees.svg";
+import {
+  default as firstAdBloqueImage,
+  default as fourthAdBloqueImage,
+  default as secondAdBloqueImage,
+  default as thirdAdBloqueImage,
+} from "@/assets/images/palm-trees.svg";
 import AdBloque from "@/components/AdBloque/AdBloque";
 import Hero from "@/components/HomePage/Hero/Hero/Hero";
 import Offers from "@/components/HomePage/Offers/Offers";
@@ -38,7 +43,7 @@ export default async function HomePage({
         content={t("adBloques.first.content")}
         image={firstAdBloqueImage}
         imageAlt={t("adBloques.first.imageAlt")}
-        direction="left"
+        direction="right"
       />
       <Slider>
         {sliderClinica.map((card, index) => (
@@ -58,14 +63,17 @@ export default async function HomePage({
       <AdBloque
         title={t("adBloques.second.title")}
         content={t("adBloques.second.content")}
-        image={firstAdBloqueImage}
+        image={secondAdBloqueImage}
         imageAlt={t("adBloques.second.imageAlt")}
-        direction="right"
+        direction="left"
       />
-      <Offers>
-        <h3>{t("offers.title")}</h3>
-        <p>{t("offers.p1")}</p>
-        <p>{t("offers.p2")}</p>
+      <Offers title={t("offers.title")}>
+        <h3>{t("offers.one.title")}</h3>
+        <p>{t("offers.one.p1")}</p>
+        <p>{t("offers.one.p2")}</p>
+        <h3>{t("offers.two.title")}</h3>
+        <p>{t("offers.two.p1")}</p>
+        <p>{t("offers.two.p2")}</p>
       </Offers>
       <WhyBlancodent title={t("whyBlancodent.title")}>
         {cardImages.map((img, index) => (
@@ -79,19 +87,19 @@ export default async function HomePage({
         ))}
       </WhyBlancodent>
       <AdBloque
-        title={t("adBloques.second.title")}
-        content={t("adBloques.second.content")}
-        image={firstAdBloqueImage}
-        imageAlt={t("adBloques.second.imageAlt")}
-        direction="left"
+        title={t("adBloques.third.title")}
+        content={t("adBloques.third.content")}
+        image={thirdAdBloqueImage}
+        imageAlt={t("adBloques.third.imageAlt")}
+        direction="right"
       />
       <Opinions />
       <AdBloque
         // title={t("adBloques.second.title")}
-        title="Servicios"
-        content={t("adBloques.second.content")}
-        image={firstAdBloqueImage}
-        imageAlt={t("adBloques.second.imageAlt")}
+        title={t("adBloques.fourth.title")}
+        content={t("adBloques.fourth.content")}
+        image={fourthAdBloqueImage}
+        imageAlt={t("adBloques.fourth.imageAlt")}
         direction="right"
       />
       <Slider>
