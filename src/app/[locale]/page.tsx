@@ -100,6 +100,7 @@ export default async function HomePage({
           "https://peertube.alexdebosnia.eu/videos/embed/ka86UPsbcHnHUetT1zFdX7"
         }
         aspRatio={16 / 9}
+        title={"Interior de la clínica"}
       />
       <AdBloque
         // title={t("adBloques.second.title")}

@@ -3,16 +3,17 @@ import styles from "./PeerTube.module.css";
 interface PeerTubeProps {
   url: string;
   aspRatio: number;
+  title: string;
 }
 
-export default function PeerTube({ url, aspRatio }: PeerTubeProps) {
+export default function PeerTube({ url, aspRatio, title }: PeerTubeProps) {
   return (
     // <div className={styles.container}>
     <iframe
       className={styles.iFrame}
       style={{ aspectRatio: aspRatio }}
       src={url}
-      title="Interior de la clínica"
+      title={title}
       width="100%"
       height="100%"
       allow="fullscreen"
