@@ -7,14 +7,15 @@ import {
   default as secondAdBloqueImage,
   default as thirdAdBloqueImage,
 } from "@/assets/images/palm-trees.svg";
-import AdBloque from "@/components/AdBloque/AdBloque";
-import Hero from "@/components/HomePage/Hero/Hero/Hero";
-import Offers from "@/components/HomePage/Offers/Offers";
-import Opinions from "@/components/HomePage/Opinions/Opinions";
+import AdBloque from "@/components/AdBloque";
+import Hero from "@/components/HomePage/Hero/Hero";
+import Offers from "@/components/HomePage/Offers";
+import Opinions from "@/components/HomePage/Opinions";
 import WhyBlancodent from "@/components/HomePage/WhyBlancodent/WhyBlancodent";
 import WhyBlancodentCard from "@/components/HomePage/WhyBlancodent/WhyBlancodentCard";
-import Slider from "@/components/Slider/Slider/Slider";
-import SliderCard from "@/components/Slider/SliderCard/SliderCard";
+import PeerTube from "@/components/PeerTube";
+import Slider from "@/components/Slider/Slider";
+import SliderCard from "@/components/Slider/SliderCard";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 export default async function HomePage({
@@ -94,17 +95,12 @@ export default async function HomePage({
         direction="right"
       />
       <Opinions />
-      <div style={{ position: "relative", paddingTop: "56.25%" }}>
-        <iframe
-          title="Interior de la clínica"
-          width="100%"
-          height="100%"
-          src="https://peertube.alexdebosnia.eu/videos/embed/ka86UPsbcHnHUetT1zFdX7"
-          allow="fullscreen"
-          sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
-          style={{ border: "0px", position: "absolute", inset: "0px" }}
-        ></iframe>
-      </div>
+      <PeerTube
+        url={
+          "https://peertube.alexdebosnia.eu/videos/embed/ka86UPsbcHnHUetT1zFdX7"
+        }
+        aspRatio={16 / 9}
+      />
       <AdBloque
         // title={t("adBloques.second.title")}
         title={t("adBloques.fourth.title")}
