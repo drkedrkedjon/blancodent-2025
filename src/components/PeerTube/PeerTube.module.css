@@ -9,4 +9,6 @@
   border: 0px;
   /* position: absolute; */
   /* inset: 0px; */
+  width: 100%;
+  height: auto;
 }
