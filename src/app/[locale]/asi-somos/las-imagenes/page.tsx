@@ -1,6 +1,7 @@
 import secondImg from "@/assets/images/clinica/clinica-9.jpg";
 import thirdImg from "@/assets/images/clinica/detalle-9.jpg";
 import AsideImageBlock from "@/components/AsideImageBlock/AsideImageBlock";
+import PeerTube from "@/components/PeerTube";
 import { routing } from "@/i18n/routing";
 import { Metadata } from "next";
 import { hasLocale } from "next-intl";
@@ -8,6 +9,7 @@ import { notFound } from "next/navigation";
 import styles from "../asi-somos.module.css";
 import firstImg from "./images/001.jpg";
 import fourthImg from "./images/004.jpg";
+import stylesPeerTube from "./page.module.css";
 
 interface ServiciosLayoutProps {
   params: Promise<{ locale: string }>;
@@ -50,6 +52,14 @@ export default async function BlanqueamientoDental({
       </header>
       <div className={styles.line} />
       <div className={styles.content}>
+        <PeerTube
+          url={
+            "https://peertube.alexdebosnia.eu/videos/embed/ka86UPsbcHnHUetT1zFdX7"
+          }
+          aspRatio={16 / 9}
+          title="Interior de la clínica"
+          classForMargin={stylesPeerTube.margin}
+        />
         <Content />
       </div>
       <div className={styles.asideContainer}>

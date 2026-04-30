@@ -1,6 +1,7 @@
 import secondImg from "@/assets/images/clinica/clinica-9.jpg";
 import thirdImg from "@/assets/images/clinica/detalle-9.jpg";
 import AsideImageBlock from "@/components/AsideImageBlock/AsideImageBlock";
+import PeerTube from "@/components/PeerTube";
 import { routing } from "@/i18n/routing";
 import { Metadata } from "next";
 import { hasLocale } from "next-intl";
@@ -8,6 +9,7 @@ import { notFound } from "next/navigation";
 import styles from "../servicios.module.css";
 import firstImg from "./images/001.jpg";
 import fourthImg from "./images/004.jpg";
+import stylesPeerTube from "./page.module.css";
 
 interface ServiciosLayoutProps {
   params: Promise<{ locale: string }>;
@@ -51,6 +53,14 @@ export default async function BlanqueamientoDental({
       <div className={styles.line} />
       <div className={styles.content}>
         <Content />
+        <PeerTube
+          url={
+            "https://peertube.alexdebosnia.eu/videos/embed/9M2UcLMuojrw3Ap9RX5kcN"
+          }
+          aspRatio={16 / 9}
+          title="20 años con ustedes / 20 years with you"
+          classForMargin={stylesPeerTube.margin}
+        />
       </div>
       <div className={styles.asideContainer}>
         <AsideImageBlock
@@ -62,4 +72,18 @@ export default async function BlanqueamientoDental({
       </div>
     </article>
   );
+}
+
+{
+  /* <div style="position: relative; padding-top: 56.25%;">
+  <iframe
+    title="Implantes Dentales - Animación"
+    width="100%"
+    height="100%"
+    src="https://peertube.alexdebosnia.eu/videos/embed/9M2UcLMuojrw3Ap9RX5kcN"
+    allow="fullscreen"
+    sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+    style="border: 0px; position: absolute; inset: 0px;"
+  ></iframe>
+</div>; */
 }

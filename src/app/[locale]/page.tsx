@@ -17,6 +17,7 @@ import PeerTube from "@/components/PeerTube";
 import Slider from "@/components/Slider/Slider";
 import SliderCard from "@/components/Slider/SliderCard";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import stylesPeerTube from "./page.module.css";
 
 export default async function HomePage({
   params,
@@ -97,10 +98,11 @@ export default async function HomePage({
       <Opinions />
       <PeerTube
         url={
-          "https://peertube.alexdebosnia.eu/videos/embed/ka86UPsbcHnHUetT1zFdX7"
+          "https://peertube.alexdebosnia.eu/videos/embed/kG1ruLnH8Byk4xFABTrWNw"
         }
         aspRatio={16 / 9}
-        title={"Interior de la clínica"}
+        title="20 años con ustedes / 20 years with you"
+        classForMargin={stylesPeerTube.margin}
       />
       <AdBloque
         // title={t("adBloques.second.title")}
