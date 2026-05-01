@@ -56,9 +56,9 @@ export default async function HomePage({
             title={t(`sliders.sliderClinica.card${index + 1}.title`)}
             content={t(`sliders.sliderClinica.card${index + 1}.content`)}
             alt={t(`sliders.sliderClinica.card${index + 1}.alt`)}
-            linkContent={t(
-              `sliders.sliderClinica.card${index + 1}.linkContent`,
-            )}
+            // linkContent={t(
+            //   `sliders.sliderClinica.card${index + 1}.linkContent`,
+            // )}
           />
         ))}
       </Slider>
@@ -121,9 +121,9 @@ export default async function HomePage({
             title={t(`sliders.sliderServices.card${index + 1}.title`)}
             content={t(`sliders.sliderServices.card${index + 1}.content`)}
             alt={t(`sliders.sliderServices.card${index + 1}.alt`)}
-            linkContent={t(
-              `sliders.sliderServices.card${index + 1}.linkContent`,
-            )}
+            // linkContent={t(
+            //   `sliders.sliderServices.card${index + 1}.linkContent`,
+            // )}
           />
         ))}
       </Slider>

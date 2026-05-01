@@ -8,7 +8,7 @@ interface SliderCardProps {
   title: string;
   content: string;
   alt: string;
-  linkContent: string;
+  // linkContent: string;
 }
 
 export default function SliderCard({
@@ -17,26 +17,26 @@ export default function SliderCard({
   title,
   content,
   alt,
-  linkContent,
+  // linkContent,
 }: SliderCardProps) {
   return (
     <article className={styles.container}>
-      <div className={styles.titleContainer}>
-        <Image
-          src={img}
-          alt={alt}
-        />
-        <h3 className={styles.h3}>{title}</h3>
-      </div>
-      <div className={styles.contentContainer}>
-        <p className={styles.p}>{content}</p>
-        <Link
-          className={styles.link}
-          href={link}
-        >
-          {linkContent + title}
-        </Link>
-      </div>
+      <Link
+        className={styles.link}
+        href={link}
+      >
+        <div className={styles.titleContainer}>
+          <Image
+            src={img}
+            alt={alt}
+          />
+          <h3 className={styles.h3}>{title}</h3>
+        </div>
+        <div className={styles.contentContainer}>
+          <p className={styles.p}>{content}</p>
+          {/* {linkContent} */}
+        </div>
+      </Link>
     </article>
   );
 }
