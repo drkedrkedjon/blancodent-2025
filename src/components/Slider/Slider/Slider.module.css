@@ -7,8 +7,8 @@
   padding-block-end: var(--space-500);
   margin-block: var(--space-600);
   /* border: 1px solid black; */
-  -webkit-mask-image: linear-gradient(to right, black 80%, transparent 100%);
-  mask-image: linear-gradient(to right, black 80%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, black 97%, transparent 100%);
+  mask-image: linear-gradient(to right, black 97%, transparent 100%);
 }
 
 /* Modern browsers — Chrome 121+, Edge 121+, Firefox, Safari 18.2+ */
