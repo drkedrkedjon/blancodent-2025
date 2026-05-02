@@ -1,5 +1,6 @@
 import secondImg from "@/assets/images/clinica/clinica-1.jpg";
 import thirdImg from "@/assets/images/clinica/detalle-1.jpg";
+import fourthImg from "@/assets/images/clinica/istock-1.jpg";
 import AsideImageBlock from "@/components/AsideImageBlock/AsideImageBlock";
 import { routing } from "@/i18n/routing";
 import { Metadata } from "next";
@@ -7,7 +8,6 @@ import { hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import styles from "../articulos.module.css";
 import firstImg from "./images/001.jpg";
-import fourthImg from "./images/004.jpg";
 
 interface ServiciosLayoutProps {
   params: Promise<{ locale: string }>;

@@ -1,5 +1,6 @@
 import secondImg from "@/assets/images/clinica/clinica-9.jpg";
 import thirdImg from "@/assets/images/clinica/detalle-9.jpg";
+import fourthImg from "@/assets/images/clinica/istock-9.jpg";
 import AsideImageBlock from "@/components/AsideImageBlock/AsideImageBlock";
 import PeerTube from "@/components/PeerTube";
 import { routing } from "@/i18n/routing";
@@ -8,7 +9,6 @@ import { hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import styles from "../asi-somos.module.css";
 import firstImg from "./images/001.jpg";
-import fourthImg from "./images/004.jpg";
 import stylesPeerTube from "./page.module.css";
 
 interface ServiciosLayoutProps {
