@@ -1,4 +1,10 @@
-import img from "@/assets/images/home-page/porque-card/cardimg-1.png";
+import img1 from "@/assets/images/home-page/opinions/b1.svg";
+import img4 from "@/assets/images/home-page/opinions/b2.svg";
+import img0 from "@/assets/images/home-page/opinions/b3.svg";
+import img2 from "@/assets/images/home-page/opinions/g1.svg";
+import img3 from "@/assets/images/home-page/opinions/g2.svg";
+import img5 from "@/assets/images/home-page/opinions/g3.svg";
+
 import { StarHalfIcon, StarIcon } from "@phosphor-icons/react/dist/ssr";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
@@ -16,6 +22,10 @@ export default async function Opinions() {
       <div className={styles.opinionsContainer}>
         <article className={styles.firstOpinionArticle}>
           <header className={styles.firstOpinionHeader}>
+            <Image
+              src={img0}
+              alt=""
+            />
             <h3>{t("first.name")}</h3>
             <span className={styles.starIcons}>
               <StarIcon weight="fill" />
@@ -34,7 +44,7 @@ export default async function Opinions() {
             className={`${styles.secondOpinionArticle} ${styles.bgColor1}`}
           >
             <Image
-              src={img}
+              src={img1}
               alt=""
             />
             <header>
@@ -55,7 +65,7 @@ export default async function Opinions() {
             className={`${styles.secondOpinionArticle} ${styles.bgColor2}`}
           >
             <Image
-              src={img}
+              src={img2}
               alt=""
             />
             <header>
@@ -76,7 +86,7 @@ export default async function Opinions() {
             className={`${styles.secondOpinionArticle} ${styles.bgColor3}`}
           >
             <Image
-              src={img}
+              src={img3}
               alt=""
             />
             <header>
@@ -99,7 +109,7 @@ export default async function Opinions() {
             >
               <header>
                 <Image
-                  src={img}
+                  src={img4}
                   alt=""
                 />
                 <h3>{t("fifth.name")}</h3>
@@ -120,14 +130,14 @@ export default async function Opinions() {
             >
               <header>
                 <Image
-                  src={img}
+                  src={img5}
                   alt=""
                 />
                 <h3>{t("sixt.name")}</h3>
                 <span className={styles.starIcons}>
                   <StarIcon weight="fill" />
                   <StarIcon weight="fill" />
-                  <StarIcon weight="fill" />
+                  {/* <StarIcon weight="fill" /> */}
                   <StarIcon weight="fill" />
                   <StarIcon weight="fill" />
                 </span>
