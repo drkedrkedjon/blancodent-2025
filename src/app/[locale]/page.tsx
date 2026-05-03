@@ -73,6 +73,7 @@ export default async function HomePage({
         <h3>{t("offers.one.title")}</h3>
         <p>{t("offers.one.p1")}</p>
         <p>{t("offers.one.p2")}</p>
+
         <h3>{t("offers.two.title")}</h3>
         <p>{t("offers.two.p1")}</p>
         <p>{t("offers.two.p2")}</p>
