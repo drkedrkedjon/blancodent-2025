@@ -49,6 +49,11 @@
   /* border: 3px solid var(--tercera-80); */
 }
 
+.contactLink {
+  font-weight: var(--f-wei-600);
+  color: inherit;
+}
+
 .rightArrow {
   display: inline-block;
   vertical-align: middle;

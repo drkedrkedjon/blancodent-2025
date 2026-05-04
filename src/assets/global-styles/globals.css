@@ -67,8 +67,8 @@ button {
 }
 
 a {
-  text-underline-offset: 0.15em;
-  text-decoration-thickness: 0.14rem;
+  text-underline-offset: 0.14em;
+  text-decoration-thickness: 0.10rem;
 }
 
 a:hover,
