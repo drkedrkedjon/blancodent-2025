@@ -116,7 +116,7 @@
 
 .tagLineContainer {
   position: relative;
-  font-size: var(--fs-200);
+  font-size: var(--fs-300);
   text-align: center;
   margin-block-start: var(--space-100);
 
