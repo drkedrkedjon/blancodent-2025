@@ -180,6 +180,13 @@
   border: 1px solid transparent;
 }
 
+.menuCarouselBtn[aria-current="true"] {
+  background-color: var(--primera-90);
+  box-shadow: var(--shadow-400);
+  /* border: 1px solid transparent; */
+}
+
+
 .menuCarouselBtn svg {
   width: 32px;
   height: auto;
