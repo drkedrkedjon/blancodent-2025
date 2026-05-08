@@ -18,7 +18,7 @@ export default function SliderCard({
   alt,
 }: SliderCardProps) {
   return (
-    <article className={styles.container}>
+    <div className={styles.container}>
       <Link
         className={styles.link}
         href={link}
@@ -36,6 +36,6 @@ export default function SliderCard({
           <p className={styles.p}>{content}</p>
         </div>
       </Link>
-    </article>
+    </div>
   );
 }

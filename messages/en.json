@@ -44,7 +44,7 @@
   },
   "Header": {
     "logoLabel": "Go to the home page",
-    "quickLinksLabel": "Quick links to location, contact form, and phone call",
+    "quickLinksLabel": "Quick links to location, offers, and opening hours",
     "quickLinksOne": "Location",
     "quickLinksTwo": "Offers",
     "quickLinksThree": "Opening hours"
