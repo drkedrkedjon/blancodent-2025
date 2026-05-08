@@ -37,6 +37,7 @@ export default async function HomePage({
     >
       <Hero />
       <div
+        className="visually-hidden"
         id="skip-after-carousel"
         tabIndex={-1}
       ></div>

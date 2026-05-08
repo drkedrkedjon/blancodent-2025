@@ -52,7 +52,7 @@
     "locale": "{locale, select, es {🇪🇸 Español} en {🇬🇧 English} other {Unknown}}"
   },
   "MainMenu": {
-    "navLabel": "Principal",
+    "navLabel": "Navegación Principal",
     "openMenuBtn": "Abrir menú",
     "disclosureGroupLabel": "Colección de categorías de navegación expandibles que contienen enlaces de navegación",
     "closeMenuBtn": "Cerrar menú",
@@ -168,7 +168,7 @@
         "6": "Higiene"
       },
       "heroSlides": {
-        "skipLink": "Saltar carousel",
+        "skipLink": "Saltar carrusel promocional, información repetida",
         "slide1": {
           "h2": "Blanqueamiento dental",
           "h3": "Dientes blancos, boca sana y sonrisa feliz.",
@@ -407,7 +407,7 @@
     "description": "Clínica dental en Las Palmas, BLANCODENT. Dentistas en Las Palmas. Dentistas en Mesa y López. Expertos en ortodoncia, endodoncia, tratamiento del bruxismo, periodoncia e implantología dental. Puedes encontrar todas las especialidades odontológicas en BLANCODENT."
   },
   "SkipLinkMain": {
-    "content": "Saltar al contenido principal"
+    "content": "Saltar el encabezado para ir al contenido principal"
   },
   "ContactForm": {
     "handleSubmit": {

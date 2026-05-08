@@ -14,7 +14,7 @@ export default function Hero() {
           <span className={styles.dentalClinic}>
             {t("heroHeader.titleSmall")}
           </span>
-          <br />
+          <br aria-hidden="true" />
           {t("heroHeader.titleBig")}
         </h1>
         <p className={styles.tagline}>{t("heroHeader.tagLine")}</p>
@@ -27,7 +27,10 @@ export default function Hero() {
         >
           {t("heroHeader.actionBtn")}
         </a>
-        <Link href={contacto()} className={styles.contactLink}>
+        <Link
+          href={contacto()}
+          className={styles.contactLink}
+        >
           {t("heroHeader.actionLink")}
           <ArrowFatRightIcon
             weight="duotone"

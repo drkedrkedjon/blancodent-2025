@@ -54,7 +54,7 @@
     "locale": "{locale, select, es {🇪🇸 Español} en {🇬🇧 English} other {Unknown}}"
   },
   "MainMenu": {
-    "navLabel": "Main",
+    "navLabel": "Main Navigation",
     "openMenuBtn": "Open menu",
     "disclosureGroupLabel": "Collection of expandable navigation categories that contain navigation links",
     "closeMenuBtn": "Close menu",
@@ -170,7 +170,7 @@
         "6": "Hygiene"
       },
       "heroSlides": {
-        "skipLink": "Skip carousel",
+        "skipLink": "Skip promotional carousel, repeated information",
         "slide1": {
           "h2": "Dental whitening",
           "h3": "White teeth, healthy mouth and happy smile.",
@@ -409,7 +409,7 @@
     "description": "Dental clinic in Las Palmas, BLANCODENT. Dentists in Las Palmas. Dentists in Mesa y López. Experts in orthodontics, endodontics, bruxism treatment, periodontics, and dental implantology. You can find all dental specialties at BLANCODENT."
   },
   "SkipLinkMain": {
-    "content": "Skip to main content",
+    "content": "Skip the header to go to the main content",
     "href": "main"
   },
   "ContactForm": {
