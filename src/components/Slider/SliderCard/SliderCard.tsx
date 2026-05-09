@@ -17,12 +17,15 @@ export default function SliderCard({
   content,
   alt,
 }: SliderCardProps) {
+  const UUID = crypto.randomUUID();
+
   return (
     <div className={styles.container}>
       <Link
         className={styles.link}
         href={link}
         aria-label={title}
+        aria-describedby={UUID}
       >
         <div className={styles.titleContainer}>
           <Image
@@ -33,7 +36,12 @@ export default function SliderCard({
           <h3 className={styles.h3}>{title}</h3>
         </div>
         <div className={styles.contentContainer}>
-          <p className={styles.p}>{content}</p>
+          <p
+            id={UUID}
+            className={styles.p}
+          >
+            {content}
+          </p>
         </div>
       </Link>
     </div>

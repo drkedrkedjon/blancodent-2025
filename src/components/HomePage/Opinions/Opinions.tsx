@@ -20,14 +20,17 @@ export default async function Opinions() {
         <div className={styles.decorativeLine} />
       </div>
       <div className={styles.opinionsContainer}>
-        <article className={styles.firstOpinionArticle}>
+        <div className={styles.firstOpinionArticle}>
           <header className={styles.firstOpinionHeader}>
             <Image
               src={img0}
               alt=""
             />
             <h3>{t("first.name")}</h3>
-            <span className={styles.starIcons}>
+            <span
+              aria-hidden={true}
+              className={styles.starIcons}
+            >
               <StarIcon weight="fill" />
               <StarIcon weight="fill" />
               <StarIcon weight="fill" />
@@ -38,18 +41,19 @@ export default async function Opinions() {
           <blockquote>
             <p>{t("first.opinion")}</p>
           </blockquote>
-        </article>
+        </div>
         <div className={styles.otherOpinionsContainer}>
-          <article
-            className={`${styles.secondOpinionArticle} ${styles.bgColor1}`}
-          >
+          <div className={`${styles.secondOpinionArticle} ${styles.bgColor1}`}>
             <Image
               src={img1}
               alt=""
             />
             <header>
               <h3>{t("second.name")}</h3>
-              <span className={styles.starIcons}>
+              <span
+                aria-hidden={true}
+                className={styles.starIcons}
+              >
                 <StarIcon weight="fill" />
                 <StarIcon weight="fill" />
                 <StarIcon weight="fill" />
@@ -60,17 +64,18 @@ export default async function Opinions() {
             <blockquote>
               <p>{t("second.opinion")}</p>
             </blockquote>
-          </article>
-          <article
-            className={`${styles.secondOpinionArticle} ${styles.bgColor2}`}
-          >
+          </div>
+          <div className={`${styles.secondOpinionArticle} ${styles.bgColor2}`}>
             <Image
               src={img2}
               alt=""
             />
             <header>
               <h3>{t("third.name")}</h3>
-              <span className={styles.starIcons}>
+              <span
+                aria-hidden={true}
+                className={styles.starIcons}
+              >
                 <StarIcon weight="fill" />
                 <StarIcon weight="fill" />
                 <StarIcon weight="fill" />
@@ -81,17 +86,18 @@ export default async function Opinions() {
             <blockquote>
               <p>{t("third.opinion")}</p>
             </blockquote>
-          </article>
-          <article
-            className={`${styles.secondOpinionArticle} ${styles.bgColor3}`}
-          >
+          </div>
+          <div className={`${styles.secondOpinionArticle} ${styles.bgColor3}`}>
             <Image
               src={img3}
               alt=""
             />
             <header>
               <h3>{t("fourth.name")}</h3>
-              <span className={styles.starIcons}>
+              <span
+                aria-hidden={true}
+                className={styles.starIcons}
+              >
                 <StarIcon weight="fill" />
                 <StarIcon weight="fill" />
                 <StarIcon weight="fill" />
@@ -102,9 +108,9 @@ export default async function Opinions() {
             <blockquote>
               <p>{t("fourth.opinion")}</p>
             </blockquote>
-          </article>
+          </div>
           <div className={styles.thirdOpinionsContainer}>
-            <article
+            <div
               className={`${styles.secondOpinionArticle} ${styles.bgColor4}`}
             >
               <header>
@@ -113,7 +119,10 @@ export default async function Opinions() {
                   alt=""
                 />
                 <h3>{t("fifth.name")}</h3>
-                <span className={styles.starIcons}>
+                <span
+                  aria-hidden={true}
+                  className={styles.starIcons}
+                >
                   <StarIcon weight="fill" />
                   <StarIcon weight="fill" />
                   <StarIcon weight="fill" />
@@ -124,8 +133,8 @@ export default async function Opinions() {
               <blockquote>
                 <p>{t("fifth.opinion")}</p>
               </blockquote>
-            </article>
-            <article
+            </div>
+            <div
               className={`${styles.secondOpinionArticle} ${styles.bgColor5}`}
             >
               <header>
@@ -134,7 +143,10 @@ export default async function Opinions() {
                   alt=""
                 />
                 <h3>{t("sixt.name")}</h3>
-                <span className={styles.starIcons}>
+                <span
+                  aria-hidden={true}
+                  className={styles.starIcons}
+                >
                   <StarIcon weight="fill" />
                   <StarIcon weight="fill" />
                   {/* <StarIcon weight="fill" /> */}
@@ -145,7 +157,7 @@ export default async function Opinions() {
               <blockquote>
                 <p>{t("sixt.opinion")}</p>
               </blockquote>
-            </article>
+            </div>
           </div>
         </div>
       </div>
