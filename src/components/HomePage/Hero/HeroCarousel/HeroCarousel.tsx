@@ -126,7 +126,7 @@ export default function HeroCarousel() {
       </div>
 
       <div
-        aria-hidden={true}
+        // aria-hidden={true}
         className={styles.buttonsContainer}
       >
         <button
@@ -172,6 +172,7 @@ export default function HeroCarousel() {
           <div className={styles.leftColumn}>
             {slideData.slideBtnIcons.slice(0, 3).map((Icon, index) => (
               <button
+                tabIndex={-1}
                 aria-hidden={true}
                 key={index}
                 className={styles.menuCarouselBtn}
@@ -186,6 +187,7 @@ export default function HeroCarousel() {
           <div className={styles.rightColumn}>
             {slideData.slideBtnIcons.slice(3).map((Icon, index) => (
               <button
+                tabIndex={-1}
                 aria-hidden={true}
                 key={index}
                 className={styles.menuCarouselBtn}
