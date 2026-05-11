@@ -46,7 +46,12 @@ export default async function BlanqueamientoDental({
     <article className={styles.container}>
       <header className={styles.header}>
         <h1 className={styles.h1}>{metadata?.title}</h1>
-        <p className={styles.date}>{metadata?.date}</p>
+        <p
+          aria-hidden={true}
+          className={styles.date}
+        >
+          {metadata?.date}
+        </p>
         <p className={styles.subTitle}>{metadata?.subTitle}</p>
       </header>
       <div className={styles.line} />

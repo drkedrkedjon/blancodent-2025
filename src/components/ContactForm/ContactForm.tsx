@@ -62,8 +62,9 @@ export default function Formulario() {
           aria-describedby="describedby-name"
         />
         <span
-          aria-describedby="describedby-name"
+          id="describedby-name"
           className={styles.description}
+          aria-hidden="true"
         >
           {t("nameDesc")}
         </span>
@@ -87,8 +88,9 @@ export default function Formulario() {
           aria-describedby="describedby-email"
         />
         <span
-          aria-describedby="describedby-email"
+          id="describedby-email"
           className={styles.description}
+          aria-hidden="true"
         >
           {t("emailDesc")}
         </span>
@@ -113,6 +115,7 @@ export default function Formulario() {
         <span
           id="describedby-phone"
           className={styles.description}
+          aria-hidden="true"
         >
           {t("phoneDesc")}
         </span>
@@ -126,7 +129,9 @@ export default function Formulario() {
           type="text"
           name="_honey"
           style={{ display: "none" }}
-        ></input>
+          aria-hidden="true"
+          tabIndex={-1}
+        />
         <textarea
           value={form.message}
           onChange={(e) => setForm({ ...form, message: e.target.value })}
@@ -142,10 +147,16 @@ export default function Formulario() {
         <span
           id="describedby-textarea"
           className={styles.description}
+          aria-hidden="true"
         >
           {t("messageDesc")}
         </span>
-        <p className={styles.formMessage}>{status}</p>
+        <p
+          className={styles.formMessage}
+          role="status"
+        >
+          {status}
+        </p>
         <button className={`btn ${styles.button}`}>{t("btn")}</button>
       </form>
     </section>
