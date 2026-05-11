@@ -1,5 +1,5 @@
 import styles from "./PeerTube.module.css";
-// IMPORTANT, PARA MARGIN USAR EL CSS DE PADRE PARA PASAR MARGEN COMO PROPS...
+// IMPORTANT, PARA MARGIN VERTICAL USAR EL CSS DE PADRE PARA PASAR MARGEN COMO PROPS...
 
 interface PeerTubeProps {
   url: string;
