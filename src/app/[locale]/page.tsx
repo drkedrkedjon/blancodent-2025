@@ -104,7 +104,6 @@ export default async function HomePage({
         classForMargin={stylesPeerTube.margin}
       />
       <AdBloque
-        // title={t("adBloques.second.title")}
         title={t("adBloques.fourth.title")}
         content={t("adBloques.fourth.content")}
         image={fourthAdBloqueImage}
@@ -120,9 +119,6 @@ export default async function HomePage({
             title={t(`sliders.sliderServices.card${index + 1}.title`)}
             content={t(`sliders.sliderServices.card${index + 1}.content`)}
             alt={t(`sliders.sliderServices.card${index + 1}.alt`)}
-            // linkContent={t(
-            //   `sliders.sliderServices.card${index + 1}.linkContent`,
-            // )}
           />
         ))}
       </Slider>

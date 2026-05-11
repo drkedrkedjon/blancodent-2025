@@ -46,7 +46,7 @@ export default function Formulario() {
           className={styles.label}
           htmlFor="name"
         >
-          {t("name")}: *
+          {t("name")}:
         </label>
         <input
           required
@@ -57,13 +57,21 @@ export default function Formulario() {
           name="Nombre"
           id="name"
           placeholder={t("namePh")}
+          inputMode="text"
+          autoComplete="name"
+          aria-describedby="describedby-name"
         />
-        <span className={styles.description}>{t("nameDesc")}</span>
+        <span
+          aria-describedby="describedby-name"
+          className={styles.description}
+        >
+          {t("nameDesc")}
+        </span>
         <label
           className={styles.label}
           htmlFor="email"
         >
-          {t("email")}: *
+          {t("email")}:
         </label>
         <input
           required
@@ -74,8 +82,16 @@ export default function Formulario() {
           id="email"
           name="Email"
           placeholder={t("emailPh")}
+          inputMode="email"
+          autoComplete="email"
+          aria-describedby="describedby-email"
         />
-        <span className={styles.description}>{t("emailDesc")}</span>
+        <span
+          aria-describedby="describedby-email"
+          className={styles.description}
+        >
+          {t("emailDesc")}
+        </span>
         <label
           className={styles.label}
           htmlFor="phone"
@@ -83,7 +99,6 @@ export default function Formulario() {
           {t("phone")}:
         </label>
         <input
-          // required
           value={form.phone}
           onChange={(e) => setForm({ ...form, phone: e.target.value })}
           className={styles.input}
@@ -91,8 +106,16 @@ export default function Formulario() {
           id="phone"
           name="Phone"
           placeholder={t("phonePh")}
+          inputMode="tel"
+          autoComplete="tel"
+          aria-describedby="describedby-phone"
         />
-        <span className={styles.description}>{t("phoneDesc")}</span>
+        <span
+          id="describedby-phone"
+          className={styles.description}
+        >
+          {t("phoneDesc")}
+        </span>
         <label
           className={styles.label}
           htmlFor="message"
@@ -105,7 +128,6 @@ export default function Formulario() {
           style={{ display: "none" }}
         ></input>
         <textarea
-          // required
           value={form.message}
           onChange={(e) => setForm({ ...form, message: e.target.value })}
           className={styles.input}
@@ -114,8 +136,15 @@ export default function Formulario() {
           cols={30}
           rows={6}
           placeholder={t("messagePh")}
+          inputMode="text"
+          aria-describedby="describedby-textarea"
         />
-        <span className={styles.description}>{t("messageDesc")}</span>
+        <span
+          id="describedby-textarea"
+          className={styles.description}
+        >
+          {t("messageDesc")}
+        </span>
         <p className={styles.formMessage}>{status}</p>
         <button className={`btn ${styles.button}`}>{t("btn")}</button>
       </form>
