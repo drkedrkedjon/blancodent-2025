@@ -11,6 +11,7 @@ export default function Formulario() {
     email: "",
     message: "",
     phone: "",
+    pusiKaru: "",
   });
   const t = useTranslations("ContactForm");
 
@@ -27,8 +28,11 @@ export default function Formulario() {
 
     if (res.ok) {
       setStatus(t("handleSubmit.success"));
-      setForm({ name: "", email: "", phone: "", message: "" });
+      setForm({ name: "", email: "", phone: "", message: "", pusiKaru: "" });
     } else {
+      // To handle error from MailjetAPI, if not only HTML required is used
+      // const data = await res.json();
+      // setStatus(data.error || t("handleSubmit.error"));
       setStatus(t("handleSubmit.error"));
     }
   };
@@ -119,19 +123,31 @@ export default function Formulario() {
         >
           {t("phoneDesc")}
         </span>
+        {/* kontrola govana koje stizu i salju */}
+        <label
+          aria-hidden="true"
+          style={{ display: "none" }}
+          htmlFor="website"
+        >
+          Website
+        </label>
+        <input
+          value={form.pusiKaru}
+          onChange={(e) => setForm({ ...form, pusiKaru: e.target.value })}
+          id="website"
+          type="text"
+          name="Website"
+          style={{ display: "none" }}
+          aria-hidden="true"
+          tabIndex={-1}
+        />
+        {/* Kraj govana */}
         <label
           className={styles.label}
           htmlFor="message"
         >
           {t("message")}:
         </label>
-        <input
-          type="text"
-          name="_honey"
-          style={{ display: "none" }}
-          aria-hidden="true"
-          tabIndex={-1}
-        />
         <textarea
           value={form.message}
           onChange={(e) => setForm({ ...form, message: e.target.value })}
