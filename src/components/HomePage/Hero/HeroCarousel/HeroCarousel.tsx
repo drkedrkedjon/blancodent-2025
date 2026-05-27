@@ -1,5 +1,6 @@
 "use client";
-import PalmTrees from "@/assets/images/palm-trees.svg";
+import Plant3 from "@/assets/images/plant3.svg";
+import Plant4 from "@/assets/images/plant4.svg";
 import {
   blanqueamiento,
   contacto,
@@ -90,7 +91,7 @@ export default function HeroCarousel() {
     <div className={styles.carouselContainer}>
       <Image
         aria-hidden={true}
-        src={PalmTrees}
+        src={Plant3}
         alt="test"
       />
       <SkipLink
@@ -154,7 +155,7 @@ export default function HeroCarousel() {
         {/* Remowe this test image */}
         <Image
           aria-hidden={true}
-          src={PalmTrees}
+          src={Plant4}
           alt="test"
         />
         <p>

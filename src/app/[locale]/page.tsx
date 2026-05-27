@@ -2,11 +2,11 @@ import { sliderClinica } from "@/assets/data/home-page-slider-clinica";
 import { sliderServices } from "@/assets/data/home-page-slider-services";
 import { cardImages } from "@/assets/data/home-page-why-blancodent";
 import {
-  default as firstAdBloqueImage,
   default as fourthAdBloqueImage,
   default as secondAdBloqueImage,
   default as thirdAdBloqueImage,
 } from "@/assets/images/palm-trees.svg";
+import firstAdBloqueImage from "@/assets/images/plant1.svg";
 import AdBloque from "@/components/AdBloque";
 import Hero from "@/components/HomePage/Hero/Hero";
 import Offers from "@/components/HomePage/Offers";
