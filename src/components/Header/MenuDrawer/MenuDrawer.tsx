@@ -2,6 +2,7 @@ import {
   anestesia,
   blanqueamiento,
   bruxismo,
+  colegioDentistas,
   contacto,
   covid19,
   dienteBiomaterial,
@@ -11,7 +12,6 @@ import {
   financiacion,
   higiene,
   implantologia,
-  laSaludEstaNavidad,
   laserDental,
   lasImagenes,
   losHorarios,
@@ -345,7 +345,7 @@ export default function MenuDrawer({ handleCloseDrawer }: MenuDrawerProps) {
                     <li>
                       <Link
                         onClick={handleCloseDrawer}
-                        href={laSaludEstaNavidad()}
+                        href={colegioDentistas()}
                       >
                         {t("others.link1")}
                       </Link>

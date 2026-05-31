@@ -28,7 +28,7 @@ export const transporte = () => "/asi-somos/transporte";
 export const ubicacion = () => "/asi-somos/ubicacion";
 export const varios = () => "/varios";
 export const notaLegal = () => "/varios/nota-legal";
-export const laSaludEstaNavidad = () => "/varios/la-salud-esta-navidad";
+export const colegioDentistas = () => "/varios/colegio-dentistas";
 export const ofertasContinuas = () => "/varios/ofertas-continuas";
 export const citaPrevia = () => "/varios/cita-previa";
 export const faq = () => "/varios/preguntas-frecuentes";

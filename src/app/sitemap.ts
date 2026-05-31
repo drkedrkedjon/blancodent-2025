@@ -32,7 +32,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/asi-somos/ubicacion",
     "/varios",
     "/varios/nota-legal",
-    "/varios/la-salud-esta-navidad",
+    "/varios/colegio-dentistas",
     "/varios/ofertas-continuas",
     "/varios/preguntas-frecuentes",
     "/varios/covid-19",
