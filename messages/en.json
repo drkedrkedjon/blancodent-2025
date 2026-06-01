@@ -330,14 +330,14 @@
     "offers": {
       "title": "Latest offers",
       "one": {
-        "title": "Bite Splint Offer",
-        "p1": "50% discount on semi-rigid bite splint + check-up + free X-ray.",
-        "p2": "Have you been wanting a healthier smile for a while?"
+        "title": "50% off all types of dental whitening.",
+        "p1": "White teeth, a healthy mouth, and a happy smile.",
+        "p2": "Valid until 31 August. (Cannot be combined with other offers)"
       },
       "two": {
         "title": "10% discount for students and unemployed.",
         "p1": "Also includes free check-up, estimate and X-rays. Take advantage!",
-        "p2": "(Not combinable with other offers)"
+        "p2": "(Cannot be combined with other offers)"
       },
       "three": {
         "title": "",
