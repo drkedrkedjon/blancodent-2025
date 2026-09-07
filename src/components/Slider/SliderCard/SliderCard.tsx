@@ -1,5 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import { useId } from "react";
 import styles from "./SliderCard.module.css";
 
 interface SliderCardProps {
@@ -17,7 +18,7 @@ export default function SliderCard({
   content,
   alt,
 }: SliderCardProps) {
-  const UUID = crypto.randomUUID();
+  const descriptionId = useId();
 
   return (
     <div className={styles.container}>
@@ -25,7 +26,7 @@ export default function SliderCard({
         className={styles.link}
         href={link}
         aria-label={title}
-        aria-describedby={UUID}
+        aria-describedby={descriptionId}
       >
         <div className={styles.titleContainer}>
           <Image
@@ -37,7 +38,7 @@ export default function SliderCard({
         </div>
         <div className={styles.contentContainer}>
           <p
-            id={UUID}
+            id={descriptionId}
             className={styles.p}
           >
             {content}

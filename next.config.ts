@@ -19,6 +19,7 @@ const cspHeader = `
 
 const nextConfig: NextConfig = {
   /* config options here */
+  cacheComponents: true,
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
   async headers() {
     return [

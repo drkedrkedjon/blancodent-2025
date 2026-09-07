@@ -11,6 +11,10 @@ import styles from "../asi-somos.module.css";
 import firstImg from "./images/001.jpg";
 import stylesPeerTube from "./page.module.css";
 
+// TODO: Cache Components adoption. Refactor this route so this opt-out can be removed.
+// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
+export const instant = false;
+
 interface ServiciosLayoutProps {
   params: Promise<{ locale: string }>;
 }

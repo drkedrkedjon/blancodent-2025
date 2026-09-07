@@ -9,6 +9,10 @@ import { notFound } from "next/navigation";
 import styles from "../servicios.module.css";
 import firstImg from "./images/001.png";
 
+// TODO: Cache Components adoption. Refactor this route so this opt-out can be removed.
+// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
+export const instant = false;
+
 interface ServiciosLayoutProps {
   params: Promise<{ locale: string }>;
 }
